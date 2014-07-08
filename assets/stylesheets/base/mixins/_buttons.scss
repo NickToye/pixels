@@ -1,0 +1,210 @@
+// Buttons
+// ---------------------------
+// Mixin for Buttons
+
+// TODO: Apply BEM to Buttons
+// TODO: Apply Baseline Grid
+
+/* - BASE ----------------------------- */
+
+@mixin btn{
+    display:inline-block;
+    vertical-align:middle;
+    white-space:nowrap;
+    font-family: sans-serif;
+    font-size:100%;
+
+    cursor:pointer;
+    border:none;
+    margin:0;
+    background-color: $button-bg-color;
+    border: 1px solid $dark-grey;
+    color: $button-color;
+    border-radius:4px;
+    overflow:visible;
+    text-decoration: none;
+    @include transition(background .3s linear);
+      &:hover, &:active, &:focus, &:visited {
+        text-decoration: none;
+      }
+      &:hover{
+        /* box-shadow:0 0 5px rgba(0, 0, 0, 0.5); */
+         background-color: $button-bg-hover-color;
+      }
+      &:active, &:focus {
+        outline:none;
+        box-shadow:0 0 5px rgba(0, 0, 0, 0.5) inset;
+      }
+      &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+      }
+}
+@mixin btn-norm {
+    line-height:2;
+    height: 2em;
+    padding: 0 1em;
+
+}
+
+@mixin btn-wide {
+    line-height:2;
+    height: 2em;
+    padding: 0 2em;
+}
+
+@mixin btn-condensed {
+	font-family: $condensed-font;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+/* - SIZES ---------------------------- */
+
+@mixin btn--small{
+    padding: 0 0.5em;
+    line-height:2;
+    height:     2em;
+}
+
+@mixin btn--large{
+    padding: 0 1.5em;
+    line-height:4;
+    height:     4em;
+}
+
+@mixin btn--huge{
+    padding: 0 2em;
+    line-height:5;
+    height:     5em;
+}
+
+@mixin btn--full{
+    width:100%;
+    padding-right:0;
+    padding-left: 0;
+    text-align:center;
+}
+
+/* - FONT SIZES ----------------------- */
+
+@mixin btn--alpha{
+    font-size:3rem;
+}
+
+@mixin btn--beta{
+    font-size:2rem;
+}
+
+@mixin btn--gamma{
+    font-size:1rem;
+}
+
+
+@mixin btn--natural{
+    vertical-align:baseline;
+    font-size:inherit;
+    line-height:inherit;
+    height:auto;
+    padding-right:0.5em;
+    padding-left: 0.5em;
+}
+
+/* - FUNCTIONS ------------------------ */
+
+@mixin btn--primary{}
+@mixin btn--secondary{}
+@mixin btn--tertiary{}
+
+
+@mixin btn--positive{
+    background-color:$brand-success;
+    color:#fff;
+}
+
+@mixin btn--negative{
+    background-color:$brand-danger;
+    color:#fff;
+}
+
+@mixin btn--inactive{
+    &:hover,
+    &:active,
+    &:focus{
+        background-color:$gray-lighter;
+        color:#777;
+        cursor:default;
+        box-shadow:none;
+    }
+}
+
+/* - STYLES --------------------------- */
+
+
+@mixin btn--soft{
+    border-radius:5em;
+}
+
+@mixin btn--hard{
+    border-radius:0;
+}
+
+// Button sizes
+// -------------------------
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+// Button variants
+// -------------------------
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $color;
+    background-color: darken($background, 8%);
+        border-color: darken($border, 12%);
+  }
+  .open & { &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 8%);
+        border-color: darken($border, 12%);
+  } }
+  &:active,
+  &.active {
+    background-image: none;
+  }
+  .open & { &.dropdown-toggle {
+    background-image: none;
+  } }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// Copyright 2013 Harry Roberts

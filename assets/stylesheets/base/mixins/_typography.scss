@@ -1,0 +1,63 @@
+// Typography
+// ---------------------------
+// Mixin for Typography
+
+// Font Size
+@mixin font-size($font-size, $line-height: false, $margin-bottom: false){
+    font-size: ($font-size)*1px;
+    font-size: rem($font-size);
+    @if $line-height == true{
+        line-height:ceil($font-size / $rhythm-unit) * ($rhythm-unit / $font-size);
+    }
+    @if $margin-bottom == true{
+        margin-bottom: rem($rhythm-unit);
+    }
+}
+
+// TODO: What is this for?
+@mixin nav($color:$navlinkcolor, $decoration:none) {
+	color: $color;
+	@if $decoration == none {
+		text-decoration: none;
+		&:hover { text-decoration: none;}
+	}
+}
+
+// Text overflow
+// Requires inline-block or block for proper styling
+@mixin text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// User select
+// For selecting text on the page
+@mixin user-select($select) {
+  -webkit-user-select: $select;
+     -moz-user-select: $select;
+      -ms-user-select: $select; // IE10+
+          user-select: $select;
+}
+
+// Optional hyphenation
+@mixin hyphens($mode: auto) {
+    word-wrap: break-word;
+    -webkit-hyphens: $mode;
+       -moz-hyphens: $mode;
+        -ms-hyphens: $mode; // IE10+
+         -o-hyphens: $mode;
+            hyphens: $mode;
+}
+
+
+// TODO: Research this mixin
+// [converter] $parent hack
+@mixin text-emphasis-variant($parent, $color) {
+  #{$parent} {
+    color: $color;
+  }
+  a#{$parent}:hover {
+    color: darken($color, 10%);
+  }
+}

@@ -1,0 +1,35 @@
+// Texture
+// ---------------------------
+// Mixin for Texture
+
+@mixin alertgrad 		{ @include vertical($alert-color, darken($alert-color, 10%)); }
+@mixin breadcrumbgrad	{ @include vertical($breadcrumb-background-color, darken($breadcrumb-background-color, 10%)); }
+@mixin buttongrad 		{ @include vertical($button-background-color, darken($button-background-color, 10%)); }
+@mixin buttongrad-alt 	{ @include vertical($button-background-color-alt, darken($button-background-color-alt, 10%)); }
+@mixin errorgrad 		{ @include vertical($error-color, darken($error-color, 10%)); }
+@mixin forminputgrad 	{ @include vertical($form-input-background-color, $white); }
+@mixin greygrad 		{ @include vertical($white, darken($lighter-neutral-color, 10%)); }
+@mixin herograd 		{ @include vertical($hero-background-color, darken($hero-background-color, 10%)); }
+@mixin infograd 		{ @include vertical($info-color, darken($info-color, 10%)); }
+@mixin inversegrad 		{ @include vertical($inverse-color, darken($inverse-color, 10%)); }
+@mixin navgrad       	{ @include vertical($navigation-background-color, darken($navigation-background-color, 10%)); }
+@mixin navgradhover 	{ @include vertical($primary-color, darken($primary-color, 10%)); }
+@mixin navbargrad 		{ @include vertical($navbar-background-color, darken($navbar-background-color, 10%)); }
+@mixin paginationgrad 	{ @include vertical($pagination-backgroundcolor, darken($pagination-background-color, 10%)); }
+@mixin pagergrad 		{ @include vertical($pager-background-color, darken($pager-background-color, 10%)); }
+@mixin primarygrad 		{ @include vertical($primary-color, darken($primary-color, 10%)); }
+@mixin successgrad 		{ @include vertical($success-color, darken($success-color, 10%)); }
+@mixin warninggrad 		{ @include vertical($warning-color, darken($warning-color, 10%)); }
+@mixin wellgrad 		{ @include vertical($well-background-color, darken($well-background-color, 10%)); }
+@mixin headergrad       { @include vertical($primary-color, darken($primary-color,10%)); }
+
+// hover grads
+@mixin buttongradhover 	{ @include vertical($button-background-color, darken($button-background-color, 25%)); }
+@mixin buttongradhover-alt 	{ @include vertical($button-background-color-alt, darken($button-background-color-alt, 25%)); }
+@mixin primarygradhover { @include vertical($primary-color, darken($primary-color, 15%)); }
+@mixin infogradhover 	{ @include vertical($info-color, darken($info-color, 15%)); }
+@mixin errorgradhover 	{ @include vertical($error-color, darken($error-color, 15%)); }
+@mixin warninggradhover { @include vertical($warning-color, darken($warning-color, 15%)); }
+@mixin inversegradhover { @include vertical($inverse-color, darken($inverse-color, 15%)); }
+@mixin pagergradhover 	{ @include vertical($pager-background-color-hover, darken($pager-background-color-hover, 10%)); }
+@mixin successgradhover { @include vertical($success-color, darken($success-color, 15%)); }

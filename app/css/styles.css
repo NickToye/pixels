@@ -1,0 +1,4066 @@
+/* [sass, assets/stylesheets, styles.scss] */
+/* Functions */
+/* Gridset */
+/* Variables */
+/* TODO: remove this content list once done
+
+A. BASICS
+	A1. Page Setup
+		- Page Dimensions
+		- Rhythm
+		- Gutters
+		- Media Queries
+
+	A2. Atmosphere
+		- Black & Whites
+		- Neutral Colours
+		- Scaffolding
+		- Branding
+		- Headings
+		- Social Media Branding
+		- Hyperlinks
+		- Blockquotes
+		- Misc
+
+	A3. Typography
+		- Typefaces
+		- Sizes
+		- Weights
+		- Iconography
+
+B. COMPONENTS
+	B1. Base Components
+		- Borders
+	B2. Component Animations
+	B3. Alerts
+	B4. Badges
+	B5. Breadcrumbs
+	B6. Button Groups
+	B7. Buttons
+	B8. Carousel
+	B9. Close
+	B10. Code
+	B11. Dropdowns
+	B12. Forms
+	B13. Glyphicons // TODO: May be replacing this with Font Awesome
+	B14. Input Groups
+	B15. Jumbotron
+	B16. Labels
+	B17. List Group
+	B18. Media
+	B19. Modals
+	B20. Navbar
+	B21. Navs
+	B22. Pagination
+	B23. Panels
+	B24. Popovers
+	B25. Progress Bars
+	B26. Tables
+	B27. Thumbnails/Figures
+	B28. Tooltip
+	B29. Wells
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600|Montserrat:400,700);
+/*
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.33 !default;
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+*/
+/*
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+*/
+/*
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+*/
+/*
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+*/
+/*
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+*/
+/*
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+*/
+/*
+
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+*/
+/*
+$container-tablet:             ((720px + $grid-gutter-width)) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((940px + $grid-gutter-width)) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+*/
+/* Bourbon */
+/* Mixins */
+/* - BASE ----------------------------- */
+/* - SIZES ---------------------------- */
+/* - FONT SIZES ----------------------- */
+/* - FUNCTIONS ------------------------ */
+/* - STYLES --------------------------- */
+/* Bootstrap Import */
+/* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+@-webkit-viewport {
+  width: device-width; }
+@-moz-viewport {
+  width: device-width; }
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+/* line 17, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 23, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/* line 27, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 33, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 38, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+[hidden] {
+  display: none; }
+
+/* line 42, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+/* line 46, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+body {
+  margin: 0; }
+
+/* line 54, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+a:focus {
+  outline: thin dotted; }
+
+/* line 58, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 67, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+hgroup, ul, ol, dd, menu, dl, figure, pre, table, fieldset, legend, hr,
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0; }
+
+/* line 71, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 75, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 81, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+q {
+  quotes: none; }
+
+/* line 85, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 96, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+sup {
+  top: -0.5em; }
+
+/* line 99, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 107, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* line 114, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/* line 124, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* line 132, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 140, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+figure {
+  margin: 0; }
+
+/* line 144, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+figure > img {
+  display: block;
+  margin: 0; }
+
+/* line 153, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+form {
+  margin: 0; }
+
+/* line 157, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 163, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+/* line 170, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+/* line 180, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+button,
+input {
+  line-height: normal; }
+
+/* line 185, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible; }
+
+/* line 194, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/* line 199, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+/* line 207, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 214, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 219, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 225, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/* line 235, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 244, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_reset.scss */
+.chromeframe {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0; }
+
+/* line 6, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h1, .h1 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 0.75rem; }
+
+/* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h2, .h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.75rem; }
+
+/* line 8, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h3, .h3 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem; }
+
+/* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h4, .h4 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  margin-bottom: 0.75rem; }
+
+/* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h5, .h5 {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  margin-bottom: 0.75rem; }
+
+/* line 11, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h6, .h6 {
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 1.2;
+  margin-bottom: 0.75rem; }
+
+/* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem; }
+
+/* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #ca6253;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+  /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
+  .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
+    color: #999999;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: middle; }
+
+/* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h1, h2, .h1, .h2 {
+  font-family: "franklin-gothic-urw", sans-serif; }
+
+/* line 41, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h1 small,
+h1 .small, .h1 small,
+.h1 .small,
+h2 small,
+h2 .small, .h2 small,
+.h2 .small {
+  font-size: 50%; }
+
+/* line 48, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+h3, .h3,
+h4, .h4 {
+  font-weight: 400; }
+  /* line 51, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  h3 small,
+  h3 .small, .h3 small,
+  .h3 .small,
+  h4 small,
+  h4 .small, .h4 small,
+  .h4 .small {
+    font-size: 75%; }
+
+/* line 59, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+main article h1 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  color: #49b067; }
+
+/* line 66, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.lead {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5; }
+
+/* line 74, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+a {
+  color: #ca6253;
+  /* 	@include transition(color, linear $transition-speed); */ }
+  /* line 77, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  a:hover, a:visited {
+    color: #9f3f31; }
+
+/* line 84, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+small,
+.small {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  margin-bottom: 0.75rem; }
+
+/* line 86, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+cite {
+  font-style: normal; }
+
+/* line 89, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999; }
+
+/* line 95, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase; }
+
+/* line 102, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.text-left {
+  text-align: left; }
+
+/* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.text-right {
+  text-align: right; }
+
+/* line 104, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.text-center {
+  text-align: center; }
+
+/* line 105, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.text-justify {
+  text-align: justify; }
+
+/* line 108, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.text-muted {
+  color: #999999; }
+
+/* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+.text-primary {
+  color: #ca6253; }
+
+/* line 60, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+a.text-primary:hover {
+  color: #b34737; }
+
+/* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+.text-success {
+  color: #3c763d; }
+
+/* line 60, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+a.text-success:hover {
+  color: #2b542c; }
+
+/* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+.text-info {
+  color: #31708f; }
+
+/* line 60, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+a.text-info:hover {
+  color: #245269; }
+
+/* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+.text-warning {
+  color: #8a6d3b; }
+
+/* line 60, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+a.text-warning:hover {
+  color: #66512c; }
+
+/* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+.text-danger {
+  color: #a94442; }
+
+/* line 60, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_typography.scss */
+a.text-danger:hover {
+  color: #843534; }
+
+/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.bg-primary {
+  color: white; }
+
+/* line 100, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.bg-primary {
+  background-color: #ca6253;
+  padding: 0.75rem; }
+  /* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .bg-primary p {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+/* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+a.bg-primary:hover {
+  background-color: #b34737; }
+
+/* line 100, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.bg-success {
+  background-color: #dff0d8;
+  padding: 0.75rem; }
+  /* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .bg-success p {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+/* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+a.bg-success:hover {
+  background-color: #c1e2b3; }
+
+/* line 100, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.bg-info {
+  background-color: #d9edf7;
+  padding: 0.75rem; }
+  /* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .bg-info p {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+/* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+a.bg-info:hover {
+  background-color: #afd9ee; }
+
+/* line 100, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.bg-warning {
+  background-color: #fcf8e3;
+  padding: 0.75rem; }
+  /* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .bg-warning p {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+/* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+a.bg-warning:hover {
+  background-color: #f7ecb5; }
+
+/* line 100, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.bg-danger {
+  background-color: #f2dede;
+  padding: 0.75rem; }
+  /* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .bg-danger p {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+/* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+a.bg-danger:hover {
+  background-color: #e4b9b9; }
+
+/* line 141, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  list-style-position: inside; }
+  /* line 146, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    margin-bottom: 0; }
+
+/* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.list-unstyled, .list-inline {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+/* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/* line 174, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+dl {
+  margin-top: 0;
+  margin-bottom: 0.75rem; }
+
+/* line 178, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+dt,
+dd {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem; }
+
+/* line 182, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+dt {
+  font-weight: 700; }
+
+/* line 185, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+dd {
+  margin-left: 0; }
+
+@media only screen and (min-width: 769px) {
+  /* line 195, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  /* line 202, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  .dl-horizontal dd {
+    margin-left: 180px; }
+    /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+    .dl-horizontal dd:before, .dl-horizontal dd:after {
+      content: " ";
+      display: table; }
+    /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+    .dl-horizontal dd:after {
+      clear: both; } }
+/* line 210, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+blockquote {
+  padding: 0.75rem;
+  margin: 0 0 0.75rem;
+  font-size: 20;
+  border-left: 5px solid #dddddd; }
+  /* line 215, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  blockquote p,
+  blockquote ul,
+  blockquote ol {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem; }
+  /* line 220, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  blockquote cite {
+    display: block;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #ca6253; }
+    /* line 224, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+    blockquote cite:before {
+      content: '\2014 \00A0'; }
+
+/* line 231, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+address {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem; }
+
+/* line 238, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.base-font-family {
+  font-family: "Open Sans", sans-serif; }
+/* line 239, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.base-font-family-serif {
+  font-family: Georgia, "Times New Roman", Times, serif; }
+/* line 240, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.base-font-family-headings {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+/* line 241, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.base-font-family-condensed {
+  font-family: "proxima-nova-alt-ext-cond", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+/* line 242, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.base-font-family-code {
+  font-family: "Source Sans Pro", Monaco, "Courier New", monospace; }
+/* line 243, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.base-font-family-amp {
+  font-family: Baskerville, Georgia, Garamond, "Palatino", "Book Antiqua";
+  font-style: italic; }
+/* line 244, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p strong {
+  font-weight: 700; }
+/* line 245, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.light {
+  font-weight: 300; }
+/* line 246, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.normal {
+  font-weight: 400; }
+/* line 247, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.semi-bold {
+  font-weight: 600; }
+/* line 248, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.bold {
+  font-weight: 700; }
+/* line 249, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+p.extra-bold {
+  font-weight: 800; }
+
+/* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+ul.palette li {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  color: white;
+  line-height: 100px;
+  text-align: center;
+  margin-bottom: 4px;
+  border-radius: 5px; }
+  @media only screen and (min-width: 769px) {
+    /* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+    ul.palette li {
+      margin-bottom: 0; } }
+  /* line 17, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-primary {
+    background-color: #ca6253; }
+  /* line 18, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-secondary {
+    background-color: #49b067; }
+  /* line 19, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.gray-darker {
+    background-color: #222222; }
+  /* line 20, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.gray-dark {
+    background-color: #333333; }
+  /* line 21, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.gray {
+    background-color: #555555; }
+  /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.gray-light {
+    background-color: #999999; }
+  /* line 23, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.gray-lighter {
+    background-color: #dddddd;
+    color: #555555; }
+  /* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.gray-lightest {
+    background-color: #eeeeee;
+    color: #555555; }
+  /* line 25, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-success {
+    background-color: #5cb85c; }
+  /* line 26, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-warning {
+    background-color: #f0ad4e; }
+  /* line 27, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-info {
+    background-color: #5bc0de; }
+  /* line 28, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-danger {
+    background-color: #d9534f; }
+  /* line 29, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-twitter {
+    background-color: #35ccff; }
+  /* line 30, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-facebook {
+    background-color: #03539e; }
+  /* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-linkedin {
+    background-color: #217bc1; }
+  /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-pinterest {
+    background-color: #cb2027; }
+  /* line 33, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-dribbble {
+    background-color: #ea4c89; }
+  /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li.brand-google {
+    background-color: #dd4b39; }
+  /* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_color.scss */
+  ul.palette li i.fa {
+    color: white;
+    font-size: 24px;
+    font-size: 1.5rem; }
+
+/* line 6, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_code.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: "Source Sans Pro", Monaco, "Courier New", monospace; }
+
+/* line 14, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_code.scss */
+code {
+  padding: 2px 4px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  color: #49b067;
+  background-color: #fbfdfb;
+  white-space: nowrap;
+  border-radius: 5px; }
+
+/* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_code.scss */
+kbd {
+  padding: 2px 4px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  color: white;
+  background-color: #49b067;
+  border-radius: 3.33333px;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+/* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_code.scss */
+pre {
+  display: block;
+  padding: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  margin-bottom: 0.75rem;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #49b067;
+  background-color: #fbfdfb;
+  border: 1px solid #e9f6ea;
+  border-radius: 5px; }
+  /* line 46, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_code.scss */
+  pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0; }
+
+/* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_code.scss */
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll; }
+
+/* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+table {
+  max-width: 100%;
+  background-color: transparent; }
+
+/* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+th {
+  text-align: left; }
+
+/* line 16, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+.table {
+  width: 100%;
+  margin-bottom: 24; }
+  /* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table > thead > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > th,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > th,
+  .table > tfoot > tr > td {
+    padding: 8px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dddddd; }
+  /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dddddd; }
+  /* line 43, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table > caption + thead > tr:first-child > th,
+  .table > caption + thead > tr:first-child > td,
+  .table > colgroup + thead > tr:first-child > th,
+  .table > colgroup + thead > tr:first-child > td,
+  .table > thead:first-child > tr:first-child > th,
+  .table > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  /* line 50, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table > tbody + tbody {
+    border-top: 2px solid #dddddd; }
+  /* line 55, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table .table {
+    background-color: #39403f; }
+  /* line 62, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table--striped > tbody > tr:nth-child(odd) > td,
+  .table--striped > tbody > tr:nth-child(odd) > th {
+    background-color: #eeeeee; }
+  /* line 69, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table--bordered {
+    border: 1px solid #dddddd; }
+    /* line 75, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+    .table--bordered > thead > tr > th,
+    .table--bordered > thead > tr > td,
+    .table--bordered > tbody > tr > th,
+    .table--bordered > tbody > tr > td,
+    .table--bordered > tfoot > tr > th,
+    .table--bordered > tfoot > tr > td {
+      border: 1px solid #dddddd; }
+    /* line 82, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+    .table--bordered > thead > tr > th,
+    .table--bordered > thead > tr > td {
+      border-bottom-width: 2px; }
+  /* line 94, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table--condensed > thead > tr > th,
+  .table--condensed > thead > tr > td,
+  .table--condensed > tbody > tr > th,
+  .table--condensed > tbody > tr > td,
+  .table--condensed > tfoot > tr > th,
+  .table--condensed > tfoot > tr > td {
+    padding: 5px; }
+  /* line 104, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table--hover > tbody > tr:hover > td,
+  .table--hover > tbody > tr:hover > th {
+    background-color: #eeeeee;
+    cursor: pointer; }
+
+/* line 116, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column; }
+
+/* line 125, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell; }
+
+/* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table > thead > tr > td.active,
+.table > thead > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th,
+.table > tbody > tr > td.active,
+.table > tbody > tr > th.active,
+.table > tbody > tr.active > td,
+.table > tbody > tr.active > th,
+.table > tfoot > tr > td.active,
+.table > tfoot > tr > th.active,
+.table > tfoot > tr.active > td,
+.table > tfoot > tr.active > th {
+  background-color: #eeeeee; }
+
+/* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover, .table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr.active:hover > th {
+  background-color: #e2e2e2; }
+
+/* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table > thead > tr > td.success,
+.table > thead > tr > th.success, .table > thead > tr.success > td, .table > thead > tr.success > th,
+.table > tbody > tr > td.success,
+.table > tbody > tr > th.success,
+.table > tbody > tr.success > td,
+.table > tbody > tr.success > th,
+.table > tfoot > tr > td.success,
+.table > tfoot > tr > th.success,
+.table > tfoot > tr.success > td,
+.table > tfoot > tr.success > th {
+  background-color: #dff0d8; }
+
+/* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr.success:hover > th {
+  background-color: #d0e9c6; }
+
+/* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table > thead > tr > td.info,
+.table > thead > tr > th.info, .table > thead > tr.info > td, .table > thead > tr.info > th,
+.table > tbody > tr > td.info,
+.table > tbody > tr > th.info,
+.table > tbody > tr.info > td,
+.table > tbody > tr.info > th,
+.table > tfoot > tr > td.info,
+.table > tfoot > tr > th.info,
+.table > tfoot > tr.info > td,
+.table > tfoot > tr.info > th {
+  background-color: #d9edf7; }
+
+/* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr.info:hover > th {
+  background-color: #c4e3f3; }
+
+/* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table > thead > tr > td.warning,
+.table > thead > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th,
+.table > tbody > tr > td.warning,
+.table > tbody > tr > th.warning,
+.table > tbody > tr.warning > td,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr > td.warning,
+.table > tfoot > tr > th.warning,
+.table > tfoot > tr.warning > td,
+.table > tfoot > tr.warning > th {
+  background-color: #fcf8e3; }
+
+/* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr.warning:hover > th {
+  background-color: #faf2cc; }
+
+/* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table > thead > tr > td.danger,
+.table > thead > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th,
+.table > tbody > tr > td.danger,
+.table > tbody > tr > th.danger,
+.table > tbody > tr.danger > td,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr > td.danger,
+.table > tfoot > tr > th.danger,
+.table > tfoot > tr.danger > td,
+.table > tfoot > tr.danger > th {
+  background-color: #f2dede; }
+
+/* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
+.table-hover > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr.danger:hover > th {
+  background-color: #ebcccc; }
+
+@media only screen and (max-width: 768px) {
+  /* line 153, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+    -webkit-overflow-scrolling: touch; }
+    /* line 163, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+    .table-responsive > .table {
+      margin-bottom: 0; }
+      /* line 171, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+      .table-responsive > .table > thead > tr > th,
+      .table-responsive > .table > thead > tr > td,
+      .table-responsive > .table > tbody > tr > th,
+      .table-responsive > .table > tbody > tr > td,
+      .table-responsive > .table > tfoot > tr > th,
+      .table-responsive > .table > tfoot > tr > td {
+        white-space: nowrap; }
+    /* line 180, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+    .table-responsive > .table-bordered {
+      border: 0; }
+      /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+      .table-responsive > .table-bordered > thead > tr > th:first-child,
+      .table-responsive > .table-bordered > thead > tr > td:first-child,
+      .table-responsive > .table-bordered > tbody > tr > th:first-child,
+      .table-responsive > .table-bordered > tbody > tr > td:first-child,
+      .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+      .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+        border-left: 0; }
+      /* line 192, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+      .table-responsive > .table-bordered > thead > tr > th:last-child,
+      .table-responsive > .table-bordered > thead > tr > td:last-child,
+      .table-responsive > .table-bordered > tbody > tr > th:last-child,
+      .table-responsive > .table-bordered > tbody > tr > td:last-child,
+      .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+      .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+        border-right: 0; }
+      /* line 205, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
+      .table-responsive > .table-bordered > tbody > tr:last-child > th,
+      .table-responsive > .table-bordered > tbody > tr:last-child > td,
+      .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+      .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+        border-bottom: 0; } }
+/* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+form.form {
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 0;
+  width: 100%; }
+  @media only screen and (min-width: 990px) {
+    /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form {
+      display: block;
+      float: left;
+      margin-left: 0;
+      margin-right: -100%;
+      width: 66%; } }
+  /* line 19, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+  form.form .controls {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+    margin-bottom: 0.75rem; }
+    /* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form .controls legend {
+      display: inline-block;
+      padding: 0 0.375rem;
+      background: #49b067;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+      color: white;
+      border: 0;
+      border-radius: 5px; }
+    /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form .controls--label {
+      display: inline-block;
+      margin-bottom: 5px;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif;
+      color: #ca6253;
+      font-size: 14px;
+      font-size: 0.875rem; }
+    /* line 44, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form .controls--control__checkbox, form.form .controls--control__radio {
+      font-size: 14px;
+      font-size: 0.875rem;
+      color: #555555;
+      cursor: pointer;
+      display: inline-block;
+      padding-left: 20px;
+      margin-right: 2%; }
+      /* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control__checkbox input, form.form .controls--control__radio input {
+        position: absolute;
+        margin: 4px 0 0 -20px; }
+    /* line 58, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form .controls .input-group {
+      position: relative;
+      display: table;
+      border-collapse: separate; }
+      /* line 63, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls .input-group__input-group-lg .controls--control, form.form .controls .input-group__input-group-lg .input-group--addon, form.form .controls .input-group__input-group-lg .input-group--btn {
+        font-size: 24px;
+        font-size: 1.5rem;
+        line-height: 1; }
+      /* line 69, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls .input-group__input-group-sm .controls--control, form.form .controls .input-group__input-group-sm .input-group--addon, form.form .controls .input-group__input-group-sm .input-group--btn {
+        font-size: 12px;
+        font-size: 0.75rem;
+        line-height: 1; }
+      /* line 74, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls .input-group--addon, form.form .controls .input-group--btn, form.form .controls .input-group .controls--control {
+        position: relative;
+        display: table-cell;
+        margin-bottom: 0; }
+        /* line 78, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:not(:first-child):not(:last-child), form.form .controls .input-group--btn:not(:first-child):not(:last-child), form.form .controls .input-group .controls--control:not(:first-child):not(:last-child) {
+          border-radius: 0; }
+        /* line 81, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:first-child, form.form .controls .input-group--btn:first-child, form.form .controls .input-group .controls--control:first-child {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0; }
+        /* line 82, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:last-child, form.form .controls .input-group--btn:last-child, form.form .controls .input-group .controls--control:last-child {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0; }
+        /* line 83, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:first-child > .btn, form.form .controls .input-group--btn:first-child > .btn, form.form .controls .input-group .controls--control:first-child > .btn {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0; }
+        /* line 84, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:last-child > .btn, form.form .controls .input-group--btn:last-child > .btn, form.form .controls .input-group .controls--control:last-child > .btn {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0; }
+        /* line 85, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:first-child > .btn:not(:first-child), form.form .controls .input-group--btn:first-child > .btn:not(:first-child), form.form .controls .input-group .controls--control:first-child > .btn:not(:first-child) {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0; }
+        /* line 86, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:last-child > .btn:not(:last-child):not(.dropdown-toggle), form.form .controls .input-group--btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), form.form .controls .input-group .controls--control:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0; }
+      /* line 88, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls .input-group--addon, form.form .controls .input-group--btn {
+        width: 1%;
+        white-space: nowrap;
+        vertical-align: middle; }
+      /* line 93, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls .input-group--btn {
+        position: relative;
+        font-size: 0; }
+        /* line 96, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--btn:first-child > .btn {
+          border-right: 0; }
+        /* line 97, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--btn:last-child > .btn {
+          border-left: 0; }
+      /* line 99, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls .input-group--addon {
+        padding: 0.375rem 0.75rem;
+        font-size: 14px;
+        font-size: 0.875rem;
+        font-weight: normal;
+        color: #555555;
+        text-align: center;
+        background-color: #dddddd;
+        border: 1px solid #999999;
+        border-radius: 5px; }
+        /* line 108, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:first-child {
+          border-right: 0; }
+        /* line 109, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form .controls .input-group--addon:last-child {
+          border-left: 0; }
+      /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls .input-group .controls--control {
+        float: left;
+        width: 100%;
+        margin-bottom: 0; }
+    /* line 118, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form .controls--control {
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 1.71429;
+      margin-bottom: 0.75rem;
+      padding: 0.375rem;
+      color: #555555;
+      background-color: white;
+      background-image: none;
+      border: 1px solid #999999;
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+      /* line 121, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control[type="search"] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      /* line 122, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control[type="radio"], form.form .controls--control[type="checkbox"] {
+        margin: 4px 0 0;
+        margin-top: 1px \9;
+        /* IE8-9 */ }
+      /* line 127, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control[type="file"] {
+        display: block;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding-left: 0;
+        font-size: 12px;
+        font-size: 0.75rem; }
+      /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control input[type="range"] {
+        display: block;
+        width: 100%; }
+      /* line 142, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control input[type="search"] {
+        -webkit-appearance: none; }
+      /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control input[type="date"] {
+        line-height: 0.75rem; }
+      /* line 153, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control select[multiple],
+      form.form .controls--control select[size] {
+        height: auto; }
+      /* line 158, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control input[type="file"]:focus,
+      form.form .controls--control input[type="radio"]:focus,
+      form.form .controls--control input[type="checkbox"]:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px; }
+      /* line 164, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control output {
+        display: block;
+        padding-top: 0.75rem;
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555555; }
+      /* line 81, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+      form.form .controls--control:focus {
+        border-color: #ca6253;
+        outline: 0;
+        background-color: #fbfbfb;
+        -webkit-box-shadow: inset 0 1px 1px rgba(202, 98, 83, 0.075), 0 0 8px rgba(202, 98, 83, 0.6);
+        box-shadow: inset 0 1px 1px rgba(202, 98, 83, 0.075), 0 0 8px rgba(202, 98, 83, 0.6); }
+      /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+      form.form .controls--control::-moz-placeholder {
+        color: #999999;
+        opacity: 1; }
+      /* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+      form.form .controls--control:-ms-input-placeholder {
+        color: #999999; }
+      /* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+      form.form .controls--control::-webkit-input-placeholder {
+        color: #999999; }
+      /* line 193, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--control[disabled], form.form .controls--control[readonly], fieldset[disabled] form.form .controls--control {
+        cursor: not-allowed;
+        background-color: #eeeeee;
+        opacity: 1; }
+    /* line 203, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form .controls select {
+      width: auto; }
+    /* line 206, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form .controls textarea {
+      height: auto; }
+    /* line 209, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form .controls--note {
+      color: #555555;
+      background: #daf1f8;
+      border: 1px solid #c5e9f3;
+      padding: 0.75rem;
+      font-size: 12px;
+      font-size: 0.75rem;
+      line-height: 1;
+      margin-bottom: 0.75rem; }
+      /* line 215, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form .controls--note i {
+        font-size: 16px;
+        font-size: 1rem;
+        color: #5bc0de;
+        padding-right: 5px; }
+  /* line 99, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  form.form .controls--control.input-sm, form.form .controls .input-group__input-group-sm .controls--control, form.form .input-group-sm > .controls--control.form-control,
+  form.form .input-group-sm > .controls--control.input-group-addon,
+  form.form .input-group-sm > .input-group-btn > .controls--control.btn {
+    height: 1rem;
+    padding: 0.75rem 0.75rem;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1;
+    border-radius: 3.33333px; }
+  /* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  form.form select.controls--control.input-sm, form.form .controls .input-group__input-group-sm select.controls--control, form.form .input-group-sm > select.controls--control.form-control,
+  form.form .input-group-sm > select.controls--control.input-group-addon,
+  form.form .input-group-sm > .input-group-btn > select.controls--control.btn {
+    height: 1rem;
+    line-height: 1rem; }
+  /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  form.form textarea.controls--control.input-sm, form.form .controls .input-group__input-group-sm textarea.controls--control, form.form .input-group-sm > textarea.controls--control.form-control,
+  form.form .input-group-sm > textarea.controls--control.input-group-addon,
+  form.form .input-group-sm > .input-group-btn > textarea.controls--control.btn,
+  form.form select[multiple].controls--control.input-sm,
+  form.form .controls .input-group__input-group-sm select[multiple].controls--control,
+  form.form .input-group-sm > select[multiple].controls--control.form-control,
+  form.form .input-group-sm > select[multiple].controls--control.input-group-addon,
+  form.form .input-group-sm > .input-group-btn > select[multiple].controls--control.btn {
+    height: auto; }
+  /* line 99, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  form.form .controls--control.input-lg, form.form .controls .input-group__input-group-lg .controls--control, form.form .input-group-lg > .controls--control.form-control,
+  form.form .input-group-lg > .controls--control.input-group-addon,
+  form.form .input-group-lg > .input-group-btn > .controls--control.btn {
+    height: 3rem;
+    padding: 0.75rem 0.75rem;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 7.5px; }
+  /* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  form.form select.controls--control.input-lg, form.form .controls .input-group__input-group-lg select.controls--control, form.form .input-group-lg > select.controls--control.form-control,
+  form.form .input-group-lg > select.controls--control.input-group-addon,
+  form.form .input-group-lg > .input-group-btn > select.controls--control.btn {
+    height: 3rem;
+    line-height: 3rem; }
+  /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  form.form textarea.controls--control.input-lg, form.form .controls .input-group__input-group-lg textarea.controls--control, form.form .input-group-lg > textarea.controls--control.form-control,
+  form.form .input-group-lg > textarea.controls--control.input-group-addon,
+  form.form .input-group-lg > .input-group-btn > textarea.controls--control.btn,
+  form.form select[multiple].controls--control.input-lg,
+  form.form .controls .input-group__input-group-lg select[multiple].controls--control,
+  form.form .input-group-lg > select[multiple].controls--control.form-control,
+  form.form .input-group-lg > select[multiple].controls--control.input-group-addon,
+  form.form .input-group-lg > .input-group-btn > select[multiple].controls--control.btn {
+    height: auto; }
+  /* line 226, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+  form.form--inline, form.navbar__form {
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    width: 100%; }
+    @media only screen and (min-width: 0px) {
+      /* line 229, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form--inline .controls, form.navbar__form .controls {
+        clear: both;
+        display: block;
+        float: left;
+        margin-left: 0;
+        width: 100%; } }
+  @media only screen and (min-width: 0px) and (min-width: 769px) {
+    /* line 229, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form--inline .controls, form.navbar__form .controls {
+      width: auto;
+      display: inline-block;
+      clear: none;
+      margin: 0 2% 0 0;
+      float: none;
+      vertical-align: middle; } }
+    @media only screen and (min-width: 0px) {
+        /* line 239, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+        form.form--inline .controls--control, form.navbar__form .controls--control {
+          margin-bottom: 0;
+          display: inline-block; }
+          /* line 242, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+          form.form--inline .controls--control__checkbox, form.navbar__form .controls--control__checkbox, form.form--inline .controls--control__radio, form.navbar__form .controls--control__radio {
+            display: inline-block;
+            margin: 0;
+            padding-left: 20px;
+            position: relative; }
+            /* line 247, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+            form.form--inline .controls--control__checkbox input[type="radio"], form.navbar__form .controls--control__checkbox input[type="radio"], form.form--inline .controls--control__checkbox input[type="checkbox"], form.navbar__form .controls--control__checkbox input[type="checkbox"], form.form--inline .controls--control__radio input[type="radio"], form.navbar__form .controls--control__radio input[type="radio"], form.form--inline .controls--control__radio input[type="checkbox"], form.navbar__form .controls--control__radio input[type="checkbox"] {
+              float: none;
+              position: absolute;
+              margin: 4px 0 0 -20px; }
+      /* line 256, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form--inline .input-group > .form-control, form.navbar__form .input-group > .form-control {
+        width: 100%; }
+      /* line 264, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form--inline .has-feedback .form-control-feedback, form.navbar__form .has-feedback .form-control-feedback {
+        top: 0; } }
+  /* line 269, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+  form.form--horizontal {
+    width: 100%;
+    /*
+      @media (min-width: $screen-sm-min) {
+        .control-label {
+          text-align: right;
+        }
+      }
+    */ }
+    /* line 272, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form--horizontal .controls--label {
+      display: block;
+      float: left;
+      margin-left: 0;
+      margin-right: -100%;
+      width: 15%;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0.75rem; }
+    /* line 278, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form--horizontal .controls--control {
+      display: block;
+      float: left;
+      margin-left: 25.5%;
+      margin-right: -100%;
+      width: 74.5%;
+      margin-top: 0;
+      margin-bottom: 0; }
+      /* line 282, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+      form.form--horizontal .controls--control__checkbox, form.form--horizontal .controls--control__radio {
+        display: block;
+        float: left;
+        margin-left: 25.5%;
+        margin-right: -100%;
+        width: 74.5%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0.75rem;
+        min-height: 0.75rem; }
+    /* line 290, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form--horizontal .controls--static {
+      display: block;
+      float: left;
+      margin-left: 25.5%;
+      margin-right: -100%;
+      width: 74.5%;
+      padding-top: 0.75rem;
+      font-size: 14px;
+      font-size: 0.875rem; }
+    /* line 296, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form--horizontal .controls__buttons {
+      display: block;
+      float: left;
+      margin-left: 25.5%;
+      margin-right: -100%;
+      width: 74.5%;
+      width: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0.75rem; }
+    /* line 320, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+    form.form--horizontal .has-feedback .form-control-feedback {
+      top: 0;
+      right: 2%/2; }
+
+/* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-success .controls--label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline {
+  color: #3c763d; }
+/* line 39, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-success .controls--note {
+  background-color: #3c763d;
+  border-color: #1a321a;
+  color: white; }
+/* line 45, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-success .controls--control {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  /* line 48, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  .has-success .controls--control:focus {
+    border-color: #2b542c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
+/* line 55, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-success .input-group-addon {
+  color: #3c763d;
+  border-color: #3c763d;
+  background-color: #dff0d8; }
+/* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-success .form-control-feedback {
+  color: #3c763d; }
+
+/* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-warning .controls--label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline {
+  color: #8a6d3b; }
+/* line 39, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-warning .controls--note {
+  background-color: #8a6d3b;
+  border-color: #43351c;
+  color: white; }
+/* line 45, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-warning .controls--control {
+  border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  /* line 48, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  .has-warning .controls--control:focus {
+    border-color: #66512c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
+/* line 55, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-warning .input-group-addon {
+  color: #8a6d3b;
+  border-color: #8a6d3b;
+  background-color: #fcf8e3; }
+/* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-warning .form-control-feedback {
+  color: #8a6d3b; }
+
+/* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-error .controls--label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline {
+  color: #a94442; }
+/* line 39, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-error .controls--note {
+  background-color: #a94442;
+  border-color: #602625;
+  color: white; }
+/* line 45, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-error .controls--control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  /* line 48, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+  .has-error .controls--control:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+/* line 55, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-error .input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede; }
+/* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
+.has-error .form-control-feedback {
+  color: #a94442; }
+
+/* line 349, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+.has-feedback {
+  position: relative; }
+  /* line 354, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+  .has-feedback .form-control {
+    padding-right: 0.9375rem; }
+  /* line 359, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+  .has-feedback .form-control-feedback {
+    position: absolute;
+    top: 29;
+    right: 0;
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    text-align: center; }
+
+/* line 377, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+.form-control-static {
+  margin-bottom: 0; }
+
+/* line 387, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: white; }
+
+/* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0.75rem 0.75rem;
+  font-size: 1rem;
+  line-height: 0.75rem;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  /* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  /* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn:hover, .btn:focus {
+    color: #999999;
+    text-decoration: none; }
+  /* line 40, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn:active, .btn.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 46, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  /* line 55, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn i.fa {
+    padding-right: 0.75rem; }
+  /* line 59, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--default {
+    color: #999999;
+    background-color: white;
+    border-color: #999999; }
+    /* line 171, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--default:hover, .btn--default:focus, .btn--default:active, .btn--default.active {
+      color: #999999;
+      background-color: #ebebeb;
+      border-color: #7a7a7a; }
+    /* line 179, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--default.dropdown-toggle {
+      color: #999999;
+      background-color: #ebebeb;
+      border-color: #7a7a7a; }
+    /* line 184, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--default:active, .btn--default.active {
+      background-image: none; }
+    /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--default.dropdown-toggle {
+      background-image: none; }
+    /* line 194, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--default.disabled, .btn--default.disabled:hover, .btn--default.disabled:focus, .btn--default.disabled:active, .btn--default.disabled.active, .btn--default[disabled], .btn--default[disabled]:hover, .btn--default[disabled]:focus, .btn--default[disabled]:active, .btn--default[disabled].active, fieldset[disabled] .btn--default, fieldset[disabled] .btn--default:hover, fieldset[disabled] .btn--default:focus, fieldset[disabled] .btn--default:active, fieldset[disabled] .btn--default.active {
+      background-color: white;
+      border-color: #999999; }
+    /* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--default .badge {
+      color: white;
+      background-color: #999999; }
+  /* line 60, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--primary {
+    color: white;
+    background-color: #ca6253;
+    border-color: #c45040; }
+    /* line 171, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--primary:hover, .btn--primary:focus, .btn--primary:active, .btn--primary.active {
+      color: white;
+      background-color: #bb4a3a;
+      border-color: #983c2f; }
+    /* line 179, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--primary.dropdown-toggle {
+      color: white;
+      background-color: #bb4a3a;
+      border-color: #983c2f; }
+    /* line 184, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--primary:active, .btn--primary.active {
+      background-image: none; }
+    /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--primary.dropdown-toggle {
+      background-image: none; }
+    /* line 194, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--primary.disabled, .btn--primary.disabled:hover, .btn--primary.disabled:focus, .btn--primary.disabled:active, .btn--primary.disabled.active, .btn--primary[disabled], .btn--primary[disabled]:hover, .btn--primary[disabled]:focus, .btn--primary[disabled]:active, .btn--primary[disabled].active, fieldset[disabled] .btn--primary, fieldset[disabled] .btn--primary:hover, fieldset[disabled] .btn--primary:focus, fieldset[disabled] .btn--primary:active, fieldset[disabled] .btn--primary.active {
+      background-color: #ca6253;
+      border-color: #c45040; }
+    /* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--primary .badge {
+      color: #ca6253;
+      background-color: white; }
+  /* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--secondary {
+    color: white;
+    background-color: #49b067;
+    border-color: #429e5c; }
+    /* line 171, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--secondary:hover, .btn--secondary:focus, .btn--secondary:active, .btn--secondary.active {
+      color: white;
+      background-color: #3d9356;
+      border-color: #307343; }
+    /* line 179, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--secondary.dropdown-toggle {
+      color: white;
+      background-color: #3d9356;
+      border-color: #307343; }
+    /* line 184, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--secondary:active, .btn--secondary.active {
+      background-image: none; }
+    /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--secondary.dropdown-toggle {
+      background-image: none; }
+    /* line 194, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--secondary.disabled, .btn--secondary.disabled:hover, .btn--secondary.disabled:focus, .btn--secondary.disabled:active, .btn--secondary.disabled.active, .btn--secondary[disabled], .btn--secondary[disabled]:hover, .btn--secondary[disabled]:focus, .btn--secondary[disabled]:active, .btn--secondary[disabled].active, fieldset[disabled] .btn--secondary, fieldset[disabled] .btn--secondary:hover, fieldset[disabled] .btn--secondary:focus, fieldset[disabled] .btn--secondary:active, fieldset[disabled] .btn--secondary.active {
+      background-color: #49b067;
+      border-color: #429e5c; }
+    /* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--secondary .badge {
+      color: #49b067;
+      background-color: white; }
+  /* line 62, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--success {
+    color: white;
+    background-color: #5cb85c;
+    border-color: #4cae4c; }
+    /* line 171, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--success:hover, .btn--success:focus, .btn--success:active, .btn--success.active {
+      color: white;
+      background-color: #47a447;
+      border-color: #398439; }
+    /* line 179, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--success.dropdown-toggle {
+      color: white;
+      background-color: #47a447;
+      border-color: #398439; }
+    /* line 184, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--success:active, .btn--success.active {
+      background-image: none; }
+    /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--success.dropdown-toggle {
+      background-image: none; }
+    /* line 194, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--success.disabled, .btn--success.disabled:hover, .btn--success.disabled:focus, .btn--success.disabled:active, .btn--success.disabled.active, .btn--success[disabled], .btn--success[disabled]:hover, .btn--success[disabled]:focus, .btn--success[disabled]:active, .btn--success[disabled].active, fieldset[disabled] .btn--success, fieldset[disabled] .btn--success:hover, fieldset[disabled] .btn--success:focus, fieldset[disabled] .btn--success:active, fieldset[disabled] .btn--success.active {
+      background-color: #5cb85c;
+      border-color: #4cae4c; }
+    /* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--success .badge {
+      color: #5cb85c;
+      background-color: white; }
+  /* line 63, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--info {
+    color: white;
+    background-color: #5bc0de;
+    border-color: #46b8da; }
+    /* line 171, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--info:hover, .btn--info:focus, .btn--info:active, .btn--info.active {
+      color: white;
+      background-color: #39b3d7;
+      border-color: #269abc; }
+    /* line 179, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--info.dropdown-toggle {
+      color: white;
+      background-color: #39b3d7;
+      border-color: #269abc; }
+    /* line 184, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--info:active, .btn--info.active {
+      background-image: none; }
+    /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--info.dropdown-toggle {
+      background-image: none; }
+    /* line 194, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--info.disabled, .btn--info.disabled:hover, .btn--info.disabled:focus, .btn--info.disabled:active, .btn--info.disabled.active, .btn--info[disabled], .btn--info[disabled]:hover, .btn--info[disabled]:focus, .btn--info[disabled]:active, .btn--info[disabled].active, fieldset[disabled] .btn--info, fieldset[disabled] .btn--info:hover, fieldset[disabled] .btn--info:focus, fieldset[disabled] .btn--info:active, fieldset[disabled] .btn--info.active {
+      background-color: #5bc0de;
+      border-color: #46b8da; }
+    /* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--info .badge {
+      color: #5bc0de;
+      background-color: white; }
+  /* line 64, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--warning {
+    color: white;
+    background-color: #f0ad4e;
+    border-color: #eea236; }
+    /* line 171, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--warning:hover, .btn--warning:focus, .btn--warning:active, .btn--warning.active {
+      color: white;
+      background-color: #ed9c28;
+      border-color: #d58512; }
+    /* line 179, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--warning.dropdown-toggle {
+      color: white;
+      background-color: #ed9c28;
+      border-color: #d58512; }
+    /* line 184, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--warning:active, .btn--warning.active {
+      background-image: none; }
+    /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--warning.dropdown-toggle {
+      background-image: none; }
+    /* line 194, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--warning.disabled, .btn--warning.disabled:hover, .btn--warning.disabled:focus, .btn--warning.disabled:active, .btn--warning.disabled.active, .btn--warning[disabled], .btn--warning[disabled]:hover, .btn--warning[disabled]:focus, .btn--warning[disabled]:active, .btn--warning[disabled].active, fieldset[disabled] .btn--warning, fieldset[disabled] .btn--warning:hover, fieldset[disabled] .btn--warning:focus, fieldset[disabled] .btn--warning:active, fieldset[disabled] .btn--warning.active {
+      background-color: #f0ad4e;
+      border-color: #eea236; }
+    /* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--warning .badge {
+      color: #f0ad4e;
+      background-color: white; }
+  /* line 65, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--danger {
+    color: white;
+    background-color: #d9534f;
+    border-color: #d43f3a; }
+    /* line 171, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--danger:hover, .btn--danger:focus, .btn--danger:active, .btn--danger.active {
+      color: white;
+      background-color: #d2322d;
+      border-color: #ac2925; }
+    /* line 179, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--danger.dropdown-toggle {
+      color: white;
+      background-color: #d2322d;
+      border-color: #ac2925; }
+    /* line 184, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--danger:active, .btn--danger.active {
+      background-image: none; }
+    /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .open .btn--danger.dropdown-toggle {
+      background-image: none; }
+    /* line 194, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--danger.disabled, .btn--danger.disabled:hover, .btn--danger.disabled:focus, .btn--danger.disabled:active, .btn--danger.disabled.active, .btn--danger[disabled], .btn--danger[disabled]:hover, .btn--danger[disabled]:focus, .btn--danger[disabled]:active, .btn--danger[disabled].active, fieldset[disabled] .btn--danger, fieldset[disabled] .btn--danger:hover, fieldset[disabled] .btn--danger:focus, fieldset[disabled] .btn--danger:active, fieldset[disabled] .btn--danger.active {
+      background-color: #d9534f;
+      border-color: #d43f3a; }
+    /* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    .btn--danger .badge {
+      color: #d9534f;
+      background-color: white; }
+  /* line 66, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--link {
+    color: #ca6253;
+    font-weight: normal;
+    cursor: pointer;
+    border-radius: 0; }
+    /* line 71, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+    .btn--link, .btn--link:active, .btn--link[disabled], fieldset[disabled] .btn--link {
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    /* line 78, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+    .btn--link, .btn--link:hover, .btn--link:focus, .btn--link:active {
+      border-color: transparent; }
+    /* line 84, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+    .btn--link:hover, .btn--link:focus {
+      color: #9f3f31;
+      text-decoration: underline;
+      background-color: transparent; }
+    /* line 92, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+    .btn--link[disabled]:hover, .btn--link[disabled]:focus, fieldset[disabled] .btn--link:hover, fieldset[disabled] .btn--link:focus {
+      color: #999999;
+      text-decoration: none; }
+  /* line 100, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--lg, .btn-group--lg > .btn,
+  .btn-group-vertical--lg > .btn {
+    padding: 1.5rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 7.5px; }
+    /* line 102, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+    .btn--lg i.fa, .btn-group--lg > .btn i.fa,
+    .btn-group-vertical--lg > .btn i.fa {
+      padding-right: 1.5rem; }
+  /* line 104, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--sm, .btn-group--sm > .btn,
+  .btn-group-vertical--sm > .btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 0.5rem;
+    border-radius: 3.33333px; }
+  /* line 107, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--xs, .btn-group--xs > .btn,
+  .btn-group-vertical--xs > .btn {
+    padding: 0.375rem 0.375rem;
+    font-size: 0.625rem;
+    line-height: 0.5rem;
+    border-radius: 3.33333px; }
+  /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+  .btn--block {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+
+/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_buttons.scss */
+input[type="submit"].btn--block,
+input[type="reset"].btn--block,
+input[type="button"].btn--block {
+  width: 100%; }
+
+/*
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+*/
+/* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_animations.scss */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear; }
+  /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_animations.scss */
+  .fade.in {
+    opacity: 1; }
+
+/* line 20, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_animations.scss */
+.collapse {
+  display: none; }
+  /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_animations.scss */
+  .collapse.in {
+    display: block; }
+
+/* line 26, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_animations.scss */
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease; }
+
+/* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; }
+
+/* line 21, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown {
+  position: relative; }
+
+/* line 26, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-toggle:focus {
+  outline: 0; }
+
+/* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 0;
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; }
+  /* line 53, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+  .dropdown-menu.pull-right {
+    right: 0;
+    left: auto; }
+  /* line 59, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+  .dropdown-menu .divider {
+    height: 1px;
+    /* margin: (($line-height-computed / 2) - 1) 0; */
+    overflow: hidden;
+    background-color: #eeeeee; }
+  /* line 64, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+  .dropdown-menu > li:first-child a {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+  /* line 65, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+  .dropdown-menu > li:last-child a {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  /* line 69, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+  .dropdown-menu > li > a {
+    display: block;
+    padding: 0.75rem;
+    clear: both;
+    font-weight: normal;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #333333;
+    text-decoration: none;
+    white-space: nowrap; }
+
+/* line 85, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #eeeeee; }
+
+/* line 95, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: white;
+  text-decoration: none;
+  outline: 0;
+  background-color: #ca6253; }
+
+/* line 110, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+  color: #999999; }
+
+/* line 118, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed; }
+
+/* line 131, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.open > .dropdown-menu {
+  display: block; }
+/* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.open > a {
+  outline: 0; }
+
+/* line 145, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-menu-right {
+  left: auto;
+  right: 0; }
+
+/* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-menu-left {
+  left: 0;
+  right: auto; }
+
+/* line 161, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12;
+  line-height: 24;
+  color: #999999; }
+
+/* line 170, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 990; }
+
+/* line 180, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto; }
+
+/* line 193, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: ""; }
+/* line 199, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px; }
+
+/*
+@media (min-width: $grid-float-breakpoint) {
+  .navbar-right {
+    .dropdown-menu {
+      right: 0; left: auto;
+    }
+    // Necessary for overrides of the default right aligned menu.
+    // Will remove come v4 in all likelihood.
+    .dropdown-menu-left {
+      left: 0; right: auto;
+    }
+  }
+}
+*/
+/* line 6, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group,
+.btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; }
+  /* line 11, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .btn-group > .btn,
+  .btn-group-vertical > .btn {
+    position: relative;
+    float: left; }
+    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+    .btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+    .btn-group-vertical > .btn:hover,
+    .btn-group-vertical > .btn:focus,
+    .btn-group-vertical > .btn:active,
+    .btn-group-vertical > .btn.active {
+      z-index: 2; }
+    /* line 21, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+    .btn-group > .btn:focus,
+    .btn-group-vertical > .btn:focus {
+      outline: none; }
+  /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .sub-section .btn-group, .sub-section
+  .btn-group-vertical {
+    margin-bottom: 0.75rem; }
+
+/* line 40, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group .btn + .btn,
+.btn-group .btn + .btn-group,
+.btn-group .btn-group + .btn,
+.btn-group .btn-group + .btn-group {
+  margin-left: -1px; }
+
+/* line 49, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-toolbar {
+  margin-left: -5px; }
+  /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .btn-toolbar:before, .btn-toolbar:after {
+    content: " ";
+    display: table; }
+  /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .btn-toolbar:after {
+    clear: both; }
+  /* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .btn-toolbar .btn-group,
+  .btn-toolbar .input-group {
+    float: left; }
+  /* line 56, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .btn-toolbar > .btn,
+  .btn-toolbar > .btn-group,
+  .btn-toolbar > .input-group {
+    margin-left: 5px; }
+  /* line 63, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .sub-section .btn-toolbar {
+    margin-bottom: 0.75rem; }
+
+/* line 68, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0; }
+
+/* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn:first-child {
+  margin-left: 0; }
+  /* line 75, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+
+/* line 80, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
+
+/* line 86, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn-group {
+  float: left; }
+
+/* line 89, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0; }
+
+/* line 93, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn-group:first-child > .btn:last-child,
+.btn-group > .btn-group:first-child > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; }
+
+/* line 98, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn-group:last-child > .btn:first-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
+
+/* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle {
+  outline: 0; }
+
+/* line 109, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group--justified {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate; }
+  /* line 114, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .btn-group--justified > .btn,
+  .btn-group--justified > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%; }
+    /* line 119, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+    .btn-group--justified > .btn:first-child a, .btn-group--justified > .btn:first-child .btn,
+    .btn-group--justified > .btn-group:first-child a,
+    .btn-group--justified > .btn-group:first-child .btn {
+      border-right: 0; }
+    /* line 121, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+    .btn-group--justified > .btn:last-child a, .btn-group--justified > .btn:last-child .btn,
+    .btn-group--justified > .btn-group:last-child a,
+    .btn-group--justified > .btn-group:last-child .btn {
+      border-left: 0; }
+  /* line 124, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .btn-group--justified > .btn-group .btn {
+    width: 100%; }
+
+/* line 135, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn + .dropdown-toggle {
+  padding-left: 8px;
+  padding-right: 8px; }
+
+/* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group > .btn-lg + .dropdown-toggle {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+/* line 146, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 150, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+  .btn-group.open .dropdown-toggle.btn-link {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+/* line 157, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn .caret {
+  margin-left: 0; }
+
+/* line 161, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn--lg .caret, .btn-group--lg > .btn .caret,
+.btn-group-vertical--lg > .btn .caret {
+  border-width: 5px 5px 0;
+  border-bottom-width: 0; }
+
+/* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.dropup .btn--lg .caret, .dropup .btn-group--lg > .btn .caret,
+.dropup .btn-group-vertical--lg > .btn .caret {
+  border-width: 0 5px 5px; }
+
+/* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group,
+.btn-group-vertical > .btn-group > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%; }
+/* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after {
+  content: " ";
+  display: table; }
+/* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.btn-group-vertical > .btn-group:after {
+  clear: both; }
+/* line 187, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn-group > .btn {
+  float: none; }
+/* line 192, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-left: 0; }
+
+/* line 202, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0; }
+/* line 205, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+/* line 209, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+/* line 214, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0; }
+
+/* line 218, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+/* line 223, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+/* line 230, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_button-groups.scss */
+[data-toggle="buttons"] > .btn > input[type="radio"],
+[data-toggle="buttons"] > .btn > input[type="checkbox"] {
+  display: none; }
+
+/* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate; }
+  /* line 14, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+  .input-group .controls--control {
+    float: left;
+    width: 100%;
+    margin-bottom: 0; }
+
+/* line 40, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group-addon,
+.input-group-btn,
+.input-group .controls--control {
+  position: relative;
+  display: table-cell;
+  margin-bottom: 0 !important; }
+  /* line 47, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+  .input-group-addon:not(:first-child):not(:last-child),
+  .input-group-btn:not(:first-child):not(:last-child),
+  .input-group .controls--control:not(:first-child):not(:last-child) {
+    border-radius: 0; }
+
+/* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle; }
+
+/* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group-addon {
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #555555;
+  text-align: center;
+  background-color: #dddddd;
+  border: 1px solid #999999;
+  border-radius: 5px; }
+  /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+  .input-group-addon.input-sm, form.form .controls .input-group__input-group-sm .input-group-addon.controls--control, form.form .controls .input-group__input-group-sm .input-group-addon.input-group--addon, form.form .controls .input-group__input-group-sm .input-group-addon.input-group--btn,
+  .input-group-sm > .input-group-addon,
+  .input-group-sm > .input-group-btn > .input-group-addon.btn {
+    font-size: 12;
+    border-radius: 3.33333px; }
+  /* line 78, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+  .input-group-addon.input-lg, form.form .controls .input-group__input-group-lg .input-group-addon.controls--control, form.form .controls .input-group__input-group-lg .input-group-addon.input-group--addon, form.form .controls .input-group__input-group-lg .input-group-addon.input-group--btn,
+  .input-group-lg > .input-group-addon,
+  .input-group-lg > .input-group-btn > .input-group-addon.btn {
+    font-size: 24;
+    border-radius: 7.5px; }
+  /* line 85, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+  .input-group-addon input[type="radio"],
+  .input-group-addon input[type="checkbox"] {
+    margin-top: 0; }
+
+/* line 92, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group .controls--control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; }
+
+/* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group-addon:first-child {
+  border-right: 0; }
+
+/* line 104, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group .controls--control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
+
+/* line 113, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group-addon:last-child {
+  border-left: 0; }
+
+/* line 119, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+.input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap; }
+  /* line 128, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+  .input-group-btn > .btn {
+    position: relative; }
+    /* line 130, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+    .input-group-btn > .btn + .btn {
+      margin-left: -1px; }
+    /* line 134, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+    .input-group-btn > .btn:hover, .input-group-btn > .btn:focus, .input-group-btn > .btn:active {
+      z-index: 2; }
+  /* line 143, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+  .input-group-btn:first-child > .btn,
+  .input-group-btn:first-child > .btn-group {
+    margin-right: -1px; }
+  /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
+  .input-group-btn:last-child > .btn,
+  .input-group-btn:last-child > .btn-group {
+    margin-left: -1px; }
+
+/* line 11, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+  /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .nav:before, .nav:after {
+    content: " ";
+    display: table; }
+  /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .nav:after {
+    clear: both; }
+  /* line 16, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav > li {
+    position: relative;
+    display: block; }
+    /* line 19, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav > li > a {
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none; }
+      /* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      .nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background-color: #eeeeee; }
+    /* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav > li.disabled > a {
+      color: #999999; }
+      /* line 33, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
+        color: #999999;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: not-allowed; }
+  /* line 44, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #eeeeee;
+    border-color: #dddddd #dddddd #dddddd; }
+  /* line 55, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav > li > a > img {
+    max-width: none; }
+  /* line 59, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav--tabs {
+    border-bottom: 1px solid #dddddd;
+    		/*
+    &--justified {
+    			@extend .nav--justified;
+    			@extend .nav-tabs-justified;
+    		}
+    */ }
+    /* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav--tabs > li {
+      float: left;
+      margin-bottom: -1px; }
+      /* line 66, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      .nav--tabs > li > a {
+        margin-right: 2px;
+        border: 1px solid transparent;
+        border-radius: 5px 5px 0 0; }
+        /* line 70, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+        .nav--tabs > li > a:hover {
+          border-color: #dddddd #dddddd #dddddd; }
+      /* line 76, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      .nav--tabs > li.active > a, .nav--tabs > li.active > a:hover, .nav--tabs > li.active > a:focus {
+        color: white;
+        background-color: #ca6253;
+        border: 1px solid #b34737;
+        border-bottom-color: transparent;
+        cursor: default; }
+  /* line 98, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav--pills > li {
+    float: left; }
+    /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav--pills > li > a {
+      border-radius: 5px;
+      border: 1px solid transparent; }
+      /* line 104, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      .nav--pills > li > a:hover {
+        border-color: #dddddd #dddddd #dddddd; }
+    /* line 108, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav--pills > li + li {
+      margin-left: 2px; }
+    /* line 113, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav--pills > li.active > a, .nav--pills > li.active > a:hover, .nav--pills > li.active > a:focus {
+      color: white;
+      background-color: #ca6253;
+      border: 1px solid #b34737; }
+  /* line 125, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav--stacked > li {
+    float: none; }
+    /* line 127, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav--stacked > li + li {
+      margin-top: 2px;
+      margin-left: 0; }
+  /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav--justified {
+    width: 100%; }
+    /* line 138, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav--justified > li {
+      float: none; }
+      /* line 140, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      .nav--justified > li > a {
+        text-align: center;
+        margin-bottom: -1px; }
+    /* line 145, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav--justified > .dropdown .dropdown-menu {
+      top: auto;
+      left: auto; }
+    @media only screen and (min-width: 769px) {
+      /* line 150, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      .nav--justified > li {
+        display: table-cell;
+        width: 1%; } }
+
+/* line 169, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+.nav-tabs-justified {
+  border-bottom: 0; }
+  /* line 172, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav-tabs-justified > li > a {
+    margin-right: 0;
+    border-radius: 5px; }
+  /* line 178, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  .nav-tabs-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus {
+    border: 1px solid #dddddd; }
+  @media only screen and (min-width: 0px) {
+    /* line 185, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav-tabs-justified > li > a {
+      border-bottom: 1px solid #dddddd;
+      border-radius: 5px 5px 0 0; }
+    /* line 189, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    .nav-tabs-justified > .active > a,
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus {
+      border-bottom-color: #39403f; } }
+
+/* line 203, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+.tab-content > .tab-pane {
+  display: none; }
+/* line 206, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+.tab-content > .active {
+  display: block; }
+
+/* line 216, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+/* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  border: 1px solid transparent;
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 0;
+  width: 100%; }
+  /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .navbar:before, .navbar:after {
+    content: " ";
+    display: table; }
+  /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .navbar:after {
+    clear: both; }
+  @media only screen and (min-width: 769px) {
+    /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar {
+      border-radius: 5px; } }
+  /* line 26, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar--default {
+    background-color: #eeeeee;
+    border-color: #dedede; }
+  /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar .container > .navbar__header,
+  .navbar .container > .navbar-collapse,
+  .navbar .container-fluid > .navbar__header,
+  .navbar .container-fluid > .navbar-collapse {
+    margin-right: -2%;
+    margin-left: -2%; }
+    @media only screen and (max-width: 768px) {
+      /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar .container > .navbar__header,
+      .navbar .container > .navbar-collapse,
+      .navbar .container-fluid > .navbar__header,
+      .navbar .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0; } }
+  /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .navbar__header:before, .navbar__header:after {
+    content: " ";
+    display: table; }
+  /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .navbar__header:after {
+    clear: both; }
+  @media only screen and (min-width: 990px) {
+    /* line 43, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__header {
+      float: left; } }
+  /* line 49, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar__toggle {
+    position: relative;
+    float: right;
+    margin-right: 2%;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-color: #dddddd; }
+    /* line 60, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__toggle:hover, .navbar__toggle:focus {
+      background-color: #dddddd; }
+    /* line 66, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__toggle:focus {
+      outline: none; }
+    /* line 70, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__toggle .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: white; }
+    /* line 77, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__toggle .icon-bar + .icon-bar {
+      margin-top: 4px; }
+    @media only screen and (min-width: 990px) {
+      /* line 49, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__toggle {
+        display: none; } }
+  /* line 84, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar__brand {
+    float: left;
+    padding: 13px 2%;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1;
+    height: 50px;
+    text-decoration: none; }
+    /* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__brand:hover, .navbar__brand:focus {
+      text-decoration: none; }
+    @media only screen and (min-width: 769px) {
+      /* line 95, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar > .container .navbar__brand, .navbar > .container-fluid .navbar__brand {
+        margin-left: -2%; } }
+  /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar__collapse {
+    overflow-x: visible;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    -webkit-overflow-scrolling: touch; }
+    /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+    .navbar__collapse:before, .navbar__collapse:after {
+      content: " ";
+      display: table; }
+    /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+    .navbar__collapse:after {
+      clear: both; }
+    /* line 110, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__collapse.in {
+      overflow-y: auto; }
+    @media only screen and (min-width: 769px) {
+      /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+        /* line 117, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar__collapse.collapse {
+          display: block !important;
+          height: auto !important;
+          padding-bottom: 0;
+          overflow: visible !important; }
+        /* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar__collapse.in {
+          overflow-y: visible; }
+        /* line 128, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar-fixed-top .navbar__collapse, .navbar-static-top .navbar__collapse, .navbar-fixed-bottom .navbar__collapse {
+          padding-left: 0;
+          padding-right: 0; } }
+  /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar__nav {
+    clear: both;
+    margin: 6.5px -2%; }
+    /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: normal; }
+    @media only screen and (max-width: 768px) {
+      /* line 146, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+        /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar__nav .open .dropdown-menu > li > a,
+        .navbar__nav .open .dropdown-menu .dropdown-header {
+          padding: 5px 15px 5px 25px; }
+        /* line 158, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar__nav .open .dropdown-menu > li > a {
+          line-height: normal;
+          color: #555555; }
+          /* line 161, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+          .navbar__nav .open .dropdown-menu > li > a:hover, .navbar__nav .open .dropdown-menu > li > a:focus {
+            color: #333333;
+            background-image: none;
+            background-color: transparent; }
+        /* line 169, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar__nav .open .dropdown-menu > .active > a, .navbar__nav .open .dropdown-menu > .active > a:hover, .navbar__nav .open .dropdown-menu > .active > a:focus {
+          color: #555555;
+          background-color: #dedede; }
+        /* line 177, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar__nav .open .dropdown-menu > .disabled > a, .navbar__nav .open .dropdown-menu > .disabled > a:hover, .navbar__nav .open .dropdown-menu > .disabled > a:focus {
+          color: #999999;
+          background-color: transparent; } }
+@media only screen and (max-width: 768px) and (min-width: 769px) {
+  /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar__nav {
+    float: left;
+    margin: 0; }
+    /* line 189, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__nav > li {
+      float: left; }
+      /* line 191, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__nav > li > a {
+        padding-top: 13px;
+        padding-bottom: 13px; }
+    /* line 196, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__nav.navbar-right:last-child {
+      margin-right: -2%; } }
+
+    /* line 202, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__nav > li .dropdown-menu {
+      margin-top: 0;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0; }
+  @media only screen and (min-width: 769px) {
+    /* line 209, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__right {
+      float: right !important; }
+    /* line 212, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__left {
+      float: left !important; } }
+  /* line 217, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar__form {
+    margin-left: -2%;
+    margin-right: -2%;
+    padding: 10px 2%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
+    @media only screen and (min-width: 769px) {
+      /* line 227, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__form .controls {
+        margin-bottom: 5px; } }
+
+/*
+// Menu position and menu caret support for dropups via extra dropup class
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  @include border-bottom-radius(0);
+}
+
+
+
+//
+// Navbar alignment options
+//
+// Display the navbar across the entirety of the page or fixed it to the top or
+// bottom of the page.
+
+// Static top (unfixed, but 100% wide) navbar
+/*
+.navbar-static-top {
+  z-index: $zindex-navbar;
+  border-width: 0 0 1px;
+
+@include gs-media(m,max) {
+    border-radius: 0;
+  }
+}
+*/
+/*
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: $zindex-navbar-fixed;
+
+  // Undo the rounded corners
+@include gs-media(m,max) {
+    border-radius: 0;
+  }
+}
+*/
+/*
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+*/
+/*
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0; // override .navbar defaults
+  border-width: 1px 0 0;
+}
+*/
+/*   @include navbar-vertical-align($input-height-base); */
+/*
+@include gs-media(m,max) {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    @include box-shadow(none);
+
+    // Outdent the form if last child to line up with content down the page
+    &.navbar-right:last-child {
+      margin-right: -$navbar-padding-horizontal;
+    }
+  }
+*/
+/*
+.navbar-btn {
+  @include navbar-vertical-align($input-height-base);
+
+  &.btn-sm {
+    @include navbar-vertical-align($input-height-small);
+  }
+  &.btn-xs {
+    @include navbar-vertical-align(22);
+  }
+}
+*/
+/*
+.navbar-text {
+  @include navbar-vertical-align($line-height-computed);
+
+@include gs-media(m,max) {
+    float: left;
+    margin-left: $navbar-padding-horizontal;
+    margin-right: $navbar-padding-horizontal;
+
+    // Outdent the form if last child to line up with content down the page
+    &.navbar-right:last-child {
+      margin-right: 0;
+    }
+  }
+}
+*/
+/*
+.navbar-default {
+  background-color: $navbar-default-background-color;
+  border-color: $navbar-default-border-color;
+
+  .navbar-brand {
+    color: $navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-default-brand-hover-color;
+      background-color: $navbar-default-brand-hover-background-color;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-default-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $navbar-default-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-link-hover-background-color;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-active-color;
+        background-color: $navbar-default-link-active-background-color;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-disabled-color;
+        background-color: $navbar-default-link-disabled-background-color;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: $navbar-default-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $navbar-default-toggle-hover-background-color;
+    }
+    .icon-bar {
+      background-color: $navbar-default-toggle-icon-bar-background-color;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $navbar-default-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-default-link-active-background-color;
+        color: $navbar-default-link-active-color;
+      }
+    }
+
+
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: $navbar-default-link-color;
+    &:hover {
+      color: $navbar-default-link-hover-color;
+    }
+  }
+
+}
+*/
+/*
+.navbar-inverse {
+  background-color: $navbar-inverse-background-color;
+  border-color: $navbar-inverse-border-color;
+
+  .navbar-brand {
+    color: $navbar-inverse-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-inverse-brand-hover-color;
+      background-color: $navbar-inverse-brand-hover-background-color;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-inverse-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $navbar-inverse-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-inverse-link-hover-color;
+        background-color: $navbar-inverse-link-hover-background-color;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-inverse-link-active-color;
+        background-color: $navbar-inverse-link-active-background-color;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-inverse-link-disabled-color;
+        background-color: $navbar-inverse-link-disabled-background-color;
+      }
+    }
+  }
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border-color: $navbar-inverse-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $navbar-inverse-toggle-hover-background-color;
+    }
+    .icon-bar {
+      background-color: $navbar-inverse-toggle-icon-bar-background-color;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: darken($navbar-inverse-background-color, 7%);
+  }
+
+  // Dropdowns
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-inverse-link-active-background-color;
+        color: $navbar-inverse-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border-color: $navbar-inverse-border-color;
+        }
+        .divider {
+          background-color: $navbar-inverse-border-color;
+        }
+        > li > a {
+          color: $navbar-inverse-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-inverse-link-hover-color;
+            background-color: $navbar-inverse-link-hover-background-color;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-inverse-link-active-color;
+            background-color: $navbar-inverse-link-active-background-color;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-inverse-link-disabled-color;
+            background-color: $navbar-inverse-link-disabled-background-color
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-link {
+    color: $navbar-inverse-link-color;
+    &:hover {
+      color: $navbar-inverse-link-hover-color;
+    }
+  }
+
+}
+*/
+/* line 8, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 0.75rem 0;
+  border-radius: 5px; }
+  /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pagination > li {
+    display: inline; }
+    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+    .pagination > li > a,
+    .pagination > li > span {
+      position: relative;
+      float: left;
+      padding: 0.375rem 0.75rem;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: normal;
+      text-decoration: none;
+      color: #ca6253;
+      background-color: white;
+      border: 1px solid #dddddd;
+      margin-left: -1px; }
+    /* line 29, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+    .pagination > li:first-child > a,
+    .pagination > li:first-child > span {
+      margin-left: 0;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px; }
+    /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+    .pagination > li:last-child > a,
+    .pagination > li:last-child > span {
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px; }
+  /* line 44, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pagination > li > a:hover, .pagination > li > a:focus,
+  .pagination > li > span:hover,
+  .pagination > li > span:focus {
+    color: #9f3f31;
+    background-color: #eeeeee;
+    border-color: #dddddd; }
+  /* line 53, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+  .pagination > .active > span,
+  .pagination > .active > span:hover,
+  .pagination > .active > span:focus {
+    z-index: 2;
+    color: white;
+    background-color: #ca6253;
+    border-color: #ca6253;
+    cursor: default; }
+  /* line 64, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pagination > .disabled > span,
+  .pagination > .disabled > span:hover,
+  .pagination > .disabled > span:focus,
+  .pagination > .disabled > a,
+  .pagination > .disabled > a:hover,
+  .pagination > .disabled > a:focus {
+    color: #999999;
+    background-color: white;
+    border-color: #dddddd;
+    cursor: not-allowed; }
+  /* line 45, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .pagination--lg > li > a,
+  .pagination--lg > li > span {
+    padding: 0.75rem 1.5rem;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: normal; }
+  /* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .pagination--lg > li:first-child > a,
+  .pagination--lg > li:first-child > span {
+    border-bottom-left-radius: 7.5px;
+    border-top-left-radius: 7.5px; }
+  /* line 58, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .pagination--lg > li:last-child > a,
+  .pagination--lg > li:last-child > span {
+    border-bottom-right-radius: 7.5px;
+    border-top-right-radius: 7.5px; }
+  /* line 45, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .pagination--sm > li > a,
+  .pagination--sm > li > span {
+    padding: 0.375rem 0.375rem;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: normal; }
+  /* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .pagination--sm > li:first-child > a,
+  .pagination--sm > li:first-child > span {
+    border-bottom-left-radius: 3.33333px;
+    border-top-left-radius: 3.33333px; }
+  /* line 58, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .pagination--sm > li:last-child > a,
+  .pagination--sm > li:last-child > span {
+    border-bottom-right-radius: 3.33333px;
+    border-top-right-radius: 3.33333px; }
+  /* line 88, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .sub-section .pagination {
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    width: 100%; }
+
+/* line 95, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+.pager {
+  padding-left: 0;
+  margin: 0.75rem 0;
+  list-style: none;
+  text-align: center; }
+  /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .pager:before, .pager:after {
+    content: " ";
+    display: table; }
+  /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .pager:after {
+    clear: both; }
+  /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pager__page {
+    display: inline; }
+    /* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+    .pager__page > a,
+    .pager__page > span {
+      display: inline-block;
+      padding: 5px 14px;
+      background-color: white;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      text-decoration: none; }
+    /* line 112, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+    .pager__page > a:hover,
+    .pager__page > a:focus {
+      text-decoration: none;
+      background-color: #eeeeee; }
+    /* line 118, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+    .pager__page:first-child i.fa {
+      padding-right: 0.75rem; }
+    /* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+    .pager__page:last-child i.fa {
+      padding-left: 0.75rem; }
+  /* line 129, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pager__next > a,
+  .pager__next > span {
+    float: right; }
+  /* line 133, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pager__next i.fa {
+    padding-left: 0.75rem; }
+  /* line 138, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pager__previous > a,
+  .pager__previous > span {
+    float: left; }
+  /* line 142, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pager__previous i.fa {
+    padding-right: 0.75rem; }
+  /* line 147, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_pagination.scss */
+  .pager__disabled > a,
+  .pager__disabled > a:hover,
+  .pager__disabled > a:focus,
+  .pager__disabled > span {
+    color: #999999;
+    background-color: white;
+    cursor: not-allowed; }
+
+/* line 8, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+.label {
+  display: inline;
+  padding: .2em .6em;
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 1.2;
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em; }
+  /* line 19, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+  .label a {
+    text-decoration: none; }
+  /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+  .label[href]:hover, .label[href]:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer; }
+  /* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+  .label:empty {
+    display: none; }
+  /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+  .btn .label {
+    position: relative;
+    top: -1px; }
+
+/* line 45, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+.label-default {
+  background-color: #999999; }
+  /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .label-default[href]:hover, .label-default[href]:focus {
+    background-color: gray; }
+
+/* line 49, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+.label-primary {
+  background-color: #ca6253; }
+  /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .label-primary[href]:hover, .label-primary[href]:focus {
+    background-color: #b34737; }
+
+/* line 53, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+.label-success {
+  background-color: #5cb85c; }
+  /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .label-success[href]:hover, .label-success[href]:focus {
+    background-color: #449d44; }
+
+/* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+.label-info {
+  background-color: #5bc0de; }
+  /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .label-info[href]:hover, .label-info[href]:focus {
+    background-color: #31b0d5; }
+
+/* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+.label-warning {
+  background-color: #f0ad4e; }
+  /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .label-warning[href]:hover, .label-warning[href]:focus {
+    background-color: #ec971f; }
+
+/* line 65, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+.label-danger {
+  background-color: #d9534f; }
+  /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .label-danger[href]:hover, .label-danger[href]:focus {
+    background-color: #c9302c; }
+
+/* line 70, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+ul.labels {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  /* line 72, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_labels.scss */
+  ul.labels li {
+    display: inline; }
+
+/* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+.jumbotron {
+  padding: 1.875rem;
+  margin-bottom: 1.875rem;
+  color: white;
+  background-color: #ca6253;
+  border-top: 10px solid rgba(120, 48, 37, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(3, 1, 1, 0.1);
+  box-shadow: 0 0 5px rgba(3, 1, 1, 0.1); }
+  /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .jumbotron:before, .jumbotron:after {
+    content: " ";
+    display: table; }
+  /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .jumbotron:after {
+    clear: both; }
+  /* line 16, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+  .jumbotron h1,
+  .jumbotron .h1 {
+    color: inherit;
+    font-weight: 700; }
+  /* line 21, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+  .jumbotron p {
+    margin-bottom: 0.9375rem;
+    font-size: 24;
+    font-weight: 300; }
+    /* line 27, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+    .jumbotron p:last-child {
+      margin-bottom: 0; }
+  /* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+  .wrapper .jumbotron {
+    border-radius: 0 0 7.5px 7.5px; }
+  /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+  .jumbotron .wrapper {
+    max-width: 100%; }
+  @media only screen and (min-width: 769px) {
+    /* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+    .jumbotron {
+      padding-top: 3rem;
+      padding-bottom: 3rem; }
+      /* line 42, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+      .container .jumbotron {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem; }
+      /* line 48, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_jumbotron.scss */
+      .jumbotron h1,
+      .jumbotron .h1 {
+        font-size: 4.5rem; } }
+
+/* line 6, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_figures.scss */
+figure img.img {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  /* line 8, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_figures.scss */
+  figure img.img--thumbnail {
+    display: block;
+    padding: 4px;
+    line-height: 24;
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    /* line 17, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_figures.scss */
+    figure img.img--thumbnail > img,
+    figure img.img--thumbnail a > img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto; }
+    /* line 23, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_figures.scss */
+    figure img.img--thumbnail:hover, figure img.img--thumbnail:focus, figure img.img--thumbnail .active {
+      border-color: #ca6253; }
+  /* line 25, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_figures.scss */
+  figure img.img--circle {
+    border-radius: 500px; }
+  /* line 28, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_figures.scss */
+  figure img.img--rounded {
+    border-radius: 5px; }
+/* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_figures.scss */
+figure figcaption {
+  padding: 0.5rem;
+  color: #ca6253;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: center; }
+
+/* line 11, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel {
+  border-radius: 5px;
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 0;
+  width: 100%;
+  margin-bottom: 1.5rem; }
+  /* line 16, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel__heading {
+    padding: 0.75rem;
+    background-color: #333333;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    color: white; }
+    /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+    .panel__heading h2 {
+      color: inherit;
+      font-family: "proxima-nova-alt-ext-cond", sans-serif;
+      font-weight: normal;
+      margin: 0;
+      text-transform: uppercase; }
+    /* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+    .panel__heading > .dropdown .dropdown-toggle {
+      color: inherit; }
+    /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+    .panel__heading p {
+      color: #999999;
+      margin-bottom: 0; }
+  /* line 40, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel__body {
+    padding: 0.75rem;
+    background-color: white;
+    color: #333333;
+    clear: both; }
+    /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+    .panel__body:before, .panel__body:after {
+      content: " ";
+      display: table; }
+    /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+    .panel__body:after {
+      clear: both; }
+  /* line 48, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel__footer {
+    padding: 0.75rem;
+    background-color: #eeeeee;
+    border-top: 1px solid #dddddd; }
+  /* line 53, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel .sub-section {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #dddddd; }
+    /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+    .panel .sub-section:before, .panel .sub-section:after {
+      content: " ";
+      display: table; }
+    /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+    .panel .sub-section:after {
+      clear: both; }
+    /* line 58, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+    .panel .sub-section:last-of-type {
+      margin: 0;
+      padding: 0;
+      border: 0; }
+
+/*
+.panel-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	> a {
+		color: inherit;
+	}
+}
+*/
+/* line 80, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel > .list-group {
+  margin-bottom: 0; }
+  /* line 83, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .list-group .list-group-item {
+    border-width: 1px 0;
+    border-radius: 0; }
+  /* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .list-group:first-child .list-group-item:first-child {
+    border-top: 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px; }
+  /* line 97, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .list-group:last-child .list-group-item:last-child {
+    border-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; }
+
+/* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel-heading + .list-group .list-group-item:first-child {
+  border-top-width: 0; }
+
+/* line 118, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel > .table,
+.panel > .table-responsive > .table {
+  margin-bottom: 0; }
+/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel > .table:first-child,
+.panel > .table-responsive:first-child > .table:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px; }
+  /* line 130, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+  .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+  .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+  .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+  .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+  .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+  .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+  .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+    border-top-left-radius: 4px; }
+  /* line 134, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+  .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+  .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+  .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+  .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+  .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+  .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+  .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+    border-top-right-radius: 4px; }
+/* line 142, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel > .table:last-child,
+.panel > .table-responsive:last-child > .table:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+  /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+  .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+  .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+  .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+  .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+  .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+  .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+  .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+    border-bottom-left-radius: 4px; }
+  /* line 153, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+  .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+  .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+  .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+  .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+  .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+  .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+  .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+    border-bottom-right-radius: 4px; }
+/* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel > .panel-body + .table,
+.panel > .panel-body + .table-responsive {
+  border-top: 1px solid #dddddd; }
+/* line 164, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel > .table > tbody:first-child > tr:first-child th,
+.panel > .table > tbody:first-child > tr:first-child td {
+  border-top: 0; }
+/* line 168, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel > .table-border-colored,
+.panel > .table-responsive > .table-border-colored {
+  border: 0; }
+  /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .table-border-colored > thead > tr > th:first-child,
+  .panel > .table-border-colored > thead > tr > td:first-child,
+  .panel > .table-border-colored > tbody > tr > th:first-child,
+  .panel > .table-border-colored > tbody > tr > td:first-child,
+  .panel > .table-border-colored > tfoot > tr > th:first-child,
+  .panel > .table-border-colored > tfoot > tr > td:first-child,
+  .panel > .table-responsive > .table-border-colored > thead > tr > th:first-child,
+  .panel > .table-responsive > .table-border-colored > thead > tr > td:first-child,
+  .panel > .table-responsive > .table-border-colored > tbody > tr > th:first-child,
+  .panel > .table-responsive > .table-border-colored > tbody > tr > td:first-child,
+  .panel > .table-responsive > .table-border-colored > tfoot > tr > th:first-child,
+  .panel > .table-responsive > .table-border-colored > tfoot > tr > td:first-child {
+    border-left: 0; }
+  /* line 179, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .table-border-colored > thead > tr > th:last-child,
+  .panel > .table-border-colored > thead > tr > td:last-child,
+  .panel > .table-border-colored > tbody > tr > th:last-child,
+  .panel > .table-border-colored > tbody > tr > td:last-child,
+  .panel > .table-border-colored > tfoot > tr > th:last-child,
+  .panel > .table-border-colored > tfoot > tr > td:last-child,
+  .panel > .table-responsive > .table-border-colored > thead > tr > th:last-child,
+  .panel > .table-responsive > .table-border-colored > thead > tr > td:last-child,
+  .panel > .table-responsive > .table-border-colored > tbody > tr > th:last-child,
+  .panel > .table-responsive > .table-border-colored > tbody > tr > td:last-child,
+  .panel > .table-responsive > .table-border-colored > tfoot > tr > th:last-child,
+  .panel > .table-responsive > .table-border-colored > tfoot > tr > td:last-child {
+    border-right: 0; }
+  /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .table-border-colored > thead > tr:first-child > td,
+  .panel > .table-border-colored > thead > tr:first-child > th,
+  .panel > .table-border-colored > tbody > tr:first-child > td,
+  .panel > .table-border-colored > tbody > tr:first-child > th,
+  .panel > .table-responsive > .table-border-colored > thead > tr:first-child > td,
+  .panel > .table-responsive > .table-border-colored > thead > tr:first-child > th,
+  .panel > .table-responsive > .table-border-colored > tbody > tr:first-child > td,
+  .panel > .table-responsive > .table-border-colored > tbody > tr:first-child > th {
+    border-bottom: 0; }
+  /* line 197, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel > .table-border-colored > tbody > tr:last-child > td,
+  .panel > .table-border-colored > tbody > tr:last-child > th,
+  .panel > .table-border-colored > tfoot > tr:last-child > td,
+  .panel > .table-border-colored > tfoot > tr:last-child > th,
+  .panel > .table-responsive > .table-border-colored > tbody > tr:last-child > td,
+  .panel > .table-responsive > .table-border-colored > tbody > tr:last-child > th,
+  .panel > .table-responsive > .table-border-colored > tfoot > tr:last-child > td,
+  .panel > .table-responsive > .table-border-colored > tfoot > tr:last-child > th {
+    border-bottom: 0; }
+/* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel > .table-responsive {
+  border: 0;
+  margin-bottom: 0; }
+
+/* line 216, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel-group {
+  margin-bottom: 24; }
+  /* line 220, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 5px;
+    overflow: hidden; }
+    /* line 224, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+    .panel-group .panel + .panel {
+      margin-top: 5px; }
+  /* line 229, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel-group .panel-heading {
+    border-bottom: 0; }
+    /* line 231, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+    .panel-group .panel-heading + .panel-collapse .panel-body {
+      border-top: 1px solid #dddddd; }
+  /* line 235, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+  .panel-group .panel-footer {
+    border-top: 0; }
+    /* line 237, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+    .panel-group .panel-footer + .panel-collapse .panel-body {
+      border-bottom: 1px solid #dddddd; }
+
+/* line 245, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel-default {
+  border-color: #dddddd; }
+  /* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-default > .panel-heading {
+    color: #333333;
+    background-color: #333333;
+    border-color: #dddddd; }
+    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+    .panel-default > .panel-heading + .panel-collapse .panel-body {
+      border-top-color: #dddddd; }
+  /* line 20, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-default > .panel-footer + .panel-collapse .panel-body {
+    border-bottom-color: #dddddd; }
+
+/* line 248, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel-primary {
+  border-color: #ca6253; }
+  /* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-primary > .panel-heading {
+    color: white;
+    background-color: #ca6253;
+    border-color: #ca6253; }
+    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+    .panel-primary > .panel-heading + .panel-collapse .panel-body {
+      border-top-color: #ca6253; }
+  /* line 20, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-primary > .panel-footer + .panel-collapse .panel-body {
+    border-bottom-color: #ca6253; }
+
+/* line 251, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel-success {
+  border-color: #d6e9c6; }
+  /* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-success > .panel-heading {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6; }
+    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+    .panel-success > .panel-heading + .panel-collapse .panel-body {
+      border-top-color: #d6e9c6; }
+  /* line 20, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-success > .panel-footer + .panel-collapse .panel-body {
+    border-bottom-color: #d6e9c6; }
+
+/* line 254, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel-info {
+  border-color: #bce8f1; }
+  /* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-info > .panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1; }
+    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+    .panel-info > .panel-heading + .panel-collapse .panel-body {
+      border-top-color: #bce8f1; }
+  /* line 20, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-info > .panel-footer + .panel-collapse .panel-body {
+    border-bottom-color: #bce8f1; }
+
+/* line 257, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel-warning {
+  border-color: #faebcc; }
+  /* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-warning > .panel-heading {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc; }
+    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+    .panel-warning > .panel-heading + .panel-collapse .panel-body {
+      border-top-color: #faebcc; }
+  /* line 20, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-warning > .panel-footer + .panel-collapse .panel-body {
+    border-bottom-color: #faebcc; }
+
+/* line 260, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
+.panel-danger {
+  border-color: #ebccd1; }
+  /* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-danger > .panel-heading {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1; }
+    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+    .panel-danger > .panel-heading + .panel-collapse .panel-body {
+      border-top-color: #ebccd1; }
+  /* line 20, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
+  .panel-danger > .panel-footer + .panel-collapse .panel-body {
+    border-bottom-color: #ebccd1; }
+
+/* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_wells.scss */
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #dddddd;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
+  /* line 17, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_wells.scss */
+  .well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.15); }
+
+/* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_wells.scss */
+.well-lg {
+  padding: 24px;
+  border-radius: 7.5px; }
+
+/* line 28, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_wells.scss */
+.well-sm {
+  padding: 9px;
+  border-radius: 3.33333px; }
+
+/* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+/* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.pull-right {
+  float: right !important; }
+
+/* line 18, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.pull-left {
+  float: left !important; }
+
+/* line 27, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.hide {
+  display: none !important; }
+
+/* line 30, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.show {
+  display: block !important; }
+
+/* line 33, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.invisible {
+  visibility: hidden; }
+
+/* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* line 45, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden !important; }
+
+/* line 54, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+/* line 68, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_utilities.scss */
+.affix {
+  position: fixed; }
+
+/* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  /* 	@include baseline-guide; */ }
+
+/* line 59, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+body.bootstrap aside.in-page-nav {
+  position: relative; }
+  @media only screen and (min-width: 990px) {
+    /* line 59, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+    body.bootstrap aside.in-page-nav {
+      display: block;
+      float: left;
+      margin-left: 85%;
+      margin-right: -100%;
+      width: 15%; } }
+  /* line 64, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  body.bootstrap aside.in-page-nav h1 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    font-weight: 400; }
+  /* line 65, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  body.bootstrap aside.in-page-nav .affix {
+    position: fixed;
+    top: 60px; }
+  /* line 69, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  body.bootstrap aside.in-page-nav .affix-bottom {
+    position: absolute; }
+/* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+body.bootstrap main {
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 0;
+  width: 100%; }
+  @media only screen and (min-width: 990px) {
+    /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+    body.bootstrap main {
+      display: block;
+      float: left;
+      margin-left: 0;
+      margin-right: -100%;
+      width: 83%; } }
+/* line 79, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+body.bootstrap article {
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 0;
+  width: 100%;
+  margin-bottom: 1.5rem; }
+  /* line 82, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  body.bootstrap article > header {
+    margin-bottom: 2.40964%;
+    padding: 0.75rem 0 0 0; }
+    /* line 85, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+    body.bootstrap article > header p {
+      color: white; }
+
+/* Page */
+/* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/site/_page.scss */
+body {
+  background: #39403f; }
+
+/* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/site/_page.scss */
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .wrapper:before, .wrapper:after {
+    content: " ";
+    display: table; }
+  /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+  .wrapper:after {
+    clear: both; }
+  /* line 14, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/site/_page.scss */
+  .navbar-fixed-top .wrapper {
+    margin-top: 0; }
+
+/* Layout */
+/* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/site/layout/_header.scss */
+header {
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 0;
+  width: 100%; }
+
+/* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/site/layout/_main.scss */
+main {
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 0;
+  width: 100%; }
+  @media only screen and (min-width: 990px) {
+    /* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/site/layout/_main.scss */
+    main {
+      display: block;
+      float: left;
+      margin-left: 0;
+      margin-right: -100%;
+      width: 66%; } }
+
+/* line 5, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/site/layout/_aside.scss */
+aside {
+  display: block;
+  float: left;
+  margin-left: 68%;
+  margin-right: -100%;
+  width: 32%;
+  display: none !important; }
+
+/* Modules */
+/* @import "modules/forms"; */
+/* TODO: Do I need forms here? */
+/* @import "modules/images"; */
+/* TODO: Do I need images here? */
+/* @import "modules/lists"; */
+/* TODO: Do I need lists here? */
+/* @import "modules/tables"; */
+/* TODO: Do I need lists here? */
+/* Scratch */
+
+

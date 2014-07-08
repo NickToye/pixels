@@ -1,0 +1,16 @@
+// Layout
+// ---------------------------
+// Mixin for Layout
+
+// Center-align a block level element
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Grids
+
+@mixin grid-mb($grid,$start-container,$end-container) {
+    margin-bottom: gs-adjust($grid, gs-gutter($grid), ($start-container,$end-container), true);
+}

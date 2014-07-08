@@ -1,0 +1,38 @@
+{% block content %}
+
+<header class="d-showgrid">
+    <h1>Pixels + Code, with Bootstrap</h1>
+</header>
+
+<main>
+    <p>This is a quick and simple setup for using <a href="https://github.com/twbs/bootstrap-sass">Bootstrap-Sass</a> in Mixture.  With a few modifications to suit the needs of Pixels + Code ideals.</p>
+    <p>It currently uses Bootstrap-Sass v3.1.0, and has Autoprefixer activated.</p>
+
+    <section class="alert alert-warning">
+        <code>Please note the project is in debugg mode by default. To change it, go to mixture.json and change "debug": true" to "debug": false".</code>
+    </section>
+
+    <section class="alert alert-info">
+        <p>Also it will be using Gridset and not the built in grid system of Bootstrap.</p>
+    </section>
+
+<a href="/example">Example page.</a>
+
+</main>
+
+<aside>
+    <section>
+        <h1>Update for Mixture v2.46</h1>
+        <ul>
+        	<li>Add javascript in assets/javascripts/application.js</li>
+        	<li>Edit styles in assets/stylesheets/style.scss</li>
+        	<li>Edit MEDIAQUERIES in assets/stylesheets/_mediaqueries.scss</li>
+        	<li>Edit variables in assets/stylesheets/_variables.scss (Own and Bootstrap)</li>
+        	<li>Add images in app/img</li>
+        	<li>Add fonts in app/fonts</li>
+        </ul>
+    </section>
+
+</aside>
+
+{% endblock %}

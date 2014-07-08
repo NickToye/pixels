@@ -1,0 +1,338 @@
+<!-- Navs -->
+<article id="bs-navs">
+	<header>
+		<h1>Navs</h1>
+		<p>Various navigation elements such as Tabs, Pills and Pagination</p>
+	</header>
+	<!-- Tabs -->
+	<section id="bs-tabs" class="panel">
+		<header class="panel__heading">
+			<h2>Tabs</h2>
+			<p>Tabbed navigation, works well with JS plugin for tabbable areas</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Default Tabs</h3>
+				</header>
+				<ul class="nav nav--tabs" role="tablist">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Justified Tabs</h3>
+				</header>
+				<ul class="nav nav--tabs nav--justified" role="tablist">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Disabled Links</h3>
+				</header>
+				<ul class="nav nav--tabs" role="tablist">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li class="disabled"><a href="#">Disabled</a></li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Tabs with Dropdowns</h3>
+				</header>
+				<ul class="nav nav--tabs" role="tablist">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Dropdown <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Pills -->
+	<section id="bs-pills" class="panel">
+		<header class="panel__heading">
+			<h2>Pills</h2>
+			<p>Similar to tabs, but with pills.  Includes a vertically stacked option</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Horizontal Pills</h3>
+				</header>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Stacked Pills</h3>
+				</header>
+				<ul class="nav nav--pills nav--stacked" style="width:300px";>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Justified Pills</h3>
+				</header>
+				<ul class="nav nav--pills nav--justified">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Disabled Pills</h3>
+				</header>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="disabled"><a href="#">Disabled</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Pills with Dropdowns</h3>
+				</header>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Dropdown <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Pagination -->
+	<section id="bs-pagination" class="panel">
+		<header class="panel__heading">
+			<h2>Pagination</h2>
+			<p>Providing pagination links</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Default</h3>
+				</header>
+				<ul class="pagination">
+					<li><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Disabled and Active States</h3>
+				</header>
+				<ul class="pagination">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Sizing</h3>
+				</header>
+				<ul class="pagination pagination--lg">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+				<ul class="pagination">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+				<ul class="pagination pagination--sm">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Pager -->
+	<section id="bs-pager" class="panel">
+		<header class="panel__heading">
+			<h2>Pager</h2>
+			<p>Providing quick previous and next links</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Default</h3>
+				</header>
+				<ul class="pager">
+					<li class="pager__page"><a href="#"><i class="fa fa-caret-left"></i>Previous</a></li>
+					<li class="pager__page"><a href="#">Next<i class="fa fa-caret-right"></i></a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Aligned Links</h3>
+				</header>
+				<ul class="pager">
+					<li class="pager__page pager__previous"><a href="#"><i class="fa fa-caret-left"></i>Previous</a></li>
+					<li class="pager__page pager__next"><a href="#">Next<i class="fa fa-caret-right"></i></a></li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Disabled Links</h3>
+				</header>
+				<ul class="pager">
+					<li class="pager__page pager__previous pager__disabled"><a href="#"><i class="fa fa-caret-left"></i>Previous</a></li>
+					<li class="pager__page pager__next"><a href="#">Next<i class="fa fa-caret-right"></i></a></li>
+				</ul>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Navbar -->
+	<section id="bs-navbar" class="panel">
+		<header class="panel__heading">
+			<h2>Navbar</h2>
+			<p>Responsive meta components that serve as navigation headers for your application or site</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Default</h3>
+				</header>
+				<nav class="navbar navbar--default" role="navigation">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar__header">
+							<button type="button" class="navbar__toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar__brand" href="#">Brand</a>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar__collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar__nav">
+								<li class="active"><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+							<form class="form navbar__form navbar__left" role="search">
+								<fieldset class="controls">
+									<input type="text" class="controls--control" placeholder="Search">
+								</fieldset>
+								<button type="submit" class="btn btn--default">Submit</button>
+							</form>
+							<ul class="nav navbar__nav navbar__right">
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+					</nav>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+</article>

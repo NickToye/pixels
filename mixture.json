@@ -1,0 +1,40 @@
+{
+  "autoPrefixer": {
+    "active": true,
+    "browsers": [
+      "last 2 version",
+      "> 1%",
+      "ie 8",
+      "ie 7"
+    ]
+  },
+  "convertHtml": {
+  "extension": ".html",
+  "path": null,
+  "ignoreUrls": null,
+  "relativePaths": true,
+  "default": null
+  },
+  "debug": true,
+  "domain": null,
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": [
+    "assets","app"
+  ],
+  "followLeader": true,
+  "preprocessorScriptOutput": "app/js",
+  "preprocessorStyleOutput": "app/css",
+  "projectDescription": "Starter kit based on Bootstrap and Sass.",
+  "projectName": "Pixels",
+  "publishedId": null,
+  "reload": 0,
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": false
+}

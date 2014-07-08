@@ -1,0 +1,37 @@
+// Color
+// ---------------------------
+// Bootstrap CSS Component
+ul.palette {
+	li {
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		color: $white;
+		line-height: 100px;
+		text-align: center;
+		margin-bottom: 4px;
+		border-radius: $radius;
+		@include gs-media(t,min) {
+			margin-bottom: 0;
+		}
+		&.brand-primary { background-color: $brand-primary;}
+		&.brand-secondary { background-color: $brand-secondary;}
+		&.gray-darker { background-color: $gray-darker;}
+		&.gray-dark { background-color: $gray-dark;}
+		&.gray { background-color: $gray;}
+		&.gray-light { background-color: $gray-light;}
+		&.gray-lighter { background-color: $gray-lighter; color: $gray;}
+		&.gray-lightest { background-color: $gray-lightest; color: $gray;}
+		&.brand-success { background-color: $brand-success;}
+		&.brand-warning { background-color: $brand-warning;}
+		&.brand-info { background-color: $brand-info;}
+		&.brand-danger { background-color: $brand-danger;}
+		&.brand-twitter { background-color: $brand-twitter;}
+		&.brand-facebook { background-color: $brand-facebook;}
+		&.brand-linkedin { background-color: $brand-linkedin;}
+		&.brand-pinterest { background-color: $brand-pinterest;}
+		&.brand-dribbble { background-color: $brand-dribbble;}
+		&.brand-google { background-color: $brand-google;}
+		i.fa { color: $white; @include font-size($font-size-large, $line-height: false, $margin-bottom: false);}
+	}
+}

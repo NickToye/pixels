@@ -1,0 +1,40 @@
+// Figures
+// ---------------------------
+// Bootstrap Component
+
+figure {
+	img.img {
+	@include zero;
+		&--thumbnail {
+			display: block;
+			padding: $thumbnail-padding;
+			line-height: $base-line-height;
+			background-color: $thumbnail-background-color;
+			border: 1px solid $thumbnail-border-color;
+			border-radius: $thumbnail-border-radius;
+			@include transition(all .2s ease-in-out);
+
+			> img,
+			a > img {
+				@include img-responsive();
+				margin-left: auto;
+				margin-right: auto;
+			}
+			&:hover,&:focus,.active { border-color: $link-color;}
+		}
+		&--circle {
+			border-radius: $circle-radius;
+		}
+		&--rounded {
+			border-radius: $radius;
+		}
+	}
+	figcaption {
+		padding: $thumbnail-caption-padding;
+		color: $thumbnail-caption-text-color;
+		@include font-size($font-size-small, $line-height: false, $margin-bottom: false);
+		font-style: italic;
+		text-align: center;
+	}
+}
+

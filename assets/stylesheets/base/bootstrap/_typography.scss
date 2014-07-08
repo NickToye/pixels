@@ -1,0 +1,250 @@
+// Typography
+// ---------------------------
+// Bootstrap CSS Component
+
+// - Font Sizes
+h1, .h1 {@include font-size($h1, $line-height: true, $margin-bottom: true);}
+h2, .h2 {@include font-size($h2, $line-height: true, $margin-bottom: true);}
+h3, .h3 {@include font-size($h3, $line-height: true, $margin-bottom: true);}
+h4, .h4 {@include font-size($h4, $line-height: true, $margin-bottom: true);}
+h5, .h5 {@include font-size($h5, $line-height: true, $margin-bottom: true);}
+h6, .h6 {@include font-size($h6, $line-height: true, $margin-bottom: true);}
+p {@include font-size($p, $line-height: true, $margin-bottom: true);}
+
+// - Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: $headings-text-color;
+	font: {
+		family: $base-font-family;
+		weight: $normal;
+	}
+	small {
+		color: $headings-small-text-color;
+		font-weight: $normal;
+		line-height: normal;
+		vertical-align: middle;
+	}
+}
+
+
+
+h1,h2,.h1,.h2 {
+	font: {
+		family: $base-font-family-headings;
+	}
+}
+
+// - With small element
+h1, .h1,
+h2, .h2 {
+  	small,
+  	.small {
+	  	font: {
+	  		size: 50%;
+	  	}
+  	}
+}
+h3, .h3,
+h4, .h4 {
+	font-weight: $normal;
+	small,
+	.small {
+		font: {
+			size: 75%;
+		}
+	}
+}
+
+main article h1 {
+	@include font-size($h1, $line-height: true, $margin-bottom: true);
+	color: $brand-secondary;
+}
+
+// - Body text
+p {
+	&.lead {
+		@include font-size($font-size-large, $line-height: false, $margin-bottom: true);
+		font-weight: $normal;
+		line-height: 1.5;
+	}
+}
+
+// - Links
+a {
+	color: $link-color;
+/* 	@include transition(color, linear $transition-speed); */ // TODO: considering dropping this, flashes on load.
+	&:hover, &:visited {
+		color: $link-hover-color;
+	}
+}
+
+
+// - Misc
+small,
+.small  { @include font-size($font-size-small, $line-height: true, $margin-bottom: true); }
+cite    { font-style: normal; }
+
+// - Abbreviations and acronyms
+abbr[title],
+// Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted $abbr-border-color;
+}
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+
+// - Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+
+// - Contextual colors
+.text-muted {
+  color: $text-muted;
+}
+
+@include text-emphasis-variant('.text-primary', $brand-primary);
+
+@include text-emphasis-variant('.text-success', $state-success-text-color);
+
+@include text-emphasis-variant('.text-info', $state-info-text-color);
+
+@include text-emphasis-variant('.text-warning', $state-warning-text-color);
+
+@include text-emphasis-variant('.text-danger', $state-danger-text-color);
+
+// - Contextual backgrounds
+.bg-primary {
+  color: $white;
+}
+@include bg-variant('.bg-primary', $brand-primary);
+
+@include bg-variant('.bg-success', $state-success-background-color);
+
+@include bg-variant('.bg-info', $state-info-background-color);
+
+@include bg-variant('.bg-warning', $state-warning-background-color);
+
+@include bg-variant('.bg-danger', $state-danger-background-color);
+
+
+// - Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: rem($rhythm-unit);
+	list-style-position: inside;
+	ul,
+	ol {
+		margin-bottom: 0;
+	}
+}
+
+// - List options
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+	@extend .list-unstyled;
+
+
+	> li {
+		display: inline-block;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+// - Definition Lists
+dl {
+	margin-top: 0; // Remove browser default
+	margin-bottom: rem($rhythm-unit);
+}
+dt,
+dd {
+	@include font-size($base-font-size, $line-height: true, $margin-bottom: true);
+}
+dt {
+	font-weight: $bold;
+}
+dd {
+	margin-left: 0; // Undo browser default
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+@include gs-media(t,min) {
+	.dl-horizontal {
+		dt {
+			float: left;
+			width: ($component-offset-horizontal - 20);
+			clear: left;
+			text-align: right;
+			@include text-overflow();
+		}
+		dd {
+			margin-left: $component-offset-horizontal;
+			@include clearfix();
+		}
+	}
+}
+
+// - Blockquotes
+blockquote {
+	padding: rem($rhythm-unit);
+	margin: 0 0 rem($rhythm-unit);
+	font-size: $blockquote-font-size;
+	border-left: $blockquote-border-size $blockquote-border-style $blockquote-border-color;
+	p,
+	ul,
+	ol {
+		@include font-size($base-font-size, $line-height: true, $margin-bottom: true);
+	}
+	cite {
+		display: block;
+		@include font-size($font-size-small, $line-height: true, $margin-bottom: false);
+		color: $blockquote-cite-color;
+		&:before {
+		  content: '\2014 \00A0'; // em dash, nbsp
+		}
+	}
+}
+
+// - Addresses
+address {
+	@include font-size($base-font-size, $line-height: true, $margin-bottom: true);
+}
+
+// - Typefaces -- for display purposes only
+p {
+
+	&.base-font-family { font-family: $base-font-family;}
+	&.base-font-family-serif { font-family: $base-font-family-serif;}
+	&.base-font-family-headings { font-family: $base-font-family-headings; @include font-size($h2, $line-height: true, $margin-bottom: false);}
+	&.base-font-family-condensed { font-family: $base-font-family-condensed; @include font-size($h2, $line-height: true, $margin-bottom: false);}
+	&.base-font-family-code { font-family: $base-font-family-code;}
+	&.base-font-family-amp { font-family: $base-font-family-amp; font-style: italic;}
+	strong { font-weight: $bold;}
+	&.light { font-weight: $light;}
+	&.normal { font-weight: $normal;}
+	&.semi-bold { font-weight: $semi-bold;}
+	&.bold { font-weight: $bold;}
+	&.extra-bold { font-weight: $extra-bold;}
+}

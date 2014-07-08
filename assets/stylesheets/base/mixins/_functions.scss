@@ -1,0 +1,15 @@
+// Functions
+// ---------------------------
+// Function file
+
+// Function to replace pixels with rems
+@function rem($target) {
+  @if $target == 0 { @return 0 }
+  @return $target / $base-font-size + 0rem;
+}
+
+// Function to replace pixels with ems
+@function em($target, $context: $base-font-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0em;
+}

@@ -1,0 +1,743 @@
+<!-- Forms -->
+<article id="bs-forms">
+	<header>
+		<h1>Forms</h1>
+		<p>Providing basic, horizontal and inline form styles as well as inputs, buttons and button groups</p>
+	</header>
+	<!-- Basic Form -->
+	<section id="bs-basic-form" class="panel">
+		<header class="panel__heading">
+			<h2>Basic Form</h2>
+			<p>Standard form styles</p>
+		</header>
+		<div class="panel__body">
+			<form role="form" class="form">
+				<fieldset class="controls">
+					<legend>Optional legend</legend>
+					<label for="exampleInputEmail1" class="controls--label">Email address</label>
+					<input type="email" class="controls--control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="Enter email">
+					<p class="controls--note"><i class="fa fa-info-circle"></i>	Notes here</p>
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword1" class="controls--label">Password</label>
+					<input type="password" class="controls--control" id="exampleInputPassword1" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputFile" class="controls--label">File input</label>
+					<input type="file" class="controls--control" id="exampleInputFile">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label controls--control__checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls">
+					<h3 class="controls--label">Radio buttons</h3>
+					<div class="input-group">
+						<label class="controls--label controls--control__radio">
+							<input type="radio" name="radios" id="radio_1" value="radio_1" checked>
+							Apple
+						</label>
+						<label class="controls--label controls--control__radio">
+							<input type="radio" name="radios" id="radio_2" value="radio_2" >
+							Orange
+						</label>
+						<label class="controls--label controls--control__radio">
+							<input type="radio" name="radios" id="radio_3" value="radio_3" >
+							Banana
+						</label>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label">Other Comments</label>
+					<textarea class="controls--control" rows="3"></textarea>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label">Disabled Field</label>
+					<input type="text" class="controls--control" id="disabledText" disabled>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label">Read-only Field</label>
+					<input type="text" class="controls--control" id="readOnly" placeholder="this is read only" readonly>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label">Small Field</label>
+					<input type="text" class="controls--control input-sm" id="smallField">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label">Large Field</label>
+					<input type="text" class="controls--control input-lg" id="smallField">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label">Select something</label>
+					<select name="colors" class="controls--control">
+						<option value="blue" selected="selected">Blue</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+					</select>
+				</fieldset>
+				<fieldset class="controls">
+					<button type="submit" name="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Inline Form -->
+	<section id="bs-inline-form" class="panel">
+		<header class="panel__heading">
+			<h2>Inline Form</h2>
+			<p>Styles for an inline form that will also stack in mobile view</p>
+		</header>
+		<div class="panel__body">
+			<form role="form" class="form form--inline">
+				<fieldset class="controls">
+					<label for="exampleInputEmail2" class="sr-only controls--label">Email address</label>
+					<input type="email" class="controls--control" id="exampleInputEmail2" placeholder="Enter email">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword2" class="sr-only controls--label">Password</label>
+					<input type="password" class="controls--control" id="exampleInputPassword2" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label controls--control__checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Horizontal Form -->
+	<section id="bs-horizontal-form" class="panel">
+		<header class="panel__heading">
+			<h2>Horizontal Form</h2>
+			<p>Styles for a horizontal form that also stacks in mobile view</p>
+		</header>
+		<div class="panel__body">
+			<form role="form" class="form form--horizontal" data-bv-message="This value is not valid">
+				<fieldset class="controls">
+					<label for="exampleInputEmail2" class="controls--label">Email address</label>
+					<input type="email" class="controls--control" name="email" id="exampleInputEmail2" placeholder="Enter email">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputStatic" class="controls--label">Static Control</label>
+					<p class="controls--static">nick@pixelsandcode.co.uk</p>
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword2" class="controls--label">Password</label>
+					<input type="password" class="controls--control" id="exampleInputPassword2" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls--label controls--control__checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls controls__buttons">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Validation States -->
+	<section id="bs-validation-states" class="panel">
+		<header class="panel__heading">
+			<h2>Validation States</h2>
+			<p>Styles for validation states</p>
+		</header>
+		<div class="panel__body">
+			<form role="form" class="form">
+				<fieldset class="controls">
+					<label for="exampleInputStateless" class="controls--label">No State</label>
+					<input type="email" class="controls--control" id="exampleInputStateless" placeholder="Enter email">
+					<p class="controls--note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-success">
+					<label for="exampleInputSuccess" class="controls--label">Success</label>
+					<input type="email" class="controls--control" id="exampleInputSuccess" placeholder="Enter email">
+					<p class="controls--note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-warning">
+					<label for="exampleInputWarning" class="controls--label">Warning</label>
+					<input type="password" class="controls--control" id="exampleInputWarning" placeholder="Password">
+					<p class="controls--note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-error">
+					<label for="exampleInputError" class="controls--label">Error</label>
+					<input type="password" class="controls--control" id="exampleInputError" placeholder="Password">
+					<p class="controls--note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls controls__buttons">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Input Groups -->
+	<section id="bs-input-groups" class="panel">
+		<header class="panel__heading">
+			<h2>Input Groups</h2>
+			<p>Extend form controls by adding text or buttons before, after or on both sides of any text based input</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<form role="form" class="form">
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group--addon">@</span>
+						<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group--addon">.00</span>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group--addon">@</span>
+						<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group--addon">.00</span>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group input-group__input-group-lg">
+						<span class="input-group--addon">@</span>
+						<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group input-group__input-group-sm">
+						<span class="input-group--addon">@</span>
+						<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+			</form>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Checkboxes and Radios</h3>
+				</header>
+				<form role="form" class="form">
+					<fieldset class="controls">
+						<div class="input-group">
+							<span class="input-group--addon">
+								<input type="checkbox">
+							</span>
+							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+						</div>
+					</fieldset>
+					<fieldset class="controls">
+						<div class="input-group">
+							<span class="input-group--addon">
+								<input type="radio">
+							</span>
+							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+						</div>
+					</fieldset>
+				</form>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Button addons</h3>
+				</header>
+				<form role="form" class="form">
+					<fieldset class="controls">
+						<div class="input-group">
+							<span class="input-group--btn">
+								<button class="btn btn--success" type="button">Go!</button>
+							</span>
+							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+						</div>
+					</fieldset>
+					<fieldset class="controls">
+						<div class="input-group">
+							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+							<span class="input-group--btn">
+								<button class="btn btn--danger" type="button">Danger!</button>
+							</span>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Button with dropdowns</h3>
+				</header>
+				<form role="form" class="form">
+					<fieldset class="controls">
+						<div class="input-group">
+							<span class="input-group--btn">
+								<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</span>
+							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+						</div>
+					</fieldset>
+					<fieldset class="controls">
+						<div class="input-group">
+							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+							<span class="input-group--btn">
+								<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</span>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Segmented buttons</h3>
+				</header>
+				<form role="form" class="form">
+					<fieldset class="controls">
+						<div class="input-group">
+							<span class="input-group--btn">
+								<button class="btn btn-info" type="button">Info!</button>
+								<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</span>
+							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+						</div>
+					</fieldset>
+					<fieldset class="controls">
+						<div class="input-group">
+							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
+							<span class="input-group--btn">
+								<button class="btn btn-info" type="button">Info!</button>
+								<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</span>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Buttons -->
+	<section id="bs-buttons" class="panel">
+		<header class="panel__heading">
+			<h2>Buttons</h2>
+			<p>A selection of buttons in various states</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Options</h3>
+				</header>
+				<!-- Default Button -->
+				<button type="button" class="btn btn--default">Default</button>
+				<!-- Primary Button -->
+				<button type="button" class="btn btn--primary">Primary</button>
+				<!-- Success Button -->
+				<button type="button" class="btn btn--success">Success</button>
+				<!-- Info Button -->
+				<button type="button" class="btn btn--info">Info</button>
+				<!-- Warning Button -->
+				<button type="button" class="btn btn--warning">Warning</button>
+				<!-- Danger Button -->
+				<button type="button" class="btn btn--danger">Danger</button>
+				<!-- Link Button -->
+				<button type="button" class="btn btn--link">Link</button>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Sizes</h3>
+				</header>
+					<!-- Large Button -->
+					<p><button type="button" class="btn btn--primary btn--lg">Large Button</button></p>
+					<!-- Default Button -->
+					<p><button type="button" class="btn btn--primary">Default Button</button></p>
+					<!-- Small Button -->
+					<p><button type="button" class="btn btn--primary btn--sm">Small Button</button></p>
+					<!-- Extra Small Button -->
+					<p><button type="button" class="btn btn--primary btn--xs">Extra Small Button</button></p>
+					<!-- Block Level Button -->
+					<div class="well" style="width:400px;">
+						<button type="button" class="btn btn--primary btn--block">Block Level Button</button>
+					</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Active State</h3>
+				</header>
+				<button type="button" class="btn btn--primary active">Primary Button</button>
+				<!-- Anchor element -->
+				<a href="#" class="btn btn--primary active">Primary Link</a>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Disabled State</h3>
+				</header>
+				<button type="button" class="btn btn--primary" disabled="disabled">Disabled  Button</button>
+				<a href="#" class="btn btn--primary" disabled="disabled">Primary Link</a>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Button tags</h3>
+				</header>
+				<a class="btn btn--default" href="#" role="button">Link</a>
+				<button class="btn btn--default" type="submit">Button</button>
+				<input class="btn btn--default" type="button" value="Input">
+				<input class="btn btn--default" type="submit" value="Submit">
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Button Groups -->
+	<section id="bs-button-groups" class="panel">
+		<header class="panel__heading">
+			<h2>Button Groups</h2>
+			<p>Grouping buttons together</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Basic Example</h3>
+				</header>
+				<div class="btn-group">
+					<button type="button" class="btn btn--default">Left</button>
+					<button type="button" class="btn btn--default">Middle</button>
+					<button type="button" class="btn btn--default">Right</button>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Button Toolbar</h3>
+				</header>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">1</button>
+						<button type="button" class="btn btn--default">2</button>
+						<button type="button" class="btn btn--default">3</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">4</button>
+						<button type="button" class="btn btn--default">5</button>
+						<button type="button" class="btn btn--default">6</button>
+						<button type="button" class="btn btn--default">7</button>
+						<button type="button" class="btn btn--default active">8</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">9</button>
+						<button type="button" class="btn btn--default">10</button>
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Sizing</h3>
+				</header>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group btn-group--lg">
+						<button type="button" class="btn btn--default">Left</button>
+						<button type="button" class="btn btn--default">Middle</button>
+						<button type="button" class="btn btn--default">Right</button>
+					</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group ">
+						<button type="button" class="btn btn--default">Left</button>
+						<button type="button" class="btn btn--default">Middle</button>
+						<button type="button" class="btn btn--default">Right</button>
+					</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group btn-group--sm">
+						<button type="button" class="btn btn--default">Left</button>
+						<button type="button" class="btn btn--default">Middle</button>
+						<button type="button" class="btn btn--default">Right</button>
+					</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group btn-group--xs">
+						<button type="button" class="btn btn--default">Left</button>
+						<button type="button" class="btn btn--default">Middle</button>
+						<button type="button" class="btn btn--default">Right</button>
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Nesting</h3>
+				</header>
+				<div class="btn-group">
+					<button type="button" class="btn btn--default">1</button>
+					<button type="button" class="btn btn--default">2</button>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
+							Dropdown
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Dropdown link</a></li>
+							<li><a href="#">Dropdown link</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Vertical Variation</h3>
+				</header>
+				<div class="btn-group-vertical">
+					<button type="button" class="btn btn--default">1</button>
+					<button type="button" class="btn btn--default">2</button>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
+							Dropdown
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Dropdown link</a></li>
+							<li><a href="#">Dropdown link</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Justified Button Groups</h3>
+				</header>
+				<div class="btn-group btn-group--justified">
+					<div class="btn-group">
+						<a href="#" class="btn btn--default">Link</a>
+					</div>
+					<div class="btn-group">
+						<a href="#" class="btn btn--default">Link</a>
+					</div>
+					<div class="btn-group">
+						<a href="#" class="btn btn--default">Link</a>
+					</div>
+				</div>
+				<div class="btn-group btn-group--justified">
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">Button</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">Button</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">Button</button>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Button Dropdowns -->
+	<section id="bs-button-dropdowns" class="panel">
+		<header class="panel__heading">
+			<h2>Button Dropdowns</h2>
+			<p>Using any button to trigger a dropdown menu</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Single Button</h3>
+				</header>
+				<div class="btn-group">
+					<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
+						Action <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">
+						Action <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Split Button Dropdowns</h3>
+				</header>
+				<div class="btn-group">
+					<button type="button" class="btn btn--danger">Action</button>
+					<button type="button" class="btn btn--danger dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn--success">Action</button>
+					<button type="button" class="btn btn--success dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Sizing</h3>
+				</header>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group">
+					<button type="button" class="btn btn--success btn--lg">Action</button>
+					<button type="button" class="btn btn--success btn--lg dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group">
+					<button type="button" class="btn btn--success btn--sm">Action</button>
+					<button type="button" class="btn btn--success btn--sm dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group">
+					<button type="button" class="btn btn--success btn--xs">Action</button>
+					<button type="button" class="btn btn--success btn--xs dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Dropup Variation</h3>
+				</header>
+				<div class="btn-group dropup">
+					<button type="button" class="btn btn--warning">Dropup</button>
+					<button type="button" class="btn btn--warning dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+</article>

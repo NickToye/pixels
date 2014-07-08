@@ -1,0 +1,139 @@
+// Buttons
+// ---------------------------
+// Bootstrap CSS Component
+
+// TODO: Apply BEM to Buttons
+// TODO: Apply Baseline Grid
+
+// Base styles
+// --------------------------------------------------
+
+
+.btn {
+	display: inline-block;
+	margin-bottom: 0; // For input.btn
+	font-weight: $btn-font-weight;
+	text: {
+		align: center;
+		decoration: none;
+	}
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	border: 1px solid transparent;
+	white-space: nowrap;
+	@include button-size(rem($rhythm-unit), rem($rhythm-unit), rem($base-font-size), rem($rhythm-unit), $border-radius);
+	@include user-select(none);
+
+	&,
+	&:active,
+		&.active {
+			&:focus {
+				@include tab-focus();
+			}
+		}
+	&:hover,
+	&:focus {
+		color: $btn-default-color;
+		text-decoration: none;
+	}
+	&:active,
+	&.active {
+		outline: 0;
+		background-image: none;
+		@include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		cursor: not-allowed;
+		pointer-events: none; // Future-proof disabling of clicks
+		@include opacity(.65);
+		@include box-shadow(none);
+	}
+	// Font awesome icons
+	i.fa {
+		padding-right:  rem($rhythm-unit);
+	}
+	// Contextual buttons
+	&--default { @include button-variant($btn-default-color, $btn-default-background-color, $btn-default-border-color); }
+	&--primary { @include button-variant($btn-primary-color, $btn-primary-background-color, $btn-primary-border-color);}
+	&--secondary { @include button-variant($btn-secondary-color, $btn-secondary-background-color, $btn-secondary-border-color); }
+	&--success { @include button-variant($btn-success-color, $btn-success-background-color, $btn-success-border-color);}
+	&--info { @include button-variant($btn-info-color, $btn-info-background-color, $btn-info-border-color); }
+	&--warning { @include button-variant($btn-warning-color, $btn-warning-background-color, $btn-warning-border-color);}
+	&--danger { @include button-variant($btn-danger-color, $btn-danger-background-color, $btn-danger-border-color);}
+	&--link {
+		color: $link-color;
+		font-weight: normal;
+		cursor: pointer;
+		border-radius: 0;
+		&,
+		&:active,
+		&[disabled],
+		fieldset[disabled] & {
+			background-color: transparent;
+			@include box-shadow(none);
+		}
+		&,
+		&:hover,
+		&:focus,
+		&:active {
+			border-color: transparent;
+		}
+		&:hover,
+		&:focus {
+			color: $link-hover-color;
+			text-decoration: underline;
+			background-color: transparent;
+		}
+		&[disabled],
+		fieldset[disabled] & {
+			&:hover,
+			&:focus {
+			color: $btn-link-disabled-color;
+			text-decoration: none;
+		}
+		}
+	}
+	// Button Sizes
+	&--lg {
+		@include button-size(rem($large-rhythm-unit), rem($large-rhythm-unit), rem($font-size-large), rem($large-rhythm-unit), $border-radius-large);
+		 i.fa { padding-right: rem($large-rhythm-unit);}
+	}
+	&--sm {
+		@include button-size(rem($small-rhythm-unit), rem($small-rhythm-unit), rem($font-size-small), rem($small-rhythm-unit), $border-radius-small);
+	}
+	&--xs {
+		@include button-size(rem($extra-small-rhythm-unit), rem($extra-small-rhythm-unit), rem($font-size-extra-small), rem($small-rhythm-unit), $border-radius-small);
+	}
+	// Block button
+	&--block {
+		display: block;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	&.btn--block {
+		width: 100%;
+	}
+}
+
+
+
+// Vertically space out multiple block buttons
+// TODO: how does this work?
+/*
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+*/
+
+
+

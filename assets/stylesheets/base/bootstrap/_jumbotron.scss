@@ -1,0 +1,53 @@
+// Jumbotron
+// ---------------------------
+// Bootstrap Component
+
+.jumbotron {
+	@include clearfix;
+	padding: $jumbotron-padding;
+	margin-bottom: $jumbotron-padding;
+	color: $jumbotron-color;
+	background-color: $jumbotron-background-color;
+	border: {
+		top: 10px solid rgba(darken($brand-primary,25%),.4);
+		bottom: 1px solid rgba($white, .1);
+	}
+	@include box-shadow(0 0 5px rgba(darken($brand-primary,55%), .1));
+	h1,
+	.h1 {
+		color: $jumbotron-heading-color;
+		font-weight: $bold;
+	}
+	p {
+		margin-bottom: ($jumbotron-padding / 2);
+		font: {
+			size: $jumbotron-font-size;
+			weight: $light;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.wrapper & {
+		border-radius: 0 0 $border-radius-large $border-radius-large;  // Only round corners at higher resolutions if contained in a .wrapper
+	}
+	.wrapper {
+		max-width: 100%;
+	}
+	@include gs-media(t,min) {
+		padding: {
+			top:  ($jumbotron-padding * 1.6);
+			bottom:  ($jumbotron-padding * 1.6);
+		}
+		.container & {
+			padding: {
+				left:  ($jumbotron-padding * 2);
+				right: ($jumbotron-padding * 2);
+			}
+		}
+		h1,
+		.h1 {
+			font-size: rem(($base-font-size * 4.5));
+			}
+		}
+}

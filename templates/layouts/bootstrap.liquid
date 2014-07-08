@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{% block title %}Style Guide{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <!-- Font Awesome -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        {{ "styles.css" | asset_url | stylesheet_tag }}
+		<!-- TypeKit -->
+		<script type="text/javascript" src="//use.typekit.net/lzv1tgn.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <!-- Style block allowing child pages to inject their own styles -->
+        {% block styles %}{% endblock %}
+    </head>
+    <body class="bootstrap">
+        {% include "navbar" %}
+        <div class="wrapper">
+            {% block content %}{% endblock %}
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        {{ "scripts.js" | asset_url | script_tag }}
+        {% block scripts %}{% endblock %}
+        {% include "ga" %}
+    </body>
+</html>

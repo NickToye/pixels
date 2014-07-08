@@ -1,0 +1,8 @@
+// Box Shadow
+// ---------------------------
+// Mixin for Box Shadow
+
+@mixin box-shadow ($values) {
+    -webkit-box-shadow: $values; // iOS Safari 3.2 - 4.3, Android 2.1+
+            box-shadow: $values;
+}
