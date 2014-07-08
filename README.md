@@ -1,20 +1,13 @@
-Bootstrap 3.1 + Sass Mixture starter kit
+Pixels :: Boilerplate files based on Bootstrap 3.1 + Sass
 ================
 
-Simple starter kit for [Bootstrap 3.1 + Sass] in Mixture
-Updated for Mixture v2.46
+Developed in Mixture
 
-###### Uses Bootstrap-Sass 3.1 (http://getbootstrap.com/css/#sass) + autoPrefixer activated.
 
-- Add javascript in assets/javascripts/application.js
-- Edit styles in assets/stylesheets/style.scss
-- Edit MEDIAQUERIES in assets/stylesheets/_mediaqueries.scss
-- Edit variables in assets/stylesheets/_variables.scss (Own and Bootstrap)
-- Add images in app/img
-- Add fonts in app/fonts
+- Add instructions here
 
 ```
     Please feel free to edit, improve or modify whatever you want :)
 ```
-
-Created by Kike Domingo - www.kikedomingo.com
+Developed by Nick Toye - www.pixelsandcode.co.uk
+Originally Created by Kike Domingo - www.kikedomingo.com, and adapted for my own requirements.
