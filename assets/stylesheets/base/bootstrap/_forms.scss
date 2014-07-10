@@ -10,7 +10,7 @@
 //
 // Restyle and baseline non-control form elements.
 
-form.form {
+.form {
 	@include gs-span(m,all);
 	@include gs-media(d,min) {
 		@include gs-span(d,1,8,(1,12));

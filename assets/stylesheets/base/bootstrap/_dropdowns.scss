@@ -57,7 +57,7 @@
 
   // Dividers (basically an hr) within the dropdown
   .divider {
-    @include nav-divider($dropdown-divider-background-color);
+ @include nav-divider($dropdown-divider-background-color);
   }
 
 > li {

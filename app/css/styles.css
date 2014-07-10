@@ -1136,7 +1136,7 @@ table th[class*="col-"] {
       .table-responsive > .table-bordered > tfoot > tr:last-child > td {
         border-bottom: 0; } }
 /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-form.form {
+.form {
   clear: both;
   display: block;
   float: left;
@@ -1144,21 +1144,21 @@ form.form {
   width: 100%; }
   @media only screen and (min-width: 990px) {
     /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form {
+    .form {
       display: block;
       float: left;
       margin-left: 0;
       margin-right: -100%;
       width: 66%; } }
   /* line 19, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-  form.form .controls {
+  .form .controls {
     margin: 0;
     padding: 0;
     border: 0;
     min-width: 0;
     margin-bottom: 0.75rem; }
     /* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form .controls legend {
+    .form .controls legend {
       display: inline-block;
       padding: 0 0.375rem;
       background: #49b067;
@@ -1170,7 +1170,7 @@ form.form {
       border: 0;
       border-radius: 5px; }
     /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form .controls--label {
+    .form .controls--label {
       display: inline-block;
       margin-bottom: 5px;
       font-weight: 400;
@@ -1179,7 +1179,7 @@ form.form {
       font-size: 14px;
       font-size: 0.875rem; }
     /* line 44, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form .controls--control__checkbox, form.form .controls--control__radio {
+    .form .controls--control__checkbox, .form .controls--control__radio {
       font-size: 14px;
       font-size: 0.875rem;
       color: #555555;
@@ -1188,73 +1188,73 @@ form.form {
       padding-left: 20px;
       margin-right: 2%; }
       /* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control__checkbox input, form.form .controls--control__radio input {
+      .form .controls--control__checkbox input, .form .controls--control__radio input {
         position: absolute;
         margin: 4px 0 0 -20px; }
     /* line 58, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form .controls .input-group {
+    .form .controls .input-group {
       position: relative;
       display: table;
       border-collapse: separate; }
       /* line 63, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls .input-group__input-group-lg .controls--control, form.form .controls .input-group__input-group-lg .input-group--addon, form.form .controls .input-group__input-group-lg .input-group--btn {
+      .form .controls .input-group__input-group-lg .controls--control, .form .controls .input-group__input-group-lg .input-group--addon, .form .controls .input-group__input-group-lg .input-group--btn {
         font-size: 24px;
         font-size: 1.5rem;
         line-height: 1; }
       /* line 69, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls .input-group__input-group-sm .controls--control, form.form .controls .input-group__input-group-sm .input-group--addon, form.form .controls .input-group__input-group-sm .input-group--btn {
+      .form .controls .input-group__input-group-sm .controls--control, .form .controls .input-group__input-group-sm .input-group--addon, .form .controls .input-group__input-group-sm .input-group--btn {
         font-size: 12px;
         font-size: 0.75rem;
         line-height: 1; }
       /* line 74, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls .input-group--addon, form.form .controls .input-group--btn, form.form .controls .input-group .controls--control {
+      .form .controls .input-group--addon, .form .controls .input-group--btn, .form .controls .input-group .controls--control {
         position: relative;
         display: table-cell;
         margin-bottom: 0; }
         /* line 78, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:not(:first-child):not(:last-child), form.form .controls .input-group--btn:not(:first-child):not(:last-child), form.form .controls .input-group .controls--control:not(:first-child):not(:last-child) {
+        .form .controls .input-group--addon:not(:first-child):not(:last-child), .form .controls .input-group--btn:not(:first-child):not(:last-child), .form .controls .input-group .controls--control:not(:first-child):not(:last-child) {
           border-radius: 0; }
         /* line 81, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:first-child, form.form .controls .input-group--btn:first-child, form.form .controls .input-group .controls--control:first-child {
+        .form .controls .input-group--addon:first-child, .form .controls .input-group--btn:first-child, .form .controls .input-group .controls--control:first-child {
           border-bottom-right-radius: 0;
           border-top-right-radius: 0; }
         /* line 82, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:last-child, form.form .controls .input-group--btn:last-child, form.form .controls .input-group .controls--control:last-child {
+        .form .controls .input-group--addon:last-child, .form .controls .input-group--btn:last-child, .form .controls .input-group .controls--control:last-child {
           border-bottom-left-radius: 0;
           border-top-left-radius: 0; }
         /* line 83, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:first-child > .btn, form.form .controls .input-group--btn:first-child > .btn, form.form .controls .input-group .controls--control:first-child > .btn {
+        .form .controls .input-group--addon:first-child > .btn, .form .controls .input-group--btn:first-child > .btn, .form .controls .input-group .controls--control:first-child > .btn {
           border-bottom-right-radius: 0;
           border-top-right-radius: 0; }
         /* line 84, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:last-child > .btn, form.form .controls .input-group--btn:last-child > .btn, form.form .controls .input-group .controls--control:last-child > .btn {
+        .form .controls .input-group--addon:last-child > .btn, .form .controls .input-group--btn:last-child > .btn, .form .controls .input-group .controls--control:last-child > .btn {
           border-bottom-left-radius: 0;
           border-top-left-radius: 0; }
         /* line 85, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:first-child > .btn:not(:first-child), form.form .controls .input-group--btn:first-child > .btn:not(:first-child), form.form .controls .input-group .controls--control:first-child > .btn:not(:first-child) {
+        .form .controls .input-group--addon:first-child > .btn:not(:first-child), .form .controls .input-group--btn:first-child > .btn:not(:first-child), .form .controls .input-group .controls--control:first-child > .btn:not(:first-child) {
           border-bottom-left-radius: 0;
           border-top-left-radius: 0; }
         /* line 86, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:last-child > .btn:not(:last-child):not(.dropdown-toggle), form.form .controls .input-group--btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), form.form .controls .input-group .controls--control:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+        .form .controls .input-group--addon:last-child > .btn:not(:last-child):not(.dropdown-toggle), .form .controls .input-group--btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .form .controls .input-group .controls--control:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
           border-bottom-right-radius: 0;
           border-top-right-radius: 0; }
       /* line 88, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls .input-group--addon, form.form .controls .input-group--btn {
+      .form .controls .input-group--addon, .form .controls .input-group--btn {
         width: 1%;
         white-space: nowrap;
         vertical-align: middle; }
       /* line 93, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls .input-group--btn {
+      .form .controls .input-group--btn {
         position: relative;
         font-size: 0; }
         /* line 96, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--btn:first-child > .btn {
+        .form .controls .input-group--btn:first-child > .btn {
           border-right: 0; }
         /* line 97, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--btn:last-child > .btn {
+        .form .controls .input-group--btn:last-child > .btn {
           border-left: 0; }
       /* line 99, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls .input-group--addon {
+      .form .controls .input-group--addon {
         padding: 0.375rem 0.75rem;
         font-size: 14px;
         font-size: 0.875rem;
@@ -1265,18 +1265,18 @@ form.form {
         border: 1px solid #999999;
         border-radius: 5px; }
         /* line 108, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:first-child {
+        .form .controls .input-group--addon:first-child {
           border-right: 0; }
         /* line 109, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form .controls .input-group--addon:last-child {
+        .form .controls .input-group--addon:last-child {
           border-left: 0; }
       /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls .input-group .controls--control {
+      .form .controls .input-group .controls--control {
         float: left;
         width: 100%;
         margin-bottom: 0; }
     /* line 118, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form .controls--control {
+    .form .controls--control {
       display: block;
       width: 100%;
       font-size: 14px;
@@ -1294,17 +1294,17 @@ form.form {
       -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
       transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
       /* line 121, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control[type="search"] {
+      .form .controls--control[type="search"] {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; }
       /* line 122, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control[type="radio"], form.form .controls--control[type="checkbox"] {
+      .form .controls--control[type="radio"], .form .controls--control[type="checkbox"] {
         margin: 4px 0 0;
         margin-top: 1px \9;
         /* IE8-9 */ }
       /* line 127, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control[type="file"] {
+      .form .controls--control[type="file"] {
         display: block;
         border: 0;
         -webkit-box-shadow: none;
@@ -1313,28 +1313,28 @@ form.form {
         font-size: 12px;
         font-size: 0.75rem; }
       /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control input[type="range"] {
+      .form .controls--control input[type="range"] {
         display: block;
         width: 100%; }
       /* line 142, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control input[type="search"] {
+      .form .controls--control input[type="search"] {
         -webkit-appearance: none; }
       /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control input[type="date"] {
+      .form .controls--control input[type="date"] {
         line-height: 0.75rem; }
       /* line 153, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control select[multiple],
-      form.form .controls--control select[size] {
+      .form .controls--control select[multiple],
+      .form .controls--control select[size] {
         height: auto; }
       /* line 158, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control input[type="file"]:focus,
-      form.form .controls--control input[type="radio"]:focus,
-      form.form .controls--control input[type="checkbox"]:focus {
+      .form .controls--control input[type="file"]:focus,
+      .form .controls--control input[type="radio"]:focus,
+      .form .controls--control input[type="checkbox"]:focus {
         outline: thin dotted;
         outline: 5px auto -webkit-focus-ring-color;
         outline-offset: -2px; }
       /* line 164, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control output {
+      .form .controls--control output {
         display: block;
         padding-top: 0.75rem;
         font-size: 16px;
@@ -1342,35 +1342,35 @@ form.form {
         line-height: 1.5;
         color: #555555; }
       /* line 81, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-      form.form .controls--control:focus {
+      .form .controls--control:focus {
         border-color: #ca6253;
         outline: 0;
         background-color: #fbfbfb;
         -webkit-box-shadow: inset 0 1px 1px rgba(202, 98, 83, 0.075), 0 0 8px rgba(202, 98, 83, 0.6);
         box-shadow: inset 0 1px 1px rgba(202, 98, 83, 0.075), 0 0 8px rgba(202, 98, 83, 0.6); }
       /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-      form.form .controls--control::-moz-placeholder {
+      .form .controls--control::-moz-placeholder {
         color: #999999;
         opacity: 1; }
       /* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-      form.form .controls--control:-ms-input-placeholder {
+      .form .controls--control:-ms-input-placeholder {
         color: #999999; }
       /* line 10, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-      form.form .controls--control::-webkit-input-placeholder {
+      .form .controls--control::-webkit-input-placeholder {
         color: #999999; }
       /* line 193, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--control[disabled], form.form .controls--control[readonly], fieldset[disabled] form.form .controls--control {
+      .form .controls--control[disabled], .form .controls--control[readonly], fieldset[disabled] .form .controls--control {
         cursor: not-allowed;
         background-color: #eeeeee;
         opacity: 1; }
     /* line 203, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form .controls select {
+    .form .controls select {
       width: auto; }
     /* line 206, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form .controls textarea {
+    .form .controls textarea {
       height: auto; }
     /* line 209, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form .controls--note {
+    .form .controls--note {
       color: #555555;
       background: #daf1f8;
       border: 1px solid #c5e9f3;
@@ -1380,15 +1380,15 @@ form.form {
       line-height: 1;
       margin-bottom: 0.75rem; }
       /* line 215, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form .controls--note i {
+      .form .controls--note i {
         font-size: 16px;
         font-size: 1rem;
         color: #5bc0de;
         padding-right: 5px; }
   /* line 99, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-  form.form .controls--control.input-sm, form.form .controls .input-group__input-group-sm .controls--control, form.form .input-group-sm > .controls--control.form-control,
-  form.form .input-group-sm > .controls--control.input-group-addon,
-  form.form .input-group-sm > .input-group-btn > .controls--control.btn {
+  .form .controls--control.input-sm, .form .controls .input-group__input-group-sm .controls--control, .form .input-group-sm > .controls--control.form-control,
+  .form .input-group-sm > .controls--control.input-group-addon,
+  .form .input-group-sm > .input-group-btn > .controls--control.btn {
     height: 1rem;
     padding: 0.75rem 0.75rem;
     font-size: 12px;
@@ -1396,25 +1396,25 @@ form.form {
     line-height: 1;
     border-radius: 3.33333px; }
   /* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-  form.form select.controls--control.input-sm, form.form .controls .input-group__input-group-sm select.controls--control, form.form .input-group-sm > select.controls--control.form-control,
-  form.form .input-group-sm > select.controls--control.input-group-addon,
-  form.form .input-group-sm > .input-group-btn > select.controls--control.btn {
+  .form select.controls--control.input-sm, .form .controls .input-group__input-group-sm select.controls--control, .form .input-group-sm > select.controls--control.form-control,
+  .form .input-group-sm > select.controls--control.input-group-addon,
+  .form .input-group-sm > .input-group-btn > select.controls--control.btn {
     height: 1rem;
     line-height: 1rem; }
   /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-  form.form textarea.controls--control.input-sm, form.form .controls .input-group__input-group-sm textarea.controls--control, form.form .input-group-sm > textarea.controls--control.form-control,
-  form.form .input-group-sm > textarea.controls--control.input-group-addon,
-  form.form .input-group-sm > .input-group-btn > textarea.controls--control.btn,
-  form.form select[multiple].controls--control.input-sm,
-  form.form .controls .input-group__input-group-sm select[multiple].controls--control,
-  form.form .input-group-sm > select[multiple].controls--control.form-control,
-  form.form .input-group-sm > select[multiple].controls--control.input-group-addon,
-  form.form .input-group-sm > .input-group-btn > select[multiple].controls--control.btn {
+  .form textarea.controls--control.input-sm, .form .controls .input-group__input-group-sm textarea.controls--control, .form .input-group-sm > textarea.controls--control.form-control,
+  .form .input-group-sm > textarea.controls--control.input-group-addon,
+  .form .input-group-sm > .input-group-btn > textarea.controls--control.btn,
+  .form select[multiple].controls--control.input-sm,
+  .form .controls .input-group__input-group-sm select[multiple].controls--control,
+  .form .input-group-sm > select[multiple].controls--control.form-control,
+  .form .input-group-sm > select[multiple].controls--control.input-group-addon,
+  .form .input-group-sm > .input-group-btn > select[multiple].controls--control.btn {
     height: auto; }
   /* line 99, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-  form.form .controls--control.input-lg, form.form .controls .input-group__input-group-lg .controls--control, form.form .input-group-lg > .controls--control.form-control,
-  form.form .input-group-lg > .controls--control.input-group-addon,
-  form.form .input-group-lg > .input-group-btn > .controls--control.btn {
+  .form .controls--control.input-lg, .form .controls .input-group__input-group-lg .controls--control, .form .input-group-lg > .controls--control.form-control,
+  .form .input-group-lg > .controls--control.input-group-addon,
+  .form .input-group-lg > .input-group-btn > .controls--control.btn {
     height: 3rem;
     padding: 0.75rem 0.75rem;
     font-size: 24px;
@@ -1422,23 +1422,23 @@ form.form {
     line-height: 1;
     border-radius: 7.5px; }
   /* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-  form.form select.controls--control.input-lg, form.form .controls .input-group__input-group-lg select.controls--control, form.form .input-group-lg > select.controls--control.form-control,
-  form.form .input-group-lg > select.controls--control.input-group-addon,
-  form.form .input-group-lg > .input-group-btn > select.controls--control.btn {
+  .form select.controls--control.input-lg, .form .controls .input-group__input-group-lg select.controls--control, .form .input-group-lg > select.controls--control.form-control,
+  .form .input-group-lg > select.controls--control.input-group-addon,
+  .form .input-group-lg > .input-group-btn > select.controls--control.btn {
     height: 3rem;
     line-height: 3rem; }
   /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
-  form.form textarea.controls--control.input-lg, form.form .controls .input-group__input-group-lg textarea.controls--control, form.form .input-group-lg > textarea.controls--control.form-control,
-  form.form .input-group-lg > textarea.controls--control.input-group-addon,
-  form.form .input-group-lg > .input-group-btn > textarea.controls--control.btn,
-  form.form select[multiple].controls--control.input-lg,
-  form.form .controls .input-group__input-group-lg select[multiple].controls--control,
-  form.form .input-group-lg > select[multiple].controls--control.form-control,
-  form.form .input-group-lg > select[multiple].controls--control.input-group-addon,
-  form.form .input-group-lg > .input-group-btn > select[multiple].controls--control.btn {
+  .form textarea.controls--control.input-lg, .form .controls .input-group__input-group-lg textarea.controls--control, .form .input-group-lg > textarea.controls--control.form-control,
+  .form .input-group-lg > textarea.controls--control.input-group-addon,
+  .form .input-group-lg > .input-group-btn > textarea.controls--control.btn,
+  .form select[multiple].controls--control.input-lg,
+  .form .controls .input-group__input-group-lg select[multiple].controls--control,
+  .form .input-group-lg > select[multiple].controls--control.form-control,
+  .form .input-group-lg > select[multiple].controls--control.input-group-addon,
+  .form .input-group-lg > .input-group-btn > select[multiple].controls--control.btn {
     height: auto; }
   /* line 226, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-  form.form--inline, form.navbar__form {
+  .form--inline, .navbar__form {
     clear: both;
     display: block;
     float: left;
@@ -1446,7 +1446,7 @@ form.form {
     width: 100%; }
     @media only screen and (min-width: 0px) {
       /* line 229, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form--inline .controls, form.navbar__form .controls {
+      .form--inline .controls, .navbar__form .controls {
         clear: both;
         display: block;
         float: left;
@@ -1454,7 +1454,7 @@ form.form {
         width: 100%; } }
   @media only screen and (min-width: 0px) and (min-width: 769px) {
     /* line 229, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form--inline .controls, form.navbar__form .controls {
+    .form--inline .controls, .navbar__form .controls {
       width: auto;
       display: inline-block;
       clear: none;
@@ -1463,28 +1463,28 @@ form.form {
       vertical-align: middle; } }
     @media only screen and (min-width: 0px) {
         /* line 239, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-        form.form--inline .controls--control, form.navbar__form .controls--control {
+        .form--inline .controls--control, .navbar__form .controls--control {
           margin-bottom: 0;
           display: inline-block; }
           /* line 242, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-          form.form--inline .controls--control__checkbox, form.navbar__form .controls--control__checkbox, form.form--inline .controls--control__radio, form.navbar__form .controls--control__radio {
+          .form--inline .controls--control__checkbox, .navbar__form .controls--control__checkbox, .form--inline .controls--control__radio, .navbar__form .controls--control__radio {
             display: inline-block;
             margin: 0;
             padding-left: 20px;
             position: relative; }
             /* line 247, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-            form.form--inline .controls--control__checkbox input[type="radio"], form.navbar__form .controls--control__checkbox input[type="radio"], form.form--inline .controls--control__checkbox input[type="checkbox"], form.navbar__form .controls--control__checkbox input[type="checkbox"], form.form--inline .controls--control__radio input[type="radio"], form.navbar__form .controls--control__radio input[type="radio"], form.form--inline .controls--control__radio input[type="checkbox"], form.navbar__form .controls--control__radio input[type="checkbox"] {
+            .form--inline .controls--control__checkbox input[type="radio"], .navbar__form .controls--control__checkbox input[type="radio"], .form--inline .controls--control__checkbox input[type="checkbox"], .navbar__form .controls--control__checkbox input[type="checkbox"], .form--inline .controls--control__radio input[type="radio"], .navbar__form .controls--control__radio input[type="radio"], .form--inline .controls--control__radio input[type="checkbox"], .navbar__form .controls--control__radio input[type="checkbox"] {
               float: none;
               position: absolute;
               margin: 4px 0 0 -20px; }
       /* line 256, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form--inline .input-group > .form-control, form.navbar__form .input-group > .form-control {
+      .form--inline .input-group > .form-control, .navbar__form .input-group > .form-control {
         width: 100%; }
       /* line 264, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form--inline .has-feedback .form-control-feedback, form.navbar__form .has-feedback .form-control-feedback {
+      .form--inline .has-feedback .form-control-feedback, .navbar__form .has-feedback .form-control-feedback {
         top: 0; } }
   /* line 269, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-  form.form--horizontal {
+  .form--horizontal {
     width: 100%;
     /*
       @media (min-width: $screen-sm-min) {
@@ -1494,7 +1494,7 @@ form.form {
       }
     */ }
     /* line 272, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form--horizontal .controls--label {
+    .form--horizontal .controls--label {
       display: block;
       float: left;
       margin-left: 0;
@@ -1504,7 +1504,7 @@ form.form {
       margin-bottom: 0;
       padding-top: 0.75rem; }
     /* line 278, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form--horizontal .controls--control {
+    .form--horizontal .controls--control {
       display: block;
       float: left;
       margin-left: 25.5%;
@@ -1513,7 +1513,7 @@ form.form {
       margin-top: 0;
       margin-bottom: 0; }
       /* line 282, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-      form.form--horizontal .controls--control__checkbox, form.form--horizontal .controls--control__radio {
+      .form--horizontal .controls--control__checkbox, .form--horizontal .controls--control__radio {
         display: block;
         float: left;
         margin-left: 25.5%;
@@ -1524,7 +1524,7 @@ form.form {
         padding-top: 0.75rem;
         min-height: 0.75rem; }
     /* line 290, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form--horizontal .controls--static {
+    .form--horizontal .controls--static {
       display: block;
       float: left;
       margin-left: 25.5%;
@@ -1534,7 +1534,7 @@ form.form {
       font-size: 14px;
       font-size: 0.875rem; }
     /* line 296, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form--horizontal .controls__buttons {
+    .form--horizontal .controls__buttons {
       display: block;
       float: left;
       margin-left: 25.5%;
@@ -1545,7 +1545,7 @@ form.form {
       margin-bottom: 0;
       padding-top: 0.75rem; }
     /* line 320, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_forms.scss */
-    form.form--horizontal .has-feedback .form-control-feedback {
+    .form--horizontal .has-feedback .form-control-feedback {
       top: 0;
       right: 2%/2; }
 
@@ -2055,9 +2055,9 @@ input[type="button"].btn--block {
   /* line 59, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
   .dropdown-menu .divider {
     height: 1px;
-    /* margin: (($line-height-computed / 2) - 1) 0; */
+    margin: 0.25rem 0;
     overflow: hidden;
-    background-color: #eeeeee; }
+    background-color: #dddddd; }
   /* line 64, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_dropdowns.scss */
   .dropdown-menu > li:first-child a {
     border-top-right-radius: 5px;
@@ -2432,13 +2432,13 @@ input[type="button"].btn--block {
   border: 1px solid #999999;
   border-radius: 5px; }
   /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
-  .input-group-addon.input-sm, form.form .controls .input-group__input-group-sm .input-group-addon.controls--control, form.form .controls .input-group__input-group-sm .input-group-addon.input-group--addon, form.form .controls .input-group__input-group-sm .input-group-addon.input-group--btn,
+  .input-group-addon.input-sm, .form .controls .input-group__input-group-sm .input-group-addon.controls--control, .form .controls .input-group__input-group-sm .input-group-addon.input-group--addon, .form .controls .input-group__input-group-sm .input-group-addon.input-group--btn,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn {
     font-size: 12;
     border-radius: 3.33333px; }
   /* line 78, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_input-groups.scss */
-  .input-group-addon.input-lg, form.form .controls .input-group__input-group-lg .input-group-addon.controls--control, form.form .controls .input-group__input-group-lg .input-group-addon.input-group--addon, form.form .controls .input-group__input-group-lg .input-group-addon.input-group--btn,
+  .input-group-addon.input-lg, .form .controls .input-group__input-group-lg .input-group-addon.controls--control, .form .controls .input-group__input-group-lg .input-group-addon.input-group--addon, .form .controls .input-group__input-group-lg .input-group-addon.input-group--btn,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
     font-size: 24;
@@ -2517,33 +2517,37 @@ input[type="button"].btn--block {
   .nav > li {
     position: relative;
     display: block; }
-    /* line 19, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    @media only screen and (min-width: 769px) {
+      /* line 16, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      .nav > li {
+        float: left; } }
+    /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav > li > a {
       position: relative;
       display: block;
       padding: 10px 15px;
       text-decoration: none; }
-      /* line 24, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      /* line 27, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: #eeeeee; }
-    /* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav > li.disabled > a {
       color: #999999; }
-      /* line 33, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
         color: #999999;
         text-decoration: none;
         background-color: transparent;
         cursor: not-allowed; }
-  /* line 44, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  /* line 47, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
     border-color: #dddddd #dddddd #dddddd; }
-  /* line 55, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  /* line 58, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
   .nav > li > a > img {
     max-width: none; }
-  /* line 59, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  /* line 62, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
   .nav--tabs {
     border-bottom: 1px solid #dddddd;
     		/*
@@ -2552,101 +2556,101 @@ input[type="button"].btn--block {
     			@extend .nav-tabs-justified;
     		}
     */ }
-    /* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 64, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav--tabs > li {
       float: left;
       margin-bottom: -1px; }
-      /* line 66, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      /* line 69, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
       .nav--tabs > li > a {
         margin-right: 2px;
         border: 1px solid transparent;
         border-radius: 5px 5px 0 0; }
-        /* line 70, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+        /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
         .nav--tabs > li > a:hover {
           border-color: #dddddd #dddddd #dddddd; }
-      /* line 76, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      /* line 79, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
       .nav--tabs > li.active > a, .nav--tabs > li.active > a:hover, .nav--tabs > li.active > a:focus {
         color: white;
         background-color: #ca6253;
         border: 1px solid #b34737;
         border-bottom-color: transparent;
         cursor: default; }
-  /* line 98, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
   .nav--pills > li {
     float: left; }
-    /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 104, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav--pills > li > a {
       border-radius: 5px;
       border: 1px solid transparent; }
-      /* line 104, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      /* line 107, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
       .nav--pills > li > a:hover {
         border-color: #dddddd #dddddd #dddddd; }
-    /* line 108, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav--pills > li + li {
       margin-left: 2px; }
-    /* line 113, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 116, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav--pills > li.active > a, .nav--pills > li.active > a:hover, .nav--pills > li.active > a:focus {
       color: white;
       background-color: #ca6253;
       border: 1px solid #b34737; }
-  /* line 125, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  /* line 128, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
   .nav--stacked > li {
     float: none; }
-    /* line 127, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 130, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav--stacked > li + li {
       margin-top: 2px;
       margin-left: 0; }
-  /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
   .nav--justified {
     width: 100%; }
-    /* line 138, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 141, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav--justified > li {
       float: none; }
-      /* line 140, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      /* line 143, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
       .nav--justified > li > a {
         text-align: center;
         margin-bottom: -1px; }
-    /* line 145, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 148, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav--justified > .dropdown .dropdown-menu {
       top: auto;
       left: auto; }
     @media only screen and (min-width: 769px) {
-      /* line 150, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+      /* line 153, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
       .nav--justified > li {
         display: table-cell;
         width: 1%; } }
 
-/* line 169, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+/* line 172, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
 .nav-tabs-justified {
   border-bottom: 0; }
-  /* line 172, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
   .nav-tabs-justified > li > a {
     margin-right: 0;
     border-radius: 5px; }
-  /* line 178, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+  /* line 181, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
     border: 1px solid #dddddd; }
   @media only screen and (min-width: 0px) {
-    /* line 185, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav-tabs-justified > li > a {
       border-bottom: 1px solid #dddddd;
       border-radius: 5px 5px 0 0; }
-    /* line 189, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+    /* line 192, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
     .nav-tabs-justified > .active > a,
     .nav-tabs-justified > .active > a:hover,
     .nav-tabs-justified > .active > a:focus {
       border-bottom-color: #39403f; } }
 
-/* line 203, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+/* line 206, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
 .tab-content > .tab-pane {
   display: none; }
-/* line 206, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+/* line 209, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
 .tab-content > .active {
   display: block; }
 
-/* line 216, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
+/* line 219, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navs.scss */
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   border-top-right-radius: 0;
@@ -2658,6 +2662,9 @@ input[type="button"].btn--block {
   min-height: 50px;
   margin-bottom: 1.5rem;
   border: 1px solid transparent;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
   clear: both;
   display: block;
   float: left;
@@ -2674,25 +2681,30 @@ input[type="button"].btn--block {
     /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar {
       border-radius: 5px; } }
-  /* line 26, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  /* line 27, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
   .navbar--default {
     background-color: #eeeeee;
     border-color: #dedede; }
-  /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
-  .navbar .container > .navbar__header,
-  .navbar .container > .navbar-collapse,
-  .navbar .container-fluid > .navbar__header,
-  .navbar .container-fluid > .navbar-collapse {
-    margin-right: -2%;
-    margin-left: -2%; }
-    @media only screen and (max-width: 768px) {
-      /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
-      .navbar .container > .navbar__header,
-      .navbar .container > .navbar-collapse,
-      .navbar .container-fluid > .navbar__header,
-      .navbar .container-fluid > .navbar-collapse {
-        margin-right: 0;
-        margin-left: 0; } }
+  /* line 31, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  .navbar .container,
+  .navbar .container-fluid {
+    padding: 0 0.75rem;
+    margin: 0 auto; }
+    /* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar .container > .navbar__header,
+    .navbar .container > .navbar__collapse,
+    .navbar .container-fluid > .navbar__header,
+    .navbar .container-fluid > .navbar__collapse {
+      margin-right: -0.75rem;
+      margin-left: -0.75rem; }
+      @media only screen and (min-width: 769px) {
+        /* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar .container > .navbar__header,
+        .navbar .container > .navbar__collapse,
+        .navbar .container-fluid > .navbar__header,
+        .navbar .container-fluid > .navbar__collapse {
+          margin-right: 0;
+          margin-left: 0; } }
   /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
   .navbar__header:before, .navbar__header:after {
     content: " ";
@@ -2701,14 +2713,14 @@ input[type="button"].btn--block {
   .navbar__header:after {
     clear: both; }
   @media only screen and (min-width: 990px) {
-    /* line 43, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 46, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__header {
       float: left; } }
-  /* line 49, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  /* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
   .navbar__toggle {
     position: relative;
     float: right;
-    margin-right: 2%;
+    margin-right: 0.75rem;
     padding: 9px 10px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -2717,47 +2729,49 @@ input[type="button"].btn--block {
     border: 1px solid transparent;
     border-radius: 5px;
     border-color: #dddddd; }
-    /* line 60, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 63, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__toggle:hover, .navbar__toggle:focus {
       background-color: #dddddd; }
-    /* line 66, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 69, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__toggle:focus {
       outline: none; }
-    /* line 70, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__toggle .icon-bar {
       display: block;
       width: 22px;
       height: 2px;
       border-radius: 1px;
       background-color: white; }
-    /* line 77, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 80, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__toggle .icon-bar + .icon-bar {
       margin-top: 4px; }
     @media only screen and (min-width: 990px) {
-      /* line 49, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      /* line 52, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
       .navbar__toggle {
         display: none; } }
-  /* line 84, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  /* line 87, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
   .navbar__brand {
+    color: #555555;
     float: left;
-    padding: 13px 2%;
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1;
-    height: 50px;
+    padding: 0.75rem 0.75rem;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333;
     text-decoration: none; }
-    /* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 94, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__brand:hover, .navbar__brand:focus {
+      color: #3c3c3c;
+      background-color: transparent;
       text-decoration: none; }
     @media only screen and (min-width: 769px) {
-      /* line 95, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
       .navbar > .container .navbar__brand, .navbar > .container-fluid .navbar__brand {
-        margin-left: -2%; } }
-  /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        margin-left: -0.75rem; } }
+  /* line 107, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
   .navbar__collapse {
     overflow-x: visible;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
     border-top: 1px solid transparent;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -2769,40 +2783,59 @@ input[type="button"].btn--block {
     /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
     .navbar__collapse:after {
       clear: both; }
-    /* line 110, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 116, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__collapse.in {
       overflow-y: auto; }
     @media only screen and (min-width: 769px) {
-      /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      /* line 107, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
       .navbar__collapse {
         width: auto;
         border-top: 0;
         -webkit-box-shadow: none;
         box-shadow: none; }
-        /* line 117, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        /* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
         .navbar__collapse.collapse {
           display: block !important;
           height: auto !important;
           padding-bottom: 0;
           overflow: visible !important; }
-        /* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        /* line 129, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
         .navbar__collapse.in {
           overflow-y: visible; }
-        /* line 128, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        /* line 134, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
         .navbar-fixed-top .navbar__collapse, .navbar-static-top .navbar__collapse, .navbar-fixed-bottom .navbar__collapse {
           padding-left: 0;
           padding-right: 0; } }
-  /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  /* line 142, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
   .navbar__nav {
-    clear: both;
-    margin: 6.5px -2%; }
-    /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    margin: 0.375rem -0.75rem;
+    clear: both; }
+    @media only screen and (min-width: 769px) {
+      /* line 142, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__nav {
+        float: left;
+        clear: none;
+        margin: 0; } }
+    /* line 151, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__nav > li > a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      line-height: normal; }
+      color: #555555; }
+      /* line 153, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__nav > li > a:hover, .navbar__nav > li > a:focus {
+        color: #333333;
+        background-color: transparent; }
+    /* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__nav > .active > a, .navbar__nav > .active > a:hover, .navbar__nav > .active > a:focus {
+      color: #555555;
+      background-color: #dedede; }
+    /* line 168, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__nav > .disabled > a, .navbar__nav > .disabled > a:hover, .navbar__nav > .disabled > a:focus {
+      color: #999999;
+      background-color: transparent; }
+    /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    .navbar__nav > li > a {
+      padding: 0.75rem 0.75rem; }
     @media only screen and (max-width: 768px) {
-      /* line 146, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      /* line 180, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
       .navbar__nav .open .dropdown-menu {
         position: static;
         float: none;
@@ -2812,69 +2845,96 @@ input[type="button"].btn--block {
         border: 0;
         -webkit-box-shadow: none;
         box-shadow: none; }
-        /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        /* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
         .navbar__nav .open .dropdown-menu > li > a,
         .navbar__nav .open .dropdown-menu .dropdown-header {
+          border-color: #090909;
           padding: 5px 15px 5px 25px; }
-        /* line 158, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        /* line 193, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
         .navbar__nav .open .dropdown-menu > li > a {
           line-height: normal;
           color: #555555; }
-          /* line 161, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+          /* line 196, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
           .navbar__nav .open .dropdown-menu > li > a:hover, .navbar__nav .open .dropdown-menu > li > a:focus {
             color: #333333;
             background-image: none;
             background-color: transparent; }
-        /* line 169, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        /* line 204, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
         .navbar__nav .open .dropdown-menu > .active > a, .navbar__nav .open .dropdown-menu > .active > a:hover, .navbar__nav .open .dropdown-menu > .active > a:focus {
           color: #555555;
           background-color: #dedede; }
-        /* line 177, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        /* line 212, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
         .navbar__nav .open .dropdown-menu > .disabled > a, .navbar__nav .open .dropdown-menu > .disabled > a:hover, .navbar__nav .open .dropdown-menu > .disabled > a:focus {
           color: #999999;
           background-color: transparent; } }
-@media only screen and (max-width: 768px) and (min-width: 769px) {
-  /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
-  .navbar__nav {
-    float: left;
-    margin: 0; }
-    /* line 189, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
-    .navbar__nav > li {
-      float: left; }
-      /* line 191, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
-      .navbar__nav > li > a {
-        padding-top: 13px;
-        padding-bottom: 13px; }
-    /* line 196, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
-    .navbar__nav.navbar-right:last-child {
-      margin-right: -2%; } }
-
-    /* line 202, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    @media only screen and (min-width: 769px) {
+      /* line 142, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__nav {
+        float: left;
+        margin: 0; }
+        /* line 226, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar__nav > li {
+          float: left; }
+          /* line 228, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+          .navbar__nav > li > a {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem; }
+        /* line 233, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+        .navbar__nav.navbar__right:last-child {
+          margin-right: -0.75rem; }
+          /* line 235, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+          .navbar__nav.navbar__right:last-child .dropdown-menu {
+            right: 0;
+            left: auto; } }
+    /* line 242, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__nav > li .dropdown-menu {
       margin-top: 0;
       border-top-right-radius: 0;
       border-top-left-radius: 0; }
+      /* line 245, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__nav > li .dropdown-menu a {
+        font-size: 14px;
+        font-size: 0.875rem;
+        line-height: 1.71429; }
   @media only screen and (min-width: 769px) {
-    /* line 209, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 250, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__right {
       float: right !important; }
-    /* line 212, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+    /* line 253, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
     .navbar__left {
       float: left !important; } }
-  /* line 217, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+  /* line 258, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
   .navbar__form {
-    margin-left: -2%;
-    margin-right: -2%;
-    padding: 10px 2%;
+    width: auto;
+    float: none;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    padding: 0.75rem;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    border-color: #dedede; }
     @media only screen and (min-width: 769px) {
-      /* line 227, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      /* line 258, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
+      .navbar__form {
+        clear: none;
+        width: auto;
+        padding: 0.3rem 0.75rem;
+        margin: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none; } }
+    @media only screen and (min-width: 769px) {
+      /* line 278, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_navbar.scss */
       .navbar__form .controls {
-        margin-bottom: 5px; } }
+        margin: 0; } }
 
+/*
+  .navbar-text {
+    color: $navbar-default-color;
+  }
+*/
 /*
 // Menu position and menu caret support for dropups via extra dropup class
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
@@ -2927,23 +2987,6 @@ input[type="button"].btn--block {
   border-width: 1px 0 0;
 }
 */
-/*   @include navbar-vertical-align($input-height-base); */
-/*
-@include gs-media(m,max) {
-    width: auto;
-    border: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    @include box-shadow(none);
-
-    // Outdent the form if last child to line up with content down the page
-    &.navbar-right:last-child {
-      margin-right: -$navbar-padding-horizontal;
-    }
-  }
-*/
 /*
 .navbar-btn {
   @include navbar-vertical-align($input-height-base);
@@ -2973,66 +3016,9 @@ input[type="button"].btn--block {
 }
 */
 /*
-.navbar-default {
-  background-color: $navbar-default-background-color;
-  border-color: $navbar-default-border-color;
 
-  .navbar-brand {
-    color: $navbar-default-brand-color;
-    &:hover,
-    &:focus {
-      color: $navbar-default-brand-hover-color;
-      background-color: $navbar-default-brand-hover-background-color;
-    }
-  }
 
-  .navbar-text {
-    color: $navbar-default-color;
-  }
 
-  .navbar-nav {
-    > li > a {
-      color: $navbar-default-link-color;
-
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-background-color;
-      }
-    }
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-background-color;
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-disabled-color;
-        background-color: $navbar-default-link-disabled-background-color;
-      }
-    }
-  }
-
-  .navbar-toggle {
-    border-color: $navbar-default-toggle-border-color;
-    &:hover,
-    &:focus {
-      background-color: $navbar-default-toggle-hover-background-color;
-    }
-    .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-background-color;
-    }
-  }
-
-  .navbar-collapse,
-  .navbar-form {
-    border-color: $navbar-default-border;
-  }
 
   // Dropdown menu items
   .navbar-nav {
@@ -3137,40 +3123,7 @@ input[type="button"].btn--block {
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
-      // Dropdowns get custom display
-      .open .dropdown-menu {
-        > .dropdown-header {
-          border-color: $navbar-inverse-border-color;
-        }
-        .divider {
-          background-color: $navbar-inverse-border-color;
-        }
-        > li > a {
-          color: $navbar-inverse-link-color;
-          &:hover,
-          &:focus {
-            color: $navbar-inverse-link-hover-color;
-            background-color: $navbar-inverse-link-hover-background-color;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-inverse-link-active-color;
-            background-color: $navbar-inverse-link-active-background-color;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-inverse-link-disabled-color;
-            background-color: $navbar-inverse-link-disabled-background-color
-          }
-        }
-      }
+
     }
   }
 
@@ -4062,5 +4015,4 @@ aside {
 /* @import "modules/tables"; */
 /* TODO: Do I need lists here? */
 /* Scratch */
-
 

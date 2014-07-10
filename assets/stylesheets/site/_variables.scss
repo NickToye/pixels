@@ -222,6 +222,9 @@ $font-size-small:																			12;
 $font-size-large:																				24;
 $font-size-extra-small:																10;
 
+$brand-font-size:																			18;
+$navbar-font-size:																			14;
+
 $input-font-size:																			14;
 $legend-font-size:																			16;
 
@@ -395,7 +398,7 @@ $dropdown-border-color:															darken($dropdown-background-color, 5%) !de
 
 $dropdown-fallback-border-color:										$gray-lighter !default;
 
-$dropdown-divider-background-color:								$gray-lightest !default;
+$dropdown-divider-background-color:								$gray-lighter !default;
 
 $dropdown-link-color:																$gray-dark !default;
 $dropdown-link-hover-color:													darken($gray-dark, 5%) !default;
@@ -512,8 +515,8 @@ $modal-small:																				300px !default; // TODO: Apply Gridset
 $navbar-height:																				50px !default; // TODO: Apply Baseline Grid
 $navbar-margin-bottom:															$base-line-height !default; // TODO: Apply Baseline Grid
 $navbar-border-radius:																$border-radius !default;
-$navbar-padding-horizontal:													$gutter-width !default; // TODO: Apply Baseline Grid
-$navbar-padding-vertical:															(($navbar-height - $base-line-height) / 2) !default; // TODO: Apply Baseline Grid
+$navbar-padding-horizontal:													rem($rhythm-unit) !default; // TODO: Apply Baseline Grid
+$navbar-padding-vertical:															rem($rhythm-unit)  !default; // TODO: Apply Baseline Grid
 $navbar-collapse-max-height:													340px !default; // TODO: Apply Baseline Grid
 
 $navbar-default-color:																$gray !default;
