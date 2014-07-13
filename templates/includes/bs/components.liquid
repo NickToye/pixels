@@ -1,0 +1,274 @@
+<!-- Components -->
+<article id="bs-components">
+	<header>
+		<h1>Components</h1>
+	</header>
+	<!-- Alerts -->
+	<section id="bs-alerts" class="panel">
+		<header class="panel__heading">
+			<h2>Alerts</h2>
+			<p>Some contextual based alerts with a close button</p>
+		</header>
+		<div class="panel__body">
+			<div class="alert alert--warning" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a warning alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--success fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a success alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--info fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is an info alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--danger fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a danger alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+				<li class="label label-info">alert.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Badges -->
+	<section id="bs-badges" class="panel">
+		<header class="panel__heading">
+			<h2>Badges</h2>
+			<p>Used for various UI elements that require notification, such as inbox or shopping baskets</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Default</h3>
+				</header>
+				<a href="#">Inbox <span class="badge">42</span></a>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Self collapsing</h3>
+					<p>activates <code>:empty</code> selector and applies a zero through <code>content</code></p>
+				</header>
+				<a href="#">Inbox <span class="badge"></span></a>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Integrated badges</h3>
+				</header>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages <span class="badge">3</span></a></li>
+				</ul>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Carousel -->
+	<section id="bs-carousel" class="panel">
+		<header class="panel__heading">
+			<h2>Carousel</h2>
+		</header>
+		<div class="panel__body">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel__indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel__inner">
+					<figure class="carousel__item active">
+						{{ "1000x250" | placeholder | image_tag:'Slide 1' }}
+						<figcaption class="carousel-caption">Slide 1</figcaption>
+					</figure>
+					<figure class="carousel__item">
+						{{ "1000x250" | placeholder | image_tag:'Slide 2' }}
+						<figcaption class="carousel-caption">Slide 2</figcaption>
+					</figure>
+					<figure class="carousel__item">
+						{{ "1000x250" | placeholder | image_tag:'Slide 3' }}
+						<figcaption class="carousel-caption">Slide 3</figcaption>
+					</figure>
+					<!-- Controls -->
+					<a class="left carousel__control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+					</a>
+					<a class="right carousel__control" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+				<li class="label label-info">carousel.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Dropdowns -->
+	<section id="bs-dropdowns" class="panel">
+		<header class="panel__heading">
+			<h2>Dropdowns</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Jumbotron -->
+	<section id="bs-jumbotron" class="panel">
+		<header class="panel__heading">
+			<h2>Jumbotron</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Labels -->
+	<section id="bs-labels" class="panel">
+		<header class="panel__heading">
+			<h2>Labels</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- List Groups -->
+	<section id="bs-list-groups" class="panel">
+		<header class="panel__heading">
+			<h2>List Groups</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Media -->
+	<section id="bs-media" class="panel">
+		<header class="panel__heading">
+			<h2>Media</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Modals -->
+	<section id="bs-modals" class="panel">
+		<header class="panel__heading">
+			<h2>Modals</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Popovers -->
+	<section id="bs-popovers" class="panel">
+		<header class="panel__heading">
+			<h2>Popovers</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Progress Bars -->
+	<section id="bs-progress-bars" class="panel">
+		<header class="panel__heading">
+			<h2>Progress Bars</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Tooltip -->
+	<section id="bs-tooltip" class="panel">
+		<header class="panel__heading">
+			<h2>Tooltip</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Wells -->
+	<section id="bs-wells" class="panel">
+		<header class="panel__heading">
+			<h2>Wells</h2>
+		</header>
+		<div class="panel__body">
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+</article>

@@ -15,7 +15,7 @@
 
   var Carousel = function (element, options) {
     this.$element    = $(element)
-    this.$indicators = this.$element.find('.carousel-indicators')
+    this.$indicators = this.$element.find('.carousel__indicators')
     this.options     = options
     this.paused      =
     this.sliding     =
@@ -47,7 +47,7 @@
   }
 
   Carousel.prototype.getActiveIndex = function () {
-    this.$active = this.$element.find('.item.active')
+    this.$active = this.$element.find('.carousel__item.active')
     this.$items  = this.$active.parent().children()
 
     return this.$items.index(this.$active)
@@ -89,7 +89,7 @@
   }
 
   Carousel.prototype.slide = function (type, next) {
-    var $active   = this.$element.find('.item.active')
+    var $active   = this.$element.find('.carousel__item.active')
     var $next     = next || $active[type]()
     var isCycling = this.interval
     var direction = type == 'next' ? 'left' : 'right'
@@ -98,7 +98,7 @@
 
     if (!$next.length) {
       if (!this.options.wrap) return
-      $next = this.$element.find('.item')[fallback]()
+      $next = this.$element.find('.carousel__item')[fallback]()
     }
 
     if ($next.hasClass('active')) return this.sliding = false
