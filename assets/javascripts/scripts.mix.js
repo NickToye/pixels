@@ -1,3 +1,4 @@
+@import "bootstrap/alert.js";
 @import "bootstrap/affix.js";
 @import "bootstrap/button.js";
 @import "bootstrap/carousel.js";

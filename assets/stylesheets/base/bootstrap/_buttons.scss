@@ -114,6 +114,18 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	// Close button
+	&--close {
+		padding: 0;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		@include opacity(.5);
+		-webkit-appearance: none;
+		&:hover,&:focus {
+			@include opacity(.9);
+		}
+	}
 }
 
 // Specificity overrides

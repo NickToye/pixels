@@ -72,8 +72,10 @@ p {
 
 // - Links
 a {
-	color: $link-color;
-/* 	@include transition(color, linear $transition-speed); */ // TODO: considering dropping this, flashes on load.
+	text-decoration: none;
+	&:link {
+		color: $link-color;
+	}
 	&:hover, &:visited {
 		color: $link-hover-color;
 	}

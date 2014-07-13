@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	// Validator
     $('.form-horizontal').bootstrapValidator({
         message: 'This value is not valid',
         feedbackIcons: {
@@ -37,4 +38,15 @@ $(document).ready(function() {
             }
         }
     });
+
+    // Button States
+	$('#loading-example-btn').click(function() {
+		var btn = $(this)
+		btn.button('loading').delay(2000).queue(function(){
+			$(this).button('reset');
+            $(this).dequeue();
+		});
+	});
 });
+
+

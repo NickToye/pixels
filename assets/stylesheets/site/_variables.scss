@@ -222,7 +222,7 @@ $font-size-small:																			12;
 $font-size-large:																				24;
 $font-size-extra-small:																10;
 
-$brand-font-size:																			18;
+$brand-font-size:																			16;
 $navbar-font-size:																			14;
 
 $input-font-size:																			14;
@@ -308,14 +308,13 @@ $alert-danger-border-color:														$state-danger-border-color !default;
 
 $badge-color:																					$white !default;
 $badge-link-hover-color:															$white !default;
-$badge-background-color:														$gray-light !default;
+$badge-background-color:														$brand-primary !default;
 
 $badge-active-color:																	$link-color !default;
 $badge-active-background-color:											$white !default;
 
-$badge-font-weight:																	bold !default; // TODO: Check with specific font weights
-$badge-line-height:																		$base-line-height !default; // TODO: Check with Baseline
-$badge-border-radius:																10px !default; // TODO: Can I not use $radius?
+$badge-font-weight:																	$bold !default;
+$badge-border-radius:																10px !default;
 
 // B5 Breadcrumbs
 // TODO: Check this in example
@@ -433,9 +432,9 @@ $input-border-focus-color:														$brand-primary  !default;
 $input-color-placeholder-color:												$gray-light !default;
 
 // TODO: Convert these to Baseline grid
-$input-height-base:																		rem($rhythm-unit) !default;
-$input-height-large:																		$base-font-size*3 !default;
-$input-height-small:																	$base-font-size !default;
+$input-height-base:																		38 !default; // TODO: This needs a variable
+$input-height-large:																		$input-height-base*2 !default; // TODO: Check need this
+$input-height-small:																	$input-height-base/2 !default;
 
 $legend-color:																				$white !default;
 $legend-background-color:														$brand-secondary !default;
@@ -512,7 +511,7 @@ $modal-small:																				300px !default; // TODO: Apply Gridset
 // TODO: Check this in example
 
 // Basics of a navbar
-$navbar-height:																				50px !default; // TODO: Apply Baseline Grid
+$navbar-height:																				48px !default; // TODO: Apply Baseline Grid
 $navbar-margin-bottom:															$base-line-height !default; // TODO: Apply Baseline Grid
 $navbar-border-radius:																$border-radius !default;
 $navbar-padding-horizontal:													rem($rhythm-unit) !default; // TODO: Apply Baseline Grid

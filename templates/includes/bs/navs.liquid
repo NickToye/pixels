@@ -270,6 +270,7 @@
 			<p>Responsive meta components that serve as navigation headers for your application or site</p>
 		</header>
 		<div class="panel__body">
+			<!-- Default -->
 			<section class="sub-section">
 				<header>
 					<h3>Default</h3>
@@ -285,6 +286,7 @@
 								<span class="icon-bar"></span>
 							</button>
 							<a class="navbar__brand" href="#">Brand</a>
+
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar__collapse" id="bs-example-navbar-collapse-1">
@@ -327,6 +329,54 @@
 					</div><!-- /.container-fluid -->
 					</nav>
 			</section>
+			<!-- Buttons/Text in Navbar -->
+			<section class="sub-section">
+				<header>
+					<h3>Buttons & Text</h3>
+				</header>
+				<nav class="navbar navbar--default" role="navigation">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar__header">
+							<button type="button" class="navbar__toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar__brand" href="#">Brand</a>
+
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar__collapse" id="bs-example-navbar-collapse-2">
+							<button type="button" class="btn btn--default navbar__btn">Sign in</button>
+							<button type="button" class="btn btn--warning navbar__btn">Don't Press!!!</button>
+							<button type="button" class="btn btn--warning btn--sm navbar__btn">Small Button</button>
+							<p class="navbar__text">Signed in as Nick Toye</p>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+					</nav>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label-info">CSS</li>
+				<li class="label label-info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Breadcrumbs -->
+	<section id="bs-breadcrumbs" class="panel">
+		<header class="panel__heading">
+			<h2>Breadcrumbs</h2>
+			<p>Indicates the current page in the site structure</p>
+		</header>
+		<div class="panel__body">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Library</a></li>
+				<li class="active">Data</li>
+			</ol>
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
@@ -336,3 +386,5 @@
 		</footer>
 	</section>
 </article>
+
+

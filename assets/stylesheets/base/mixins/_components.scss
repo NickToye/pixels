@@ -25,17 +25,20 @@
 
 // Alerts
 // -------------------------
-@mixin alert-variant($background, $border, $text-color) {
-  background-color: $background;
-  border-color: $border;
-  color: $text-color;
+@mixin alert-variant($background, $border, $text-color,$decoration:none) {
+	background-color: $background;
+	border-color: $border;
+	color: $text-color;
 
-  hr {
-    border-top-color: darken($border, 5%);
-  }
-  .alert-link {
-    color: darken($text-color, 10%);
-  }
+	hr {
+		border-top-color: darken($border, 5%);
+	}
+	.alert__link {
+		color: darken($text-color, 10%);
+		font-weight: $alert-link-font-weight;
+		text-decoration: $decoration;
+		&:hover, &:focus { color: darken($text-color,20%);}
+	}
 }
 
 // Pagination
