@@ -1,4 +1,3 @@
-// bootstrap
 @import "bootstrap/alert.js";
 @import "bootstrap/affix.js";
 @import "bootstrap/button.js";
@@ -12,9 +11,7 @@
 @import "bootstrap/tooltip.js";
 @import "bootstrap/popover.js";
 
-// 3rd party
 @import "gridset-overlay.js";
 @import "bootstrapValidator.js";
 
-// application specific
 @import "application.js";
