@@ -426,7 +426,11 @@
   }
 
   Carousel.prototype.slide = function (type, next) {
+<<<<<<< HEAD
     var $active   = this.$element.find('.carousel__items__item.active')
+=======
+    var $active   = this.$element.find('.carousel__item.active')
+>>>>>>> e862dcff01ca5c91e4cd9b492d2da1d4345a3bec
     var $next     = next || $active[type]()
     var isCycling = this.interval
     var direction = type == 'next' ? 'left' : 'right'
@@ -435,7 +439,11 @@
 
     if (!$next.length) {
       if (!this.options.wrap) return
+<<<<<<< HEAD
       $next = this.$element.find('.carousel__items__item')[fallback]()
+=======
+      $next = this.$element.find('.carousel__item')[fallback]()
+>>>>>>> e862dcff01ca5c91e4cd9b492d2da1d4345a3bec
     }
 
     if ($next.hasClass('active')) return this.sliding = false

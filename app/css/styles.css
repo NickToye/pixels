@@ -4458,63 +4458,55 @@ a.list-group__item.active, a.list-group__item.active:hover, a.list-group__item.a
 .carousel {
   position: relative; }
   /* line 11, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-  .carousel__items {
+  .carousel__inner {
     position: relative;
     overflow: hidden;
     width: 100%; }
-    /* line 15, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-    .carousel__items__item {
-      display: none;
-      position: relative;
-      -webkit-transition: 0.6s ease-in-out left;
-      transition: 0.6s ease-in-out left; }
-      /* line 21, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item > img,
-      .carousel__items__item > a > img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        line-height: 1; }
-      /* line 26, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item.active, .carousel__items__item.next, .carousel__items__item.prev {
-        display: block; }
-      /* line 27, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item.active {
-        left: 0; }
-      /* line 28, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item.next, .carousel__items__item.prev {
-        position: absolute;
-        top: 0;
-        width: 100%; }
-      /* line 33, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item.next {
-        left: 100%; }
-      /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item.prev {
-        left: -100%; }
-      /* line 35, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item.next.left, .carousel__items__item.prev.right {
-        left: 0; }
-      /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item.active.left {
-        left: -100%; }
-      /* line 37, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item.active.right {
-        left: 100%; }
-      /* line 39, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-      .carousel__items__item__caption {
-        position: absolute;
-        left: 15%;
-        right: 15%;
-        bottom: 20px;
-        z-index: 10;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: #ca6253;
-        text-align: center; }
-        /* line 50, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-        .carousel__items__item__caption .btn {
-          text-shadow: none; }
+  /* line 17, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+  .carousel__item {
+    display: none;
+    position: relative;
+    -webkit-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left; }
+    /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    .carousel__item > img,
+    .carousel__item > a > img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      line-height: 1; }
+    /* line 27, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    .carousel__item.active, .carousel__item.next, .carousel__item.prev {
+      display: block; }
+    /* line 28, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    .carousel__item.active {
+      left: 0; }
+    /* line 29, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    .carousel__item.next, .carousel__item.prev {
+      position: absolute;
+      top: 0;
+      width: 100%; }
+    /* line 34, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    .carousel__item.next {
+      left: 100%; }
+    /* line 37, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    .carousel__item.prev {
+      left: -100%; }
+    /* line 40, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    .carousel__item .figcaption {
+      position: absolute;
+      left: 15%;
+      right: 15%;
+      bottom: 20px;
+      z-index: 10;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #ca6253;
+      text-align: center;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+      /* line 51, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+      .carousel__item .figcaption .btn {
+        text-shadow: none; }
   /* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
   .carousel__control {
     position: absolute;
@@ -4524,14 +4516,17 @@ a.list-group__item.active, a.list-group__item.active:hover, a.list-group__item.a
     width: 15%;
     opacity: 0.5;
     filter: alpha(opacity=50);
-    text-align: center; }
-    /* line 70, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+    /* line 69, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
     .carousel__control.left {
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
       background-image: linear, to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%;
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
-    /* line 73, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    /* line 72, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
     .carousel__control.right {
       left: auto;
       right: 0;
@@ -4539,35 +4534,33 @@ a.list-group__item.active, a.list-group__item.active:hover, a.list-group__item.a
       background-image: linear, to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%;
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
-    /* line 79, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    /* line 78, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
     .carousel__control:hover, .carousel__control:focus {
       outline: none;
       color: white;
       text-decoration: none;
       opacity: 0.9;
       filter: alpha(opacity=90); }
-    /* line 87, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+    /* line 85, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
     .carousel__control i.fa {
       position: absolute;
       top: 50%;
       z-index: 5;
       display: inline-block;
-      font-size: 64px;
-      width: 64px;
-      height: 64px;
-      color: white;
-      line-height: 1;
-      margin-top: -32px; }
-      /* line 98, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      margin-left: -10px; }
+      /* line 94, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
       .carousel__control i.fa.fa-angle-left {
         left: 50%; }
-      /* line 99, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+      /* line 97, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
       .carousel__control i.fa.fa-angle-right {
         right: 50%; }
   /* line 103, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
   .carousel__indicators {
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     left: 50%;
     z-index: 15;
     width: 60%;
@@ -4587,17 +4580,16 @@ a.list-group__item.active, a.list-group__item.active:hover, a.list-group__item.a
       cursor: pointer;
       background-color: #000 \9;
       background-color: transparent; }
-    /* line 133, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
-    .carousel__indicators .active {
-      margin: 0;
-      width: 12px;
-      height: 12px;
-      background-color: white; }
+      /* line 125, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_carousel.scss */
+      .carousel__indicators li.active {
+        margin: 0;
+        width: 12px;
+        height: 12px;
+        background-color: white; }
 
 /*
-@media screen and (min-width: $screen-sm-min) {
-
-  // Scale up the controls a smidge
+@include gs-media(t,min) {
+	  // Scale up the controls a smidge
   .carousel-control {
     .glyphicon-chevron-left,
     .glyphicon-chevron-right,
@@ -4819,4 +4811,5 @@ aside {
 /* @import "modules/tables"; */
 /* TODO: Do I need lists here? */
 /* Scratch */
+
 
