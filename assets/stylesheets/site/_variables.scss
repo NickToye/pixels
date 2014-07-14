@@ -368,6 +368,7 @@ $btn-link-disabled-color:															$gray-light !default;
 
 // B8. Carousel
 
+$carousel-control-font-size:														64px;
 $carousel-text-shadow:																0 1px 2px rgba($black,.6) !default;
 
 $carousel-control-color:															$white !default;
@@ -376,9 +377,9 @@ $carousel-control-opacity:														.5 !default;
 $carousel-control-font-size:														20px !default; // TODO: Apply using Baseline Grid
 
 $carousel-indicator-active-background-color:					$white !default;
-$carousel-indicator-border-color: 											$white !default;
+$carousel-indicator-border-color: 											$gray-light !default;
 
-$carousel-caption-color:															$white !default;
+$carousel-caption-color:															$brand-primary !default;
 
 // B9. Close
 
@@ -466,7 +467,7 @@ $label-danger-background-color:											$brand-danger !default;
 $label-color:																					$white !default;
 $label-link-hover-color:																$white !default;
 
-$label-font-size:																				$h6 !default;
+$label-font-size:																				75% !default;
 
 // B17. List Group
 // TODO: Check this in example
@@ -480,7 +481,6 @@ $list-group-active-background-color:									$component-active-background-color 
 $list-group-active-border-color:												darken($list-group-active-background-color, 5%) !default;
 $list-group-active-text-color:													lighten($list-group-active-border-color, 40%) !default;
 
-$list-group-link-color:																	$gray !default;
 $list-group-link-heading-color: 												$gray-dark !default;
 
 // B18. Media
@@ -489,9 +489,9 @@ $list-group-link-heading-color: 												$gray-dark !default;
 
 // B19. Modals
 
-$modal-inner-padding:																20px !default; // TODO: Apply Baseline Grid
+$modal-inner-padding:																rem($rhythm-unit) !default;
 
-$modal-title-padding:																	15px !default; // TODO: Apply Baseline Grid
+$modal-title-padding:																	rem($rhythm-unit) !default;
 $modal-title-line-height:															$base-line-height !default;
 
 $modal-content-background-color:										$white !default;
@@ -499,13 +499,13 @@ $modal-content-border-color:												darken($modal-content-background-color, 
 $modal-content-fallback-border-color:								$gray-light !default;
 
 $modal-backdrop-background-color:									$black !default;
-$modal-backdrop-opacity:														.5 !default;
+$modal-backdrop-opacity:														.8 !default;
 $modal-header-border-color:													$gray-lighter !default;
 $modal-footer-border-color:													$modal-header-border-color !default;
 
-$modal-large:																					900px !default; // TODO: Apply Gridset
-$modal-medium:																			600px !default; // TODO: Apply Gridset
-$modal-small:																				300px !default; // TODO: Apply Gridset
+$modal-large:																					gs-width(d,1,10,false,true) !default;
+$modal-medium:																			gs-width(d,1,6,false,true) !default;
+$modal-small:																				gs-width(d,1,3,false,true) !default;
 
 // B20. Navbar
 // TODO: Check this in example
@@ -638,7 +638,7 @@ $panel-footer-background-color:											$gray-lightest !default;
 
 $panel-default-text-color:															$gray-dark !default;
 $panel-default-border-color:													$gray-lighter !default;
-$panel-default-heading-background-color:						$gray-dark !default;
+$panel-default-heading-background-color:						$gray-lighter !default;
 $panel-default-heading-text-color:										$white !default;
 
 $panel-primary-text-color:														$white !default;
@@ -664,9 +664,9 @@ $panel-danger-heading-background-color:						$state-danger-background-color !def
 // B25. Popovers
 
 $popover-background-color:													$white !default;
-$popover-max-width:																	276px !default; // TODO: Apply Gridset
+$popover-max-width:																	gs-width(d,1,3,false,true) !default;
 $popover-border-color:																darken($popover-background-color, 10%) !default;
-$popover-fallback-border-color:											$gray-light !default;
+$popover-fallback-border-color:											$gray-lighter !default;
 
 $popover-title-background-color:											darken($popover-background-color, 3%) !default;
 
@@ -674,12 +674,12 @@ $popover-arrow-width:																10px !default;
 $popover-arrow-color:																$white !default;
 
 $popover-arrow-outer-width:													($popover-arrow-width + 1) !default;
-$popover-arrow-outer-color:													fadein($popover-border-color, 5%) !default;
-$popover-arrow-outer-fallback-color:									darken($popover-fallback-border-color, 20%) !default;
+$popover-arrow-outer-color:													fadein($popover-background-color, 5%) !default;
+$popover-arrow-outer-fallback-color:									$gray-lighter !default;
 
 // B26. Progress Bars
 
-$progress-background-color:													$gray-light !default;
+$progress-background-color:													$gray-lighter !default;
 $progress-bar-color:																	$white !default;
 
 $progress-bar-background-color:											$brand-primary !default;
@@ -724,7 +724,7 @@ $tooltip-arrow-color:																	$tooltip-background-color !default;
 
 // B30. Wells
 
-$well-background-color:															$gray-lighter !default;
+$well-background-color:															$gray-lightest !default;
 $well-border:																					darken($well-background-color, 7%) !default;
 
 

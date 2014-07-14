@@ -1,0 +1,984 @@
+<!-- Components -->
+<article id="bs-components">
+	<header>
+		<h1>Components</h1>
+	</header>
+	<!-- Alerts -->
+	<section id="bs-alerts" class="panel">
+		<header class="panel__heading">
+			<h2>Alerts</h2>
+			<p>Some contextual based alerts with a close button</p>
+		</header>
+		<div class="panel__body">
+			<div class="alert alert--warning" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a warning alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--success fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a success alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--info fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is an info alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--danger fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a danger alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">alert.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Badges -->
+	<section id="bs-badges" class="panel">
+		<header class="panel__heading">
+			<h2>Badges</h2>
+			<p>Used for various UI elements that require notification, such as inbox or shopping baskets</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Default</h3>
+				</header>
+				<a href="#">Inbox <span class="badge">42</span></a>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Self collapsing</h3>
+					<p>activates <code>:empty</code> selector and applies a zero through <code>content</code></p>
+				</header>
+				<a href="#">Inbox <span class="badge"></span></a>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Integrated badges</h3>
+				</header>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages <span class="badge">3</span></a></li>
+				</ul>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Carousel -->
+	<section id="bs-carousel" class="panel">
+		<header class="panel__heading">
+			<h2>Carousel</h2>
+		</header>
+		<div class="panel__body">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel__indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel__items">
+					<figure class="carousel__items__item active">
+						{{ "1000x250" | placeholder | image_tag:'Slide 1' }}
+						<figcaption class="carousel__items__item__caption">Slide 1</figcaption>
+					</figure>
+					<figure class="carousel__items__item">
+						{{ "1000x250" | placeholder | image_tag:'Slide 2' }}
+						<figcaption class="carousel__items__item__caption">Slide 2</figcaption>
+					</figure>
+					<figure class="carousel__items__item">
+						{{ "1000x250" | placeholder | image_tag:'Slide 3' }}
+						<figcaption class="carousel__items__item__caption">Slide 3</figcaption>
+					</figure>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel__control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel__control" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">carousel.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Dropdowns -->
+	<section id="bs-dropdowns" class="panel">
+		<header class="panel__heading">
+			<h2>Dropdowns</h2>
+			<p>Add dropdowns to almost anything using the js plugin</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Within a navbar</h3>
+				</header>
+				<nav class="navbar navbar--default" role="navigation">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar__header">
+							<button type="button" class="navbar__toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar__brand" href="#">Brand</a>
+
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar__collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar__nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown__menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown__menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown__menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown__menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+					</nav>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Within pills</h3>
+				</header>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Regular link</a></li>
+					<li class="dropdown">
+						<a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+						<ul id="menu1" class="dropdown__menu" role="menu" aria-labelledby="drop4">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <span class="caret"></span></a>
+						<ul id="menu2" class="dropdown__menu" role="menu" aria-labelledby="drop5">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+						</ul>
+						</li>
+				</ul>
+			</section>
+
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">dropdown.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- ScrollSpy -->
+	<section id="bs-scrollspy" class="panel">
+		<header class="panel__heading">
+			<h2>ScrollSpy</h2>
+			<p>Automatically scrolls to positions</p>
+		</header>
+		<div class="panel__body">
+			<nav id="navbar-scrollspy-example" class="navbar navbar--default scrollspy-example" role="navigation">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar__header">
+						<button type="button" class="navbar__toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar__brand" href="#">Brand</a>
+
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar__collapse" id="bs-example-js-navbar-scrollspy">
+						<ul class="nav navbar__nav">
+							<li><a href="#nicktoye">@nicktoye</a></li>
+							<li><a href="#pixelscode">@pixelscode</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown__menu" role="menu">
+									<li><a href="#one">One</a></li>
+									<li><a href="#two">Two</a></li>
+									<li class="divider"></li>
+									<li><a href="#three">Three</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+			<div data-spy="scroll" data-target="#navbar-scrollspy-example" data-offset="0" class="scrollspy-example">
+				<h4 id="nicktoye">@nicktoye</h4>
+				<p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+				<h4 id="pixelscode">@pixelscode</h4>
+				<p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+				<h4 id="one">one</h4>
+				<p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+				<h4 id="two">two</h4>
+				<p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+				<h4 id="three">three</h4>
+				<p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+				<p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+				</p>
+			</div>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">scrollspy.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Jumbotron -->
+	<section id="bs-jumbotron" class="panel">
+		<header class="panel__heading">
+			<h2>Jumbotron</h2>
+		</header>
+		<div class="panel__body">
+			<div class="jumbotron">
+				<h1>Hello, world!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				<p><a class="btn btn--secondary btn--lg" role="button"><i class="fa fa-heart"></i>Learn more</a></p>
+			</div>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Labels -->
+	<section id="bs-labels" class="panel">
+		<header class="panel__heading">
+			<h2>Labels</h2>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Default</h3>
+				</header>
+				<h1>Example heading <span class="label label--default">New</span></h1>
+				<h2>Example heading <span class="label label--default">New</span></h2>
+				<h3>Example heading <span class="label label--default">New</span></h3>
+				<h4>Example heading <span class="label label--default">New</span></h4>
+				<h5>Example heading <span class="label label--default">New</span></h5>
+				<p>Example heading <span class="label label--default">New</span></p>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Variations</h3>
+				</header>
+				<span class="label label--default">Default</span>
+				<span class="label label--primary">Primary</span>
+				<span class="label label--success">Success</span>
+				<span class="label label--info">Info</span>
+				<span class="label label--warning">Warning</span>
+				<span class="label label--danger">Danger</span>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- List Groups -->
+	<section id="bs-list-groups" class="panel">
+		<header class="panel__heading">
+			<h2>List Groups</h2>
+			<p>Flexible and powerful component for both simple and complex lists</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Basic example</h3>
+				</header>
+				<ul class="list-group">
+					<li class="list-group__item">Cras justo odio</li>
+					<li class="list-group__item">Dapibus ac facilisis in</li>
+					<li class="list-group__item">Morbi leo risus</li>
+					<li class="list-group__item">Porta ac consectetur ac</li>
+					<li class="list-group__item">Vestibulum at eros</li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Badges</h3>
+				</header>
+				<ul class="list-group">
+					<li class="list-group__item">
+						<span class="badge">14</span>
+						Cras justo odio
+					</li>
+					<li class="list-group__item">
+						<span class="badge">14</span>
+						Cras justo odio
+					</li>
+					<li class="list-group__item">
+						<span class="badge">14</span>
+						Cras justo odio
+					</li>
+				</ul>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Linked items</h3>
+				</header>
+				<div class="list-group">
+					<a href="#" class="list-group__item active">
+					Cras justo odio
+					</a>
+					<a href="#" class="list-group__item">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group__item disabled">Disabled link</a>
+					<a href="#" class="list-group__item">Porta ac consectetur ac</a>
+					<a href="#" class="list-group__item">Vestibulum at eros</a>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Contextual variations</h3>
+				</header>
+				<ul class="list-group">
+					<li class="list-group__item list-group__item--success">Dapibus ac facilisis in</li>
+					<li class="list-group__item list-group__item--info">Cras sit amet nibh libero</li>
+					<li class="list-group__item list-group__item--warning">Porta ac consectetur ac</li>
+					<li class="list-group__item list-group__item--danger">Vestibulum at eros</li>
+				</ul>
+				<div class="list-group">
+					<a href="#" class="list-group__item list-group__item--success">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group__item list-group__item--info active">Active link</a>
+					<a href="#" class="list-group__item list-group__item--warning">Porta ac consectetur ac</a>
+					<a href="#" class="list-group__item list-group__item--danger">Vestibulum at eros</a>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Custom content</h3>
+				</header>
+				<div class="list-group">
+					<a href="#" class="list-group__item active">
+						<h3 class="list-group__item__heading">List group item heading</h3>
+						<p class="list-group__item__text">Some random text here.</p>
+					</a>
+					<a href="#" class="list-group__item">
+						<h3 class="list-group__item__heading">List group item heading</h3>
+						<p class="list-group__item__text">Some random text here.</p>
+					</a>
+					<a href="#" class="list-group__item">
+						<h3 class="list-group__item__heading">List group item heading</h3>
+						<p class="list-group__item__text">Some random text here.</p>
+					</a>
+				</div>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Media -->
+	<section id="bs-media" class="panel">
+		<header class="panel__heading">
+			<h2>Media</h2>
+			<p>Styles used in blog comments, tweets etc...</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Default example</h3>
+				</header>
+				<div class="media">
+				<a class="pull-right" href="#">
+					<img class="media__object" src="{{ "64x64" | placeholder}}">
+				</a>
+				<div class="media__body">
+					<h3 class="media__body__heading">Media heading</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+			</div>
+				<div class="media">
+				<a class="pull-left" href="#">
+					<img class="media__object" src="{{ "64x64" | placeholder}}">
+				</a>
+				<div class="media__body">
+					<h3 class="media__body__heading">Media heading</h3>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media__object" src="{{ "64x64" | placeholder}}">
+						</a>
+						<div class="media__body">
+							<h3 class="media__body__heading">Nested media heading</h3>
+							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Media list</h3>
+				</header>
+				<ul class="media-list">
+					<li class="media">
+						<a class="pull-left" href="#">
+							<img class="media__object" src="{{ "64x64" | placeholder}}">
+						</a>
+						<div class="media__body">
+							<h3 class="media__body__heading">Media heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							<div class="media">
+								<a class="pull-left" href="#">
+									<img class="media__object" src="{{ "64x64" | placeholder}}">
+								</a>
+								<div class="media__body">
+									<h3 class="media__body__heading">Nested media heading</h3>
+									<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+									<!-- Nested media object -->
+									<div class="media">
+										<a class="pull-left" href="#">
+											<img class="media__object" src="{{ "64x64" | placeholder}}">
+											</a>
+											<div class="media__body">
+												<h3 class="media__body__heading">Nested media heading</h3>
+												<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+											</div>
+										</div>
+								</div>
+							</div>
+							<div class="media">
+								<a class="pull-left" href="#">
+									<img class="media__object" src="{{ "64x64" | placeholder}}">
+								</a>
+								<div class="media__body">
+									<h3 class="media__body__heading">Nested media heading</h3>
+									<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="media">
+						<a class="pull-right" href="#">
+							<img class="media__object" src="{{ "64x64" | placeholder}}">
+						</a>
+						<div class="media__body">
+							<h3 class="media__body__heading">Media heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Modals -->
+	<section id="bs-modals" class="panel">
+		<header class="panel__heading">
+			<h2>Modals</h2>
+			<p>Useful for logins and other content that requires immediate focus</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Live example</h3>
+				</header>
+				<!-- Button trigger modal -->
+				<button class="btn btn--primary" data-toggle="modal" data-target="#largeModal">
+					Large  modal
+				</button>
+				<button class="btn btn--info" data-toggle="modal" data-target="#mediumModal">
+					Medium  modal
+				</button>
+				<button class="btn btn--danger" data-toggle="modal" data-target="#smallModal">
+					Small  modal
+				</button>
+				<button class="btn btn--success" data-toggle="modal" data-target="#loginModal">
+					Login
+				</button>
+				<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal__dialog modal__dialog--lg">
+						<div class="modal__content">
+							<header class="modal__header">
+								<button type="button" class="btn--close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<h3>Modal title</h3>
+							</header>
+							<div class="modal__body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							</div>
+							<footer class="modal__footer">
+								<button type="button" class="btn btn--default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn--primary">Save changes</button>
+							</footer>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal__dialog">
+						<div class="modal__content">
+							<header class="modal__header">
+								<button type="button" class="btn--close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<h3>Modal title</h3>
+							</header>
+							<div class="modal__body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							</div>
+							<footer class="modal__footer">
+								<button type="button" class="btn btn--default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn--primary">Save changes</button>
+							</footer>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal__dialog modal__dialog--sm">
+						<div class="modal__content">
+							<header class="modal__header">
+								<button type="button" class="btn--close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<h3>Modal title</h3>
+							</header>
+							<div class="modal__body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							</div>
+							<footer class="modal__footer">
+								<button type="button" class="btn btn--default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn--primary">Save changes</button>
+							</footer>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal__dialog">
+						<div class="modal__content">
+							<header class="modal__header">
+								<button type="button" class="btn--close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<h3>Login!</h3>
+							</header>
+							<div class="modal__body">
+								<form role="form" class="form form--inline">
+									<fieldset class="controls">
+										<label for="exampleInputEmail2" class="sr-only controls--label">Email address</label>
+										<input type="email" class="controls--control" id="exampleInputEmail2" placeholder="Enter email">
+									</fieldset>
+									<fieldset class="controls">
+										<label for="exampleInputPassword2" class="sr-only controls--label">Password</label>
+										<input type="password" class="controls--control" id="exampleInputPassword2" placeholder="Password">
+									</fieldset>
+									<fieldset class="controls">
+										<button type="button" class="btn btn--success" data-dismiss="modal">Login</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">modal.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Popovers -->
+	<section id="bs-popovers" class="panel">
+		<header class="panel__heading">
+			<h2>Popovers</h2>
+			<p>A way to show secondary content in small overlays</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Example</h3>
+				</header>
+				<button type="button" class="btn btn--danger btn--popover" id="#popover" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Four Directions</h3>
+				</header>
+				<button type="button" class="btn btn--default  btn--popover" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+				Popover on left
+				</button>
+
+				<button type="button" class="btn btn--default  btn--popover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+				Popover on top
+				</button>
+
+				<button type="button" class="btn btn--default  btn--popover" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+				sagittis lacus vel augue laoreet rutrum faucibus.">
+				Popover on bottom
+				</button>
+
+				<button type="button" class="btn btn--default  btn--popover" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+				Popover on right
+				</button>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Dismiss Popovers</h3>
+				</header>
+				<button type="button" class="btn btn--danger popover-dismiss" data-toggle="popover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</button>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">popover.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Progress Bars -->
+	<section id="bs-progress__bars" class="panel">
+		<header class="panel__heading">
+			<h2>Progress Bars</h2>
+			<p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Basic example</h3>
+				</header>
+				<div class="progress">
+					<div class="progress__bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only">60% Complete</span>
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>With Labels</h3>
+				</header>
+				<div class="progress">
+					<div class="progress__bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					60%
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Low percentages</h3>
+				</header>
+				<div class="progress">
+					<div class="progress__bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+					0%
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress__bar" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="100" style="width:2%;">
+					2%
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Contextual alternatives</h3>
+				</header>
+				<div class="progress">
+					<div class="progress__bar progress__bar--success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						<span class="sr-only">40% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress__bar progress__bar--info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+						<span class="sr-only">20% Complete</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress__bar progress__bar--warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						<span class="sr-only">60% Complete (warning)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress__bar progress__bar--danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+						<span class="sr-only">80% Complete</span>
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Striped</h3>
+				</header>
+				<div class="progress">
+					<div class="progress__bar progress__bar--success progress__bar--striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						<span class="sr-only">40% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress__bar progress__bar--info progress__bar--striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+						<span class="sr-only">20% Complete</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress__bar progress__bar--warning progress__bar--striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						<span class="sr-only">60% Complete (warning)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress__bar progress__bar--danger progress__bar--striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+						<span class="sr-only">80% Complete (danger)</span>
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Animated</h3>
+				</header>
+				<div class="progress">
+					<div class="progress__bar progress__bar--striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+						<span class="sr-only">45% Complete</span>
+					</div>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Stacked</h3>
+				</header>
+				<div class="progress">
+					<div class="progress__bar progress__bar--success" style="width: 35%">
+						<span class="sr-only">35% Complete (success)</span>
+					</div>
+					<div class="progress__bar progress__bar--warning progress__bar--striped" style="width: 20%">
+						<span class="sr-only">20% Complete (warning)</span>
+					</div>
+					<div class="progress__bar progress__bar--danger" style="width: 10%">
+						<span class="sr-only">10% Complete (danger)</span>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Tooltip -->
+	<section id="bs-tooltip" class="panel">
+		<header class="panel__heading">
+			<h2>Tooltip</h2>
+			<p>Shows little helper content</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Example</h3>
+				</header>
+				<p>Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+    </p>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">tooltip.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Wells -->
+	<section id="bs-wells" class="panel">
+		<header class="panel__heading">
+			<h2>Wells</h2>
+			<p>Simple element to give an inset effect</p>
+		</header>
+		<div class="panel__body">
+			<section class="sub-section">
+				<header>
+					<h3>Example</h3>
+				</header>
+				<div class="well">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+			</section>
+			<section class="sub-section">
+				<header>
+					<h3>Large and Small</h3>
+				</header>
+				<div class="well well--lg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+				<div class="well well--sm">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+			</section>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Tabs -->
+	<section id="bs-tabs" class="panel">
+		<header class="panel__heading">
+			<h2>Tabs</h2>
+			<p>Quick way of showing/hiding content with tabs</p>
+		</header>
+		<div class="panel__body">
+			<!-- Nav tabs -->
+			<ul class="nav nav--tabs" role="tablist">
+				<li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+				<li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+				<li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+				<li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-content__pane active" id="home"><p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p></div>
+				<div class="tab-content__pane" id="profile"><p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p></div>
+				<div class="tab-content__pane" id="messages"><p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p></div>
+				<div class="tab-content__pane" id="settings"><p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p></div>
+			</div>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">tab.js</li>
+			</ul>
+		</footer>
+	</section>
+	<!-- Collapse -->
+	<section id="bs-collapse" class="panel">
+		<header class="panel__heading">
+			<h2>Collapse</h2>
+			<p>Component that works like an accordion</p>
+		</header>
+		<div class="panel__body">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-group--default">
+					<div class="panel__heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Collapsible Group Item #1</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel__body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+					</div>
+				</div>
+				<div class="panel panel-group--default">
+					<div class="panel__heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible Group Item #2</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+					<div class="panel__body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+				</div>
+				</div>
+				<div class="panel panel-group--default">
+					<div class="panel__heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Collapsible Group Item #3</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel__body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="panel__footer">
+			<ul class="labels">
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
+				<li class="label label--info">collapse.js</li>
+			</ul>
+		</footer>
+	</section>
+</article>

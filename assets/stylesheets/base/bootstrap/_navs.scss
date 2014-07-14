@@ -145,7 +145,7 @@
 				margin-bottom: -1px;
 			}
 		}
-		> .dropdown .dropdown-menu {
+		> .dropdown .dropdown__menu {
 			top: auto;
 			left: auto;
 		}
@@ -203,8 +203,8 @@
 
 // Hide tabbable panes to start, show them when `.active`
 .tab-content {
-  > .tab-pane {
-    display: none;
+	&__pane {
+		display: none;
   }
   > .active {
     display: block;
@@ -216,7 +216,7 @@
 // -------------------------
 
 // Specific dropdowns
-.nav-tabs .dropdown-menu {
+.nav-tabs .dropdown__menu {
   // make dropdown border overlap tab border
   margin-top: -1px;
   // Remove the top rounded corners here since there is a hard edge above the menu

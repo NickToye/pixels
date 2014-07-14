@@ -26,29 +26,25 @@
 
 // TODO: Research this mixin
 @mixin list-group-item-variant($state, $background, $color) {
-  .list-group-item-#{$state} {
+  &--#{$state} {
     color: $color;
     background-color: $background;
 
     // [converter] extracted a& to a.list-group-item-#{$state}
   }
+ }
 
-  a.list-group-item-#{$state} {
-    color: $color;
-
-    .list-group-item-heading { color: inherit; }
-
-    &:hover,
-    &:focus {
-      color: $color;
-      background-color: darken($background, 5%);
-    }
-    &.active,
-    &.active:hover,
-    &.active:focus {
-      color: #fff;
-      background-color: $color;
-      border-color: $color;
-    }
-  }
-}
+@mixin list-group-item-link-variant($state,$background,$color) {
+	&--#{$state}{
+		color: $color;
+		&:hover, &:focus {
+			color: $color;
+			background-color:  darken($background,5%);
+		}
+		&.active, &active:hover, &.active:focus {
+			color: $white;
+			background-color: $color;
+			border-color: $color;
+		}
+	}
+ }

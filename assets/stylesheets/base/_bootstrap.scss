@@ -30,16 +30,17 @@
 @import "bootstrap/badges";
 @import "bootstrap/jumbotron";
 @import "bootstrap/figures";
-// @import "bootstrap/progress-bars";
-// @import "bootstrap/media";
-// @import "bootstrap/list-group";
+@import "bootstrap/progress-bars";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
 @import "bootstrap/panels";
 @import "bootstrap/wells";
+@import "bootstrap/tab";
 
 // Components w/ JavaScript
-// @import "bootstrap/modals";
-// @import "bootstrap/tooltip";
-// @import "bootstrap/popovers";
+@import "bootstrap/modals";
+@import "bootstrap/tooltip";
+@import "bootstrap/popovers";
 @import "bootstrap/carousel";
 
 // Utility classes
@@ -82,6 +83,14 @@ body.bootstrap {
 			@include grid-mb(d,1,10);
 			padding: rem($rhythm-unit) 0 0 0;
 			p { color: $white;}
+		}
+		.panel {
+			header.panel__heading {
+				background: $gray-darker;
+			}
+			> .panel__body {
+				border: none;
+			}
 		}
 
 	}

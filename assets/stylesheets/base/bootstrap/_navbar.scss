@@ -181,7 +181,7 @@
 		}
 		@include gs-media(m,max) {
 			// Dropdowns get custom display when collapsed
-			.open .dropdown-menu {
+			.open .dropdown__menu {
 				position: static;
 				float: none;
 				width: auto;
@@ -236,14 +236,14 @@
 				}
 				&.navbar__right:last-child {
 					margin-right: -$navbar-padding-horizontal;
-					.dropdown-menu {
+					.dropdown__menu {
 						right: 0;
 						left: auto;
 					}
 				}
 			}
 		// Menu position and menu carets
-		> li .dropdown-menu {
+		> li .dropdown__menu {
 			margin-top: 0;
 			@include border-top-radius(0);
 			a { @include font-size($navbar-font-size, $line-height: true, $margin-bottom: false);}

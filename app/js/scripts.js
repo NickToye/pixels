@@ -1,3 +1,4 @@
+// bootstrap
 /* ========================================================================
  * Bootstrap: alert.js v3.1.0
  * http://getbootstrap.com/javascript/#alerts
@@ -383,7 +384,7 @@
   }
 
   Carousel.prototype.getActiveIndex = function () {
-    this.$active = this.$element.find('.carousel__item.active')
+    this.$active = this.$element.find('.carousel__items__item.active')
     this.$items  = this.$active.parent().children()
 
     return this.$items.index(this.$active)
@@ -425,7 +426,7 @@
   }
 
   Carousel.prototype.slide = function (type, next) {
-    var $active   = this.$element.find('.carousel__item.active')
+    var $active   = this.$element.find('.carousel__items__item.active')
     var $next     = next || $active[type]()
     var isCycling = this.interval
     var direction = type == 'next' ? 'left' : 'right'
@@ -434,7 +435,7 @@
 
     if (!$next.length) {
       if (!this.options.wrap) return
-      $next = this.$element.find('.carousel__item')[fallback]()
+      $next = this.$element.find('.carousel__items__item')[fallback]()
     }
 
     if ($next.hasClass('active')) return this.sliding = false
@@ -1211,7 +1212,7 @@
 
     if (this.options.remote) {
       this.$element
-        .find('.modal-content')
+        .find('.modal__content')
         .load(this.options.remote, $.proxy(function () {
           this.$element.trigger('loaded.bs.modal')
         }, this))
@@ -1266,7 +1267,7 @@
       var e = $.Event('shown.bs.modal', { relatedTarget: _relatedTarget })
 
       transition ?
-        that.$element.find('.modal-dialog') // wait for modal to slide in
+        that.$element.find('.modal__dialog') // wait for modal to slide in
           .one($.support.transition.end, function () {
             that.$element.focus().trigger(e)
           })
@@ -1944,7 +1945,7 @@
 }(jQuery);
 
 
-
+// 3rd party
 // Gridset Overlay JS
 
 gs = {
@@ -8440,6 +8441,7 @@ gs.init();
 }(window.jQuery));
 
 
+// application specific
 $(document).ready(function() {
 	// Validator
     $('.form-horizontal').bootstrapValidator({
@@ -8489,6 +8491,14 @@ $(document).ready(function() {
             $(this).dequeue();
 		});
 	});
+
+	// Popovers
+	$(".btn--popover").popover();
+	$('.popover-dismiss').popover({
+		trigger: 'focus'
+	})
+
+	// Tooltips
+	$('*').tooltip();
+
 });
-
-

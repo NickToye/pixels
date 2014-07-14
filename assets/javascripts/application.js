@@ -47,6 +47,14 @@ $(document).ready(function() {
             $(this).dequeue();
 		});
 	});
+
+	// Popovers
+	$(".btn--popover").popover();
+	$('.popover-dismiss').popover({
+		trigger: 'focus'
+	})
+
+	// Tooltips
+	$('*').tooltip();
+
 });
-
-

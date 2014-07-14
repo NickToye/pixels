@@ -21,7 +21,7 @@
 
     if (this.options.remote) {
       this.$element
-        .find('.modal-content')
+        .find('.modal__content')
         .load(this.options.remote, $.proxy(function () {
           this.$element.trigger('loaded.bs.modal')
         }, this))
@@ -76,7 +76,7 @@
       var e = $.Event('shown.bs.modal', { relatedTarget: _relatedTarget })
 
       transition ?
-        that.$element.find('.modal-dialog') // wait for modal to slide in
+        that.$element.find('.modal__dialog') // wait for modal to slide in
           .one($.support.transition.end, function () {
             that.$element.focus().trigger(e)
           })

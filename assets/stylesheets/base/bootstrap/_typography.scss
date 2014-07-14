@@ -73,10 +73,8 @@ p {
 // - Links
 a {
 	text-decoration: none;
-	&:link {
-		color: $link-color;
-	}
-	&:hover, &:visited {
+	color: $link-color;
+	&:hover{
 		color: $link-hover-color;
 	}
 }

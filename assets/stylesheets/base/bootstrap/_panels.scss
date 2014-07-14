@@ -4,7 +4,7 @@
 
 // TODO: Apply BEM to Panels
 // TODO: Apply Baseline Grid
-
+// // TODO: tidy up
 
 
 // Base class
@@ -12,13 +12,19 @@
 	border-radius: $panel-border-radius;
 	@include gs-span(m,all);
 	margin-bottom: rem($base-line-height);
+	.panel-group & {
+		border: 1px solid $panel-default-border-color;
+		margin-bottom: 0;
+		margin-top: 5px;
+		&:first-child { margin-top: 0;}
+	}
 	// Optional heading
 	&__heading {
-	padding: $panel-header-padding;
-	background-color: $panel-default-heading-background-color;
-	border-radius: $panel-border-radius $panel-border-radius 0 0;
-	margin: 0;
-	color: $panel-default-heading-text-color;
+		padding: $panel-header-padding;
+		background-color: $panel-default-heading-background-color;
+		border-radius: $panel-border-radius $panel-border-radius 0 0;
+		margin: 0;
+		color: $panel-default-heading-text-color;
 		h2 {
 			color: inherit;
 			font: {
@@ -34,6 +40,11 @@
 		p {
 			color: $gray-light;
 			margin-bottom: 0;
+		}
+		.panel-group & {
+			h4 {
+				margin-bottom: 0;
+			}
 		}
 	}
 	// Panel contents
@@ -52,6 +63,7 @@
 	}
 	.sub-section {
 		@include clearfix;
+		@include gs-span(m,all);
 		margin-bottom: rem($rhythm-unit);
 		padding-bottom: rem($rhythm-unit);
 		border-bottom: $border-width $border-style $gray-lighter;
@@ -214,30 +226,31 @@
 // the help of our collapse JavaScript plugin.
 
 .panel-group {
-  margin-bottom: $base-line-height;
-
-  // Tighten up margin so it's only between panels
-  .panel {
-    margin-bottom: 0;
-    border-radius: $panel-border-radius;
-    overflow: hidden; // crop contents when collapsed
-    + .panel {
-      margin-top: 5px;
-    }
-  }
-
-  .panel-heading {
-    border-bottom: 0;
-    + .panel-collapse .panel-body {
-      border-top: 1px solid $panel-inner-border-color;
-    }
-  }
-  .panel-footer {
-    border-top: 0;
-    + .panel-collapse .panel-body {
-      border-bottom: 1px solid $panel-inner-border-color;
-    }
-  }
+	margin-bottom: $base-line-height;
+	// Tighten up margin so it's only between panels
+	&__panel {
+		margin-bottom: 0;
+		border-radius: $panel-border-radius;
+		overflow: hidden; // crop contents when collapsed
+		+ .panel-group__panel {
+			margin-top: 5px;
+		}
+		&.panel-body {
+			border-top: 1px solid $panel-inner-border-color;
+		}
+		&.panel-heading {
+			border-bottom: 0;
+			+ .panel-collapse .panel-body {
+				border-top: 1px solid $panel-inner-border-color;
+			}
+		}
+		&.panel-footer {
+			border-top: 0;
+			+ .panel-collapse .panel-body {
+				border-bottom: 1px solid $panel-inner-border-color;
+			}
+		}
+	}
 }
 
 

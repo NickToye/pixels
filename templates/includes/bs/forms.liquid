@@ -83,8 +83,8 @@
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
-				<li class="label label-info">CSS</li>
-				<li class="label label-info">HTML</li>
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
 			</ul>
 		</footer>
 	</section>
@@ -116,8 +116,8 @@
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
-				<li class="label label-info">CSS</li>
-				<li class="label label-info">HTML</li>
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
 			</ul>
 		</footer>
 	</section>
@@ -153,8 +153,8 @@
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
-				<li class="label label-info">CSS</li>
-				<li class="label label-info">HTML</li>
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
 			</ul>
 		</footer>
 	</section>
@@ -193,8 +193,8 @@
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
-				<li class="label label-info">CSS</li>
-				<li class="label label-info">HTML</li>
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
 			</ul>
 		</footer>
 	</section>
@@ -293,9 +293,9 @@
 				<form role="form" class="form">
 					<fieldset class="controls">
 						<div class="input-group">
-							<span class="input-group--btn">
+							<span class="input-group--btn dropdown">
 								<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-								<ul class="dropdown-menu" role="menu">
+								<ul class="dropdown__menu" role="menu">
 									<li><a href="#">Action</a></li>
 									<li><a href="#">Another action</a></li>
 									<li><a href="#">Something else here</a></li>
@@ -309,9 +309,9 @@
 					<fieldset class="controls">
 						<div class="input-group">
 							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
-							<span class="input-group--btn">
+							<span class="input-group--btn dropdown">
 								<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-								<ul class="dropdown-menu" role="menu">
+								<ul class="dropdown__menu" role="menu">
 									<li><a href="#">Action</a></li>
 									<li><a href="#">Another action</a></li>
 									<li><a href="#">Something else here</a></li>
@@ -330,10 +330,10 @@
 				<form role="form" class="form">
 					<fieldset class="controls">
 						<div class="input-group">
-							<span class="input-group--btn">
+							<span class="input-group--btn dropdown">
 								<button class="btn btn-info" type="button">Info!</button>
 								<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-								<ul class="dropdown-menu" role="menu">
+								<ul class="dropdown__menu" role="menu">
 									<li><a href="#">Action</a></li>
 									<li><a href="#">Another action</a></li>
 									<li><a href="#">Something else here</a></li>
@@ -347,10 +347,10 @@
 					<fieldset class="controls">
 						<div class="input-group">
 							<input type="text" class="controls--control" name="" id="exampleUsername" placeholder="Enter username">
-							<span class="input-group--btn">
+							<span class="input-group--btn dropdown">
 								<button class="btn btn-info" type="button">Info!</button>
 								<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-								<ul class="dropdown-menu" role="menu">
+								<ul class="dropdown__menu" role="menu">
 									<li><a href="#">Action</a></li>
 									<li><a href="#">Another action</a></li>
 									<li><a href="#">Something else here</a></li>
@@ -365,8 +365,8 @@
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
-				<li class="label label-info">CSS</li>
-				<li class="label label-info">HTML</li>
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
 			</ul>
 		</footer>
 	</section>
@@ -385,6 +385,8 @@
 				<button type="button" class="btn btn--default">Default</button>
 				<!-- Primary Button -->
 				<button type="button" class="btn btn--primary">Primary</button>
+				<!-- Secondary Button -->
+				<button type="button" class="btn btn--secondary">Secondary</button>
 				<!-- Success Button -->
 				<button type="button" class="btn btn--success">Success</button>
 				<!-- Info Button -->
@@ -451,8 +453,8 @@
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
-				<li class="label label-info">CSS</li>
-				<li class="label label-info">HTML</li>
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
 			</ul>
 		</footer>
 	</section>
@@ -536,12 +538,12 @@
 				<div class="btn-group">
 					<button type="button" class="btn btn--default">1</button>
 					<button type="button" class="btn btn--default">2</button>
-					<div class="btn-group">
+					<div class="btn-group dropdown">
 						<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
 							Dropdown
 							<span class="caret"></span>
 						</button>
-						<ul class="dropdown-menu" role="menu">
+						<ul class="dropdown__menu" role="menu">
 							<li><a href="#">Dropdown link</a></li>
 							<li><a href="#">Dropdown link</a></li>
 						</ul>
@@ -555,12 +557,12 @@
 				<div class="btn-group-vertical">
 					<button type="button" class="btn btn--default">1</button>
 					<button type="button" class="btn btn--default">2</button>
-					<div class="btn-group">
+					<div class="btn-group dropdown">
 						<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
 							Dropdown
 							<span class="caret"></span>
 						</button>
-						<ul class="dropdown-menu" role="menu">
+						<ul class="dropdown__menu" role="menu">
 							<li><a href="#">Dropdown link</a></li>
 							<li><a href="#">Dropdown link</a></li>
 						</ul>
@@ -597,8 +599,8 @@
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
-				<li class="label label-info">CSS</li>
-				<li class="label label-info">HTML</li>
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
 			</ul>
 		</footer>
 	</section>
@@ -613,11 +615,11 @@
 				<header>
 					<h3>Single Button</h3>
 				</header>
-				<div class="btn-group">
+				<div class="btn-group dropdown">
 					<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
 						Action <span class="caret"></span>
 					</button>
-					<ul class="dropdown-menu" role="menu">
+					<ul class="dropdown__menu" role="menu">
 						<li><a href="#">Action</a></li>
 						<li><a href="#">Another action</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -625,11 +627,11 @@
 						<li><a href="#">Separated link</a></li>
 					</ul>
 				</div>
-				<div class="btn-group">
+				<div class="btn-group dropdown">
 					<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">
 						Action <span class="caret"></span>
 					</button>
-					<ul class="dropdown-menu" role="menu">
+					<ul class="dropdown__menu" role="menu">
 						<li><a href="#">Action</a></li>
 						<li><a href="#">Another action</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -642,13 +644,13 @@
 				<header>
 					<h3>Split Button Dropdowns</h3>
 				</header>
-				<div class="btn-group">
+				<div class="btn-group dropdown">
 					<button type="button" class="btn btn--danger">Action</button>
 					<button type="button" class="btn btn--danger dropdown-toggle" data-toggle="dropdown">
 						<span class="caret"></span>
 						<span class="sr-only">Toggle Dropdown</span>
 					</button>
-					<ul class="dropdown-menu" role="menu">
+					<ul class="dropdown__menu" role="menu">
 						<li><a href="#">Action</a></li>
 						<li><a href="#">Another action</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -656,13 +658,13 @@
 						<li><a href="#">Separated link</a></li>
 					</ul>
 				</div>
-				<div class="btn-group">
+				<div class="btn-group dropdown">
 					<button type="button" class="btn btn--success">Action</button>
 					<button type="button" class="btn btn--success dropdown-toggle" data-toggle="dropdown">
 						<span class="caret"></span>
 						<span class="sr-only">Toggle Dropdown</span>
 					</button>
-					<ul class="dropdown-menu" role="menu">
+					<ul class="dropdown__menu" role="menu">
 						<li><a href="#">Action</a></li>
 						<li><a href="#">Another action</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -676,29 +678,29 @@
 					<h3>Sizing</h3>
 				</header>
 				<div class="btn-toolbar" role="toolbar">
-					<div class="btn-group">
-					<button type="button" class="btn btn--success btn--lg">Action</button>
-					<button type="button" class="btn btn--success btn--lg dropdown-toggle" data-toggle="dropdown">
-						<span class="caret"></span>
-						<span class="sr-only">Toggle Dropdown</span>
-					</button>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</div>
+					<div class="btn-group dropdown">
+						<button type="button" class="btn btn--success btn--lg">Action</button>
+						<button type="button" class="btn btn--success btn--lg dropdown-toggle" data-toggle="dropdown">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown__menu" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="btn-toolbar" role="toolbar">
-					<div class="btn-group">
+					<div class="btn-group dropdown">
 					<button type="button" class="btn btn--success btn--sm">Action</button>
 					<button type="button" class="btn btn--success btn--sm dropdown-toggle" data-toggle="dropdown">
 						<span class="caret"></span>
 						<span class="sr-only">Toggle Dropdown</span>
 					</button>
-					<ul class="dropdown-menu" role="menu">
+					<ul class="dropdown__menu" role="menu">
 						<li><a href="#">Action</a></li>
 						<li><a href="#">Another action</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -708,13 +710,13 @@
 				</div>
 				</div>
 				<div class="btn-toolbar" role="toolbar">
-					<div class="btn-group">
+					<div class="btn-group dropdown">
 					<button type="button" class="btn btn--success btn--xs">Action</button>
 					<button type="button" class="btn btn--success btn--xs dropdown-toggle" data-toggle="dropdown">
 						<span class="caret"></span>
 						<span class="sr-only">Toggle Dropdown</span>
 					</button>
-					<ul class="dropdown-menu" role="menu">
+					<ul class="dropdown__menu" role="menu">
 						<li><a href="#">Action</a></li>
 						<li><a href="#">Another action</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -734,7 +736,7 @@
 					<span class="caret"></span>
 					<span class="sr-only">Toggle Dropdown</span>
 					</button>
-					<ul class="dropdown-menu" role="menu">
+					<ul class="dropup__menu" role="menu">
 						<li><a href="#">Action</a></li>
 						<li><a href="#">Another action</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -746,8 +748,8 @@
 		</div>
 		<footer class="panel__footer">
 			<ul class="labels">
-				<li class="label label-info">CSS</li>
-				<li class="label label-info">HTML</li>
+				<li class="label label--info">CSS</li>
+				<li class="label label--info">HTML</li>
 			</ul>
 		</footer>
 	</section>
