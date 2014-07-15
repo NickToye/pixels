@@ -60,12 +60,60 @@ body.bootstrap {
 		@include gs-media(d,min) {
 			@include gs-span(d,11,12,(1,12));
 		}
+// 		height: 300px;
 		position: relative;
+		top: 40px;
 		h1 { @include font-size($h3, $line-height: true, $margin-bottom: true); font-weight: $normal;}
-		.affix {
-			position: fixed;
-			top: 60px;
+		nav {
+			ul.nav {
+				background: $white;
+				border-radius: $radius;
+				> li {
+					width: 100%;
+					border-bottom: 1px solid $gray-lighter;
+					&:last-child {
+						border-bottom: none;
+					}
+					&:first-child a {
+						border-radius: $radius $radius 0 0;
+					}
+					&:last-child a {
+						border-radius: 0 0 $radius $radius;
+					}
+				}
+				> li > a {
+					@include font-size(13,$line-height:true,$margin-bottom:false);
+					padding: rem($rhythm-unit)/2 rem($rhythm-unit);
+					&:hover {
+						background: none;
+					}
+				}
+				ul {
+					margin-left: rem($rhythm-unit);
+					margin-bottom: rem($rhythm-unit);
+					padding-left: rem($rhythm-unit);
+					border-left: 2px solid $brand-primary;
+					display: none;
+				}
+				> li.active ul {
+					display: block;
+				}
+				ul > li > a {
+					@include font-size(12,$line-height:true,$margin-bottom:false);
+					color: $gray-light;
+					&:hover {
+						color: $gray-dark;
+					}
+				}
+			}
+
 		}
+		.affix {
+			width: 180px;
+			position: fixed;
+			top: 40px;
+		}
+
 		.affix-bottom {
 			position: absolute;
 		}

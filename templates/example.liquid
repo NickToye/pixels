@@ -1,16 +1,12 @@
 {% layout "bootstrap" %}
 {% block content %}
-
-
 	<main>
-
 		<section class="jumbotron">
 
-			<header>
 				<h1>Style Guide</h1>
 				<p>Built on the foundation of Bootstrap, this style guide serves to demonstrate the styles available to Pixels + Code</p>
-				<p><a href="#" class="btn btn--secondary"><i class="fa fa-heart"></i>Hire Me</a></p>
-			</header>
+				<p><a href="#" class="btn btn--secondary btn--lg" role="button"><i class="fa fa-heart"></i>Hire Me</a></p>
+
 		</section>
 		{% include "bs/typography" %}
 		{% include "bs/color" %}
@@ -19,12 +15,10 @@
 		{% include "bs/forms" %}
 		{% include "bs/navs" %}
 		{% include "bs/components" %}
-
 	</main>
 
-	<aside class="in-page-nav panel">
-		<nav data-spy="affix" data-offset-top="60" data-offset-bottom="200" class="panel-body">
-		<h1>Style Menu</h1>
+	<aside class="in-page-nav">
+		<nav data-spy="affix" data-offset-top="40" data-offset-bottom="200" id="nav-content">
 			<ul class="nav">
 				<li><a href="#bs-typography">Typography</a>
 					<ul>
@@ -37,30 +31,48 @@
 						<li><a href="#bs-code">Code</a></li>
 					</ul>
 				</li>
-				<li><a href="#bs-color">Color</a></li>
+				<li><a href="#bs-color">Color</a>
+					<ul>
+						<li><a href="#bs-branding">Branding</a></li>
+					</ul>
+				</li>
 				<li><a href="#bs-images">Images</a>
 					<ul>
 						<li><a href="#bs-thumbnails">Thumbnails</a></li>
+						<li><a href="#bs-image-frames">Image Frames</a></li>
 					</ul>
 				</li>
-				<li><a href="#bs-tables">Tables</a></li>
+				<li><a href="#bs-tables">Tables</a>
+					<ul>
+						<li><a href="#bs-basic-table">Basic Table</a></li>
+						<li><a href="#bs-striped-table">Striped Table</a></li>
+						<li><a href="#bs-bordered-table">Bordered Table</a></li>
+						<li><a href="#bs-condensed-table">Condensed Table</a></li>
+						<li><a href="#bs-hover-table">Hover Table</a></li>
+						<li><a href="#bs-contextual-table">Contextual Table</a></li>
+						<li><a href="#bs-responsive-table">Responsive Table</a></li>
+					</ul>
+				</li>
 				<li><a href="#bs-forms">Forms</a>
 					<ul>
 						<li><a href="#bs-basic-form">Basic Form</a></li>
 						<li><a href="#bs-inline-form">Inline Form</a></li>
 						<li><a href="#bs-horizontal-form">Horizontal Form</a></li>
+						<li><a href="#bs-validation-states">Validation States</a></li>
 						<li><a href="#bs-input-groups">Input Groups</a></li>
 						<li><a href="#bs-buttons">Buttons</a></li>
 						<li><a href="#bs-button-groups">Button Groups</a></li>
+						<li><a href="#bs-button-dropdowns">Button Dropdowns</a></li>
 					</ul>
 				</li>
 				<li><a href="#bs-navigation">Navigation</a>
 					<ul>
-						<li><a href="#bs-navs">Navs</a></li>
-						<li><a href="#bs-navbar">Nav Bar</a></li>
 						<li><a href="#bs-tabs">Tabs</a></li>
 						<li><a href="#bs-pills">Pills</a></li>
 						<li><a href="#bs-pagination">Pagination</a></li>
+						<li><a href="#bs-pager">Pager</a></li>
+						<li><a href="#bs-navbar">Nav Bar</a></li>
+						<li><a href="#bs-breadcrumbs">Breadcrumbs</a></li>
 					</ul>
 				</li>
 				<li><a href="#bs-components">Components</a>
@@ -69,6 +81,7 @@
 						<li><a href="#bs-badges">Badges</a></li>
 						<li><a href="#bs-carousel">Carousel</a></li>
 						<li><a href="#bs-dropdowns">Dropdowns</a></li>
+						<li><a href="#bs-scrollspy">Scrollspy</a></li>
 						<li><a href="#bs-jumbotron">Jumbotron</a></li>
 						<li><a href="#bs-labels">Labels</a></li>
 						<li><a href="#bs-list-groups">List Groups</a></li>
@@ -78,9 +91,13 @@
 						<li><a href="#bs-progress-bars">Progress Bars</a></li>
 						<li><a href="#bs-tooltip">Tooltip</a></li>
 						<li><a href="#bs-wells">Wells</a></li>
+						<li><a href="#bs-tab-content">Tab Content</a></li>
+						<li><a href="#bs-collapse">Collapse</a></li>
 					</ul>
 				</li>
+				<li><a href="#top">Back to top <i class="fa fa-angle-up"></i></a></li>
 			</ul>
+
 		</nav>
 	</aside>
 

@@ -57,4 +57,6 @@ $(document).ready(function() {
 	// Tooltips
 	$('*').tooltip();
 
+	// Scrollspy
+	$('body').scrollspy({ target: '#nav-content' })
 });
