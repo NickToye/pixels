@@ -18,7 +18,7 @@
 @import "mixins/layout";
 @import "mixins/lists";
 @import "mixins/misc";
-@import "mixins/rwd-padding-margin"; // TODO: Need to understand this
+/* @import "mixins/rwd-padding-margin"; */ // This is to use pixel free values, not currently needed.
 @import "mixins/shapes";
 @import "mixins/tables";
 @import "mixins/texture";

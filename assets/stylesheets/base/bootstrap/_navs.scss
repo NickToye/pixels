@@ -2,9 +2,6 @@
 // ---------------------------
 // Bootstrap Component
 
-// TODO: Apply BEM to Navs
-// TODO: Apply Baseline Grid
-
 // Base class
 // --------------------------------------------------
 
@@ -49,7 +46,6 @@
 		&:focus {
 			background-color: $nav-link-hover-background-color;
 			border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
-// 			border-color: $link-color;
 		}
 	}
 	// Prevent IE8 from misplacing imgs
@@ -159,7 +155,7 @@
 }
 
 // TODO: Remove corners from pills when stacked
-
+// TODO: Sort out below
 
 // Nav variations
 // --------------------------------------------------

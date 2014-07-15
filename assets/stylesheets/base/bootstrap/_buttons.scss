@@ -2,12 +2,8 @@
 // ---------------------------
 // Bootstrap CSS Component
 
-// TODO: Apply BEM to Buttons
-// TODO: Apply Baseline Grid
-
 // Base styles
 // --------------------------------------------------
-
 
 .btn {
 	display: inline-block;
@@ -127,7 +123,6 @@
 		}
 	}
 }
-
 // Specificity overrides
 input[type="submit"],
 input[type="reset"],
@@ -136,16 +131,3 @@ input[type="button"] {
 		width: 100%;
 	}
 }
-
-
-
-// Vertically space out multiple block buttons
-// TODO: how does this work?
-/*
-.btn-block + .btn-block {
-  margin-top: 5px;
-}
-*/
-
-
-

@@ -1,41 +1,33 @@
 // Lists
 // ---------------------------
 // Mixin for Lists
-
 @mixin inline-list {
 	padding: 0;
 	display: inline;
 	list-style: none;
 }
-
 @mixin block-list {
 	padding: 0;
 	display: block;
 	list-style: none;
 }
-
 @mixin no-bullet {
 	padding: 0;
 	list-style: none;
 }
-
 @mixin bullets($bullet, $padding-left: 0) {
 	background: url($bullet) no-repeat 0 0;
 	padding-left: $padding-left;
 }
-
-// TODO: Research this mixin
 @mixin list-group-item-variant($state, $background, $color) {
-  &--#{$state} {
-    color: $color;
-    background-color: $background;
-
-    // [converter] extracted a& to a.list-group-item-#{$state}
-  }
- }
-
+	&--#{$state} {
+		color: $color;
+		background-color: $background;
+		// [converter] extracted a& to a.list-group-item-#{$state}
+	}
+}
 @mixin list-group-item-link-variant($state,$background,$color) {
-	&--#{$state}{
+	&--#{$state} {
 		color: $color;
 		&:hover, &:focus {
 			color: $color;
@@ -47,4 +39,4 @@
 			border-color: $color;
 		}
 	}
- }
+}

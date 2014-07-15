@@ -4,107 +4,94 @@
 
 // Clearfix
 @mixin clearfix() {
-    &:before,
-    &:after {
-        content: " "; // 1
-        display: table; // 2
-    }
-    &:after {
-        clear: both;
-    }
+	&:before,
+	&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
 }
-
 // inline-block
 @mixin inline-block {
 	display: inline-block;
 	.lt-ie9 & {
-	    zoom: 1;
-        *display: inline;
+		zoom: 1;
+		*display: inline;
 	}
 }
-
 // Resize anything
 @mixin resizable($direction) {
-    resize: $direction; // Options: horizontal, vertical, both
-    overflow: auto; // Safari fix
+	resize: $direction; // Options: horizontal, vertical, both
+	overflow: auto; // Safari fix
 }
-
 // Image Replacement
 @mixin ir() {
-    color: transparent;
-    font: 0/0 a;
-    text-shadow: none;
+	color: transparent;
+	font: 0/0 a;
+	text-shadow: none;
 }
-
 @mixin hide-text() {
-  font: #{0/0} a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
+	font: #{0/0} a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
 }
 // New mixin to use as of v3.0.1
 @mixin text-hide() {
-  @include hide-text();
+	@include hide-text();
 }
-
 // Zero Stuff
 @mixin zero {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
-
 @mixin zero-list {
 	@include zero;
 	list-style: none;
 }
-
 @mixin zero-focus {
-    outline: 0;
-    border: 0;
-    @include box-shadow(none);
+	outline: 0;
+	border: 0;
+	@include box-shadow(none);
 }
-
 // Baseline Guide
 $guide-color: rgba($black,.1); // TODO: put these in variables
 $guide-background: $body-background-color;
-
 @mixin baseline-guide() {
-    background-color: $guide-background;
-    @include background-image(linear-gradient($guide-color 1px, transparent 1px));
-    background-size: 100% rem($rhythm-unit);
+	background-color: $guide-background;
+	@include background-image(linear-gradient($guide-color 1px, transparent 1px));
+	background-size: 100% rem($rhythm-unit);
 }
-
 // Scaffold
 // TODO: Do I need this with the other bootstrap version?
 @mixin scaffold($block:outline) {
-    background: rgba($white,1);
-    color: $black;
-    border-radius: $radius;
+	background: rgba($white,1);
+	color: $black;
+	border-radius: $radius;
 }
-
 // Sizing shortcuts
 @mixin size($width, $height) {
-    width: $width;
-    height: $height;
+	width: $width;
+	height: $height;
 }
 @mixin square($size) {
-    @include size($size, $size);
+	@include size($size, $size);
 }
-
 // Contextual backgrounds
 // -------------------------
 // [converter] $parent hack
 @mixin bg-variant($parent, $color) {
-  #{$parent} {
-    background-color: $color;
-    padding: rem($rhythm-unit);
-    p { @include zero;}
-  }
-  // Currently not applied as an anchor
-  a#{$parent}:hover {
-    background-color: darken($color, 10%);
-  }
-
+	#{$parent} {
+		background-color: $color;
+		padding: rem($rhythm-unit);
+		p { @include zero;}
+	}
+	// Currently not applied as an anchor
+	a#{$parent}:hover {
+		background-color: darken($color, 10%);
+	}
 }

@@ -2,9 +2,6 @@
 // ---------------------------
 // Bootstrap Component
 
-// TODO: Apply BEM to Navbars
-// TODO: Apply Baseline Grid
-
 // Wrapper and base class
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
@@ -93,7 +90,6 @@
 		float: left;
 		padding: $navbar-padding-vertical $navbar-padding-horizontal;
 		@include font-size($brand-font-size,$line-height: true, $margin-bottom: false);
-// 		height: $navbar-height;
 		text-decoration: none;
 		&:hover,
 		&:focus {
@@ -109,7 +105,6 @@
 		}
 	}
 	&__collapse {
-// 		max-height: $navbar-collapse-max-height;
 		overflow-x: visible;
 		padding-right: $navbar-padding-horizontal;
 		padding-left:  $navbar-padding-horizontal;
@@ -151,7 +146,6 @@
 			clear: none;
 			margin: 0;
 		}
-
 		> li > a {
 			color: $navbar-default-link-color;
 			&:hover,

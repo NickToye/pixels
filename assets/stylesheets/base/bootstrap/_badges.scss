@@ -2,8 +2,6 @@
 // ---------------------------
 // Bootstrap Component
 
-// TODO: Apply BEM to Badges
-
 // Base classes
 .badge {
 	display: inline-block;
@@ -43,7 +41,6 @@ a.badge {
 		text-decoration: none;
 		cursor: pointer;
 	}
-
 }
 // Account for counters in navs
 a.list-group-item.active > .badge,

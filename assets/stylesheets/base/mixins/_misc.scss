@@ -2,38 +2,33 @@
 // ---------------------------
 // Mixin for Misc
 
-
-// TODO: what's this??
 // box-sizing with IE fallback and grid lovliness
 @mixin box($width:'null', $padding:'null', $margin:$gutter, $first: false) {
-
-    @if $first == false {
-    	float: left;
-    	margin-right: 0% + $margin;
-    	padding: 0% +$padding;
-    	width: 0% + $width - $margin;
-    	.lt-ie8 & {
-            margin-right: 0% + $margin;
-            padding: 0% + $padding;
-            width: 0% + $width - $padding - $padding - $margin;
-        }
-    }
-    @else {
-        float: left;
-        margin-left: 0% + $first;
-        margin-right: 0% + $margin;
-        padding: 0% +$padding;
-        width: 0% + $width - $margin - $first;
-        .lt-ie7 & {
-            margin-left: 0% + $first;
-            margin-right: 0% + $margin;
-            padding: 0% + $padding;
-            width: 0% + $width - $padding - $padding - $margin - $first;
-        }
-    }
+	@if $first == false {
+		float: left;
+		margin-right: 0% + $margin;
+		padding: 0% +$padding;
+		width: 0% + $width - $margin;
+		.lt-ie8 & {
+			margin-right: 0% + $margin;
+			padding: 0% + $padding;
+			width: 0% + $width - $padding - $padding - $margin;
+		}
+	}
+	@else {
+		float: left;
+		margin-left: 0% + $first;
+		margin-right: 0% + $margin;
+		padding: 0% +$padding;
+		width: 0% + $width - $margin - $first;
+		.lt-ie7 & {
+			margin-left: 0% + $first;
+			margin-right: 0% + $margin;
+			padding: 0% + $padding;
+			width: 0% + $width - $padding - $padding - $margin - $first;
+		}
+	}
 }
-
-
 // TODO: why 2 opacity mixins??
 // @include opacity(VALUE);
 @mixin opacity($opacity : .5) {
@@ -44,31 +39,25 @@
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})";
 	}
 }
-
 // Appearance
 @mixin appearance($value) {
-    -webkit-appearance: $value;
-       -moz-appearance: $value;
-            appearance: $value;
+	-webkit-appearance: $value;
+	-moz-appearance: $value;
+	appearance: $value;
 }
-
-
-
 // Opacity
 @mixin opacity($opacity) {
-    opacity: $opacity;
-    // IE8 filter
-    $opacity-ie: ($opacity * 100);
-    filter: #{alpha(opacity=$opacity-ie)};
+	opacity: $opacity;
+	// IE8 filter
+	$opacity-ie: ($opacity * 100);
+	filter: #{alpha(opacity=$opacity-ie)};
 }
-
 // Horizontal dividers
 // -------------------------
 // Dividers (basically an hr) within dropdowns and nav lists
 @mixin nav-divider($color: #e5e5e5) {
-  height: 1px;
-  // TODO: disabled prior to Baseline grid shit
-  margin: rem($rhythm-unit)/3 0;
-  overflow: hidden;
-  background-color: $color;
+	height: 1px;
+	margin: rem($rhythm-unit)/3 0;
+	overflow: hidden;
+	background-color: $color;
 }

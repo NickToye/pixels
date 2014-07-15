@@ -2,9 +2,6 @@
 // ---------------------------
 // Bootstrap Component
 
-// TODO: Apply BEM to Pagination
-// TODO: Apply Baseline Grid
-
 .pagination {
 	display: inline-block;
 	padding-left: 0;
@@ -89,7 +86,6 @@
 		@include gs-span(m,all);
 	}
 }
-
 // Pager
 // --------------------------------------------------
 .pager {

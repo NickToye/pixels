@@ -2,11 +2,6 @@
 // ---------------------------
 // Bootstrap Component
 
-// TODO: Apply BEM to Panels
-// TODO: Apply Baseline Grid
-// TODO: tidy up
-
-
 // Base class
 .panel {
 	border-radius: $panel-border-radius;
@@ -228,7 +223,6 @@
 		}
 	}
 }
-
 // Contextual variations
 .panel-default {
 	@include panel-variant($panel-default-border-color, $panel-default-text-color, $panel-default-heading-background-color, $panel-default-border-color);

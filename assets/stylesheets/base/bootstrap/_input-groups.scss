@@ -2,8 +2,6 @@
 // ---------------------------
 // Bootstrap Component
 
-// TODO: Apply BEM to Input Groups
-
 // Base styles
 // -------------------------
 .input-group {
@@ -16,25 +14,20 @@
     // select elements in input groups. To fix it, we float the input. Details:
     // https://github.com/twbs/bootstrap/issues/11561#issuecomment-28936855
     float: left;
-
     width: 100%;
     margin-bottom: 0;
   }
 }
-
 // Sizing options
 //
 // Remix the default form control sizing classes into new ones for easier
 // manipulation.
-
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn { @extend .input-lg; }
 .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn { @extend .input-sm; }
-
-
 // Display as table-cell
 // -------------------------
 .input-group-addon,
@@ -43,7 +36,6 @@
 	position: relative;
   display: table-cell;
   margin-bottom: 0 !important;
-
   &:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
@@ -55,7 +47,6 @@
   white-space: nowrap;
   vertical-align: middle; // Match the inputs
 }
-
 // Text input groups
 // -------------------------
 .input-group-addon {
@@ -68,7 +59,6 @@
   background-color: $input-group-addon-background-color;
   border: 1px solid $input-group-addon-border-color;
   border-radius: $radius;
-
   // Sizing
   &.input-sm {
 //     padding: $padding-small-vertical $padding-small-horizontal; // TODO: fix these
@@ -87,7 +77,6 @@
     margin-top: 0;
   }
 }
-
 // Reset rounded corners
 .input-group .controls--control:first-child,
 .input-group-addon:first-child,
@@ -113,7 +102,6 @@
 .input-group-addon:last-child {
   border-left: 0;
 }
-
 // Button input groups
 // -------------------------
 .input-group-btn {
@@ -122,7 +110,6 @@
   // `font-size` in combination with `inline-block` on buttons.
   font-size: 0;
   white-space: nowrap;
-
   // Negative margin for spacing, position for bringing hovered/focused/actived
   // element above the siblings.
   > .btn {
@@ -137,7 +124,6 @@
       z-index: 2;
     }
   }
-
   // Negative margin to only have a 1px border between the two
   &:first-child {
     > .btn,

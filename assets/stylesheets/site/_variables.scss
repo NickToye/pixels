@@ -49,23 +49,21 @@ B. COMPONENTS
 	B10. Code
 	B11. Dropdowns
 	B12. Forms
-	B13. Glyphicons // TODO: May be replacing this with Font Awesome
-	B14. Input Groups
-	B15. Jumbotron
-	B16. Labels
-	B17. List Group
-	B18. Media
-	B19. Modals
-	B20. Navbar
-	B21. Navs
-	B22. Pagination
-	B23. Panels
-	B24. Popovers
-	B25. Progress Bars
-	B26. Tables
-	B27. Thumbnails/Figures
-	B28. Tooltip
-	B29. Wells
+	B13. Jumbotron
+	B14. Labels
+	B15. List Group
+	B16. Media
+	B17. Modals
+	B18. Navbar
+	B19. Navs
+	B20. Pagination
+	B21. Panels
+	B22. Popovers
+	B23. Progress Bars
+	B24. Tables
+	B25. Thumbnails/Figures
+	B26. Tooltip
+	B27. Wells
 */
 
 // A. BASICS
@@ -95,9 +93,10 @@ $desktop-gutter-width:															gs-adjust(d,gs-gutter(d),(9,12),true);
 //  class name to target browsers that don't support media queries
 $no-mq-classname:																	".lt-ie9";
 
+// - Radius
 $radius:																							5px !default;
-$radius-large:																				$radius * 1.5;  // TODO: Check this works well
-$radius-small:																			$radius / 1.5;  // TODO: Check this works well
+$radius-large:																				$radius * 1.5;
+$radius-small:																			$radius / 1.5;
 
 // A2. ATMOSPHERE
 
@@ -137,12 +136,15 @@ $brand-pinterest:																		rgb(203,32,39);
 $brand-dribbble:																		rgb(234,76,137);
 $brand-google:																			rgb(221,75,57);
 
+// Third Party Branding
+$brand-fontawesome:															rgb(34,34,34);
+$brand-mixture:																		rgb(249,249,249);
+
 // - Hyperlinks
 $link-color:																					$brand-primary !default;
 $link-hover-color:																		darken($link-color,15%) !default;
 
 // - Blockquotes
-// TODO: Test this in example page
 $blockquote-text-color:															$text-color;
 $blockquote-background-color:											$brand-info;
 $blockquote-border-color:													$gray-lighter !default;
@@ -155,17 +157,17 @@ $text-muted:																				$gray-light !default;
 $abbr-border-color:																	$gray-light !default;
 $hr-border:																					$gray-lighter !default;
 
-// TODO: test this in example page
+// - Code
 $code-text-color:																		$brand-secondary !default;
 $code-background-color:														lighten($code-text-color, 50%) !default;
 $code-border-color:																	darken(adjust-hue($code-background-color, -10), 5%) !default;
 
-// TODO: what is KBD?
+// - KBD
 $kbd-text-color:																			$white !default;
 $kbd-background-color:														$brand-secondary !default;
 $kbd-border-color:																	darken(adjust-hue($kbd-background-color, -10), 5%) !default;
 
-// TODO: test this in example page
+// - Pre
 $pre-text-color:																			$brand-secondary !default;
 $pre-background-color:															lighten($pre-text-color, 50%) !default;
 $pre-border-color:																	darken(adjust-hue($pre-background-color, -10), 5%) !default;
@@ -443,11 +445,7 @@ $legend-background-color:														$brand-secondary !default;
 $input-group-addon-background-color:								$gray-lighter !default;
 $input-group-addon-border-color: 										$input-border-color !default;
 
-// B13. Glyphicons // TODO: checking posisble replacing this with Font Awesome
-
-// B14. Input Groups // TODO: checking if can merge with Forms
-
-// B15. Jumbotron
+// B13. Jumbotron
 
 $jumbotron-padding:																	rem(30) !default;
 $jumbotron-color:																		$white !default;
@@ -455,7 +453,7 @@ $jumbotron-background-color:												$brand-primary !default;
 $jumbotron-heading-color:														inherit !default;
 $jumbotron-font-size:																	ceil(($base-font-size * 1.5)) !default; // TODO: Apply Baseline grid
 
-// B16. Labels
+// B14. Labels
 
 $label-default-background-color:											$gray-light !default;
 $label-primary-background-color:											$brand-primary !default;
@@ -469,7 +467,7 @@ $label-link-hover-color:																$white !default;
 
 $label-font-size:																				75% !default;
 
-// B17. List Group
+// B15. List Group
 // TODO: Check this in example
 $list-group-background-color:													$white !default;
 $list-group-border-color:															$gray-lighter !default;
@@ -483,11 +481,11 @@ $list-group-active-text-color:													lighten($list-group-active-border-col
 
 $list-group-link-heading-color: 												$gray-dark !default;
 
-// B18. Media
+// B16. Media
 
 // No variables required
 
-// B19. Modals
+// B17. Modals
 
 $modal-inner-padding:																rem($rhythm-unit) !default;
 
@@ -507,8 +505,7 @@ $modal-large:																					gs-width(d,1,10,false,true) !default;
 $modal-medium:																			gs-width(d,1,6,false,true) !default;
 $modal-small:																				gs-width(d,1,3,false,true) !default;
 
-// B20. Navbar
-// TODO: Check this in example
+// B18. Navbar
 
 // Basics of a navbar
 $navbar-height:																				48px !default; // TODO: Apply Baseline Grid
@@ -518,15 +515,15 @@ $navbar-padding-horizontal:													rem($rhythm-unit) !default; // TODO: App
 $navbar-padding-vertical:															rem($rhythm-unit)  !default; // TODO: Apply Baseline Grid
 $navbar-collapse-max-height:													340px !default; // TODO: Apply Baseline Grid
 
-$navbar-default-color:																$gray !default;
-$navbar-default-background-color:										$gray-lightest !default;
+$navbar-default-color:																$gray-lightest !default;
+$navbar-default-background-color:										$gray-darker !default;
 $navbar-default-border-color:													darken($navbar-default-background-color, 6.5%) !default;
 
 // Navbar links
-$navbar-default-link-color:														$gray !default;
-$navbar-default-link-hover-color:											$gray-dark !default;
+$navbar-default-link-color:														$gray-lightest !default;
+$navbar-default-link-hover-color:											$brand-primary !default;
 $navbar-default-link-hover-background-color:					transparent !default;
-$navbar-default-link-active-color:											$gray !default;
+$navbar-default-link-active-color:											$navbar-default-link-hover-color !default;
 $navbar-default-link-active-background-color:					darken($navbar-default-background-color, 6.5%) !default;
 $navbar-default-link-disabled-color:										$gray-light !default;
 $navbar-default-link-disabled-background-color:			transparent !default;
@@ -566,7 +563,7 @@ $navbar-inverse-toggle-hover-background-color:			$gray-darker!default;
 $navbar-inverse-toggle-icon-bar-background-color:		$white !default;
 $navbar-inverse-toggle-border-color:									$gray-darker !default;
 
-// B21. Navs
+// B19. Navs
 //=== Shared nav styles
 $nav-link-padding:																		10px 15px !default; // TODO: Apply Baseline Grid
 $nav-link-hover-background-color:										$gray-lightest !default;
@@ -593,7 +590,7 @@ $nav-pills-border-radius:															$border-radius !default;
 $nav-pills-active-link-hover-background-color:				$component-active-background-color !default;
 $nav-pills-active-link-hover-color:											$component-active-color !default;
 
-// B22. Pagination // TODO: checking if can merge with Pager
+// B20. Pagination // TODO: checking if can merge with Pager
 
 $pagination-color:																		$link-color !default;
 $pagination-background-color:												$white !default;
@@ -624,7 +621,7 @@ $pager-active-color:																		$pagination-active-color !default;
 
 $pager-disabled-color:																$pagination-disabled-color !default;
 
-// B24. Panels
+// B21. Panels
 
 $panel-background-color:															$white !default;
 $panel-text-color:																			$gray-dark !default;
@@ -661,7 +658,7 @@ $panel-danger-text-color:															$state-danger-text-color !default;
 $panel-danger-border-color:													$state-danger-border-color !default;
 $panel-danger-heading-background-color:						$state-danger-background-color !default;
 
-// B25. Popovers
+// B22. Popovers
 
 $popover-background-color:													$white !default;
 $popover-max-width:																	gs-width(d,1,3,false,true) !default;
@@ -677,7 +674,7 @@ $popover-arrow-outer-width:													($popover-arrow-width + 1) !default;
 $popover-arrow-outer-color:													fadein($popover-background-color, 5%) !default;
 $popover-arrow-outer-fallback-color:									$gray-lighter !default;
 
-// B26. Progress Bars
+// B23. Progress Bars
 
 $progress-background-color:													$gray-lighter !default;
 $progress-bar-color:																	$white !default;
@@ -688,7 +685,7 @@ $progress-bar-warning-background-color:							$brand-warning !default;
 $progress-bar-danger-background-color:							$brand-danger !default;
 $progress-bar-info-background-color:									$brand-info !default;
 
-// B27. Tables
+// B24. Tables
 
 $table-cell-padding:																		8px !default; // TODO: Apply Baseline Grid
 $table-condensed-cell-padding: 											5px !default; // TODO: Apply Baseline Grid
@@ -700,7 +697,7 @@ $table-background-active-color:												$table-background-hover-color !defaul
 
 $table-border-color:																	$gray-lighter !default;
 
-// B28. Thumbnails/Figures
+// B25. Thumbnails/Figures
 
 $thumbnail-padding:																	4px !default; // TODO: Apply Baseline Grid
 $thumbnail-background-color:												transparent!default;
@@ -712,7 +709,7 @@ $thumbnail-caption-padding:													rem($rhythm-unit)/1.5 !default; // TODO:
 
 $circle-radius:																					500px !default;
 
-// B29. Tooltip
+// B26. Tooltip
 
 $tooltip-max-width:																		200px !default; // TODO: Apply Gridset
 $tooltip-color:																				$white!default;
@@ -722,136 +719,7 @@ $tooltip-opacity:																			.9 !default;
 $tooltip-arrow-width:																	5px !default;
 $tooltip-arrow-color:																	$tooltip-background-color !default;
 
-// B30. Wells
+// B27. Wells
 
 $well-background-color:															$gray-lightest !default;
 $well-border:																					darken($well-background-color, 7%) !default;
-
-
-
-
-
-// EVERYTHING BELOW HERE I MAY REMOVE
-
-
-
-//== Components
-//
-//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
-
-/*
-$padding-base-vertical:     6px !default;
-$padding-base-horizontal:   12px !default;
-
-$padding-large-vertical:    10px !default;
-$padding-large-horizontal:  16px !default;
-
-$padding-small-vertical:    5px !default;
-$padding-small-horizontal:  10px !default;
-
-$padding-xs-vertical:       1px !default;
-$padding-xs-horizontal:     5px !default;
-
-$line-height-large:         1.33 !default;
-$line-height-small:         1.5 !default;
-
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-//== Media queries breakpoints
-//
-//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
-
-// Extra small screen / phone
-// Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
-/*
-$screen-xs:                  480px !default;
-$screen-xs-min:              $screen-xs !default;
-$screen-phone:               $screen-xs-min !default;
-*/
-
-// Small screen / tablet
-// Note: Deprecated $screen-sm and $screen-tablet as of v3.0.1
-/*
-$screen-sm:                  768px !default;
-$screen-sm-min:              $screen-sm !default;
-$screen-tablet:              $screen-sm-min !default;
-*/
-
-// Medium screen / desktop
-// Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
-/*
-$screen-md:                  992px !default;
-$screen-md-min:              $screen-md !default;
-$screen-desktop:             $screen-md-min !default;
-*/
-
-// Large screen / wide desktop
-// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
-/*
-$screen-lg:                  1200px !default;
-$screen-lg-min:              $screen-lg !default;
-$screen-lg-desktop:          $screen-lg-min !default;
-*/
-
-// So media queries don't overlap when required, provide a maximum
-/*
-$screen-xs-max:              ($screen-sm-min - 1) !default;
-$screen-sm-max:              ($screen-md-min - 1) !default;
-$screen-md-max:              ($screen-lg-min - 1) !default;
-*/
-
-
-//== Grid system
-//
-//## Define your custom responsive grid.
-/*
-
-//** Number of columns in the grid.
-$grid-columns:              12 !default;
-//** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         30px !default;
-// Navbar collapse
-//** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-sm-min !default;
-//** Point at which the navbar begins collapsing.
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
-*/
-
-
-//== Container sizes
-//
-//## Define the maximum width of `.container` for different screen sizes.
-
-// Small screen / tablet
-/*
-$container-tablet:             ((720px + $grid-gutter-width)) !default;
-//** For `$screen-sm-min` and up.
-$container-sm:                 $container-tablet !default;
-
-// Medium screen / desktop
-$container-desktop:            ((940px + $grid-gutter-width)) !default;
-//** For `$screen-md-min` and up.
-$container-md:                 $container-desktop !default;
-
-// Large screen / wide desktop
-$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
-//** For `$screen-lg-min` and up.
-$container-lg:                 $container-large-desktop !default;
-*/
-
-
-

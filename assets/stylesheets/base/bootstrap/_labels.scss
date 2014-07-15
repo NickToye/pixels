@@ -2,9 +2,6 @@
 // ---------------------------
 // Bootstrap Component
 
-// TODO: Apply BEM to Labels
-// TODO: Apply Baseline grid
-
 .label {
 	display: inline;
 	padding: .2em .6em;
@@ -54,8 +51,17 @@
 	&--danger {
 		@include label-variant($label-danger-background-color);
 	}
+	&--google {
+		@include label-variant($brand-google);
+	}
+	&--fontawesome {
+		@include label-variant($brand-fontawesome);
+	}
+	&--mixture {
+		@include label-variant($brand-mixture);
+		color: $gray-dark;
+	}
 }
-
 // Lists of labels
 ul.labels {
 	@include zero;
