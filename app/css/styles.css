@@ -4738,24 +4738,27 @@ body.bootstrap aside.in-page-nav {
     /* line 98, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
     body.bootstrap aside.in-page-nav nav ul.nav > li.active ul {
       display: block; }
-    /* line 101, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+    /* line 102, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+    body.bootstrap aside.in-page-nav nav ul.nav ul > li.active a {
+      color: #999999; }
+    /* line 106, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
     body.bootstrap aside.in-page-nav nav ul.nav ul > li > a {
       font-size: 12px;
       font-size: 0.75rem;
       line-height: 1;
       color: #999999; }
-      /* line 104, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+      /* line 109, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
       body.bootstrap aside.in-page-nav nav ul.nav ul > li > a:hover {
         color: #333333; }
-  /* line 111, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  /* line 116, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
   body.bootstrap aside.in-page-nav .affix {
     width: 180px;
     position: fixed;
     top: 40px; }
-  /* line 117, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  /* line 122, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
   body.bootstrap aside.in-page-nav .affix-bottom {
     position: absolute; }
-/* line 121, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+/* line 126, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
 body.bootstrap main {
   clear: both;
   display: block;
@@ -4763,32 +4766,32 @@ body.bootstrap main {
   margin-left: 0;
   width: 100%; }
   @media only screen and (min-width: 990px) {
-    /* line 121, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+    /* line 126, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
     body.bootstrap main {
       display: block;
       float: left;
       margin-left: 0;
       margin-right: -100%;
       width: 83%; } }
-/* line 127, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+/* line 132, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
 body.bootstrap article {
   clear: both;
   display: block;
   float: left;
   margin-left: 0;
   width: 100%;
-  margin-bottom: 1.5rem; }
-  /* line 130, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  margin-bottom: 3rem; }
+  /* line 135, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
   body.bootstrap article > header {
     margin-bottom: 2.40964%;
     padding: 0.75rem 0 0 0; }
-    /* line 133, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+    /* line 138, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
     body.bootstrap article > header p {
       color: white; }
-  /* line 136, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  /* line 141, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
   body.bootstrap article .panel header.panel__heading {
     background: #222222; }
-  /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
+  /* line 144, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/_bootstrap.scss */
   body.bootstrap article .panel > .panel__body {
     border: none; }
 

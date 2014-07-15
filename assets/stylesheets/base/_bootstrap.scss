@@ -98,6 +98,11 @@ body.bootstrap {
 				> li.active ul {
 					display: block;
 				}
+				ul > li {
+					&.active a {
+						color: $gray-light;
+					}
+				}
 				ul > li > a {
 					@include font-size(12,$line-height:true,$margin-bottom:false);
 					color: $gray-light;
@@ -126,7 +131,7 @@ body.bootstrap {
 	}
 	article {
 		@include gs-span(m,all);
-		margin-bottom: rem($base-line-height);
+		margin-bottom: rem($base-line-height)*2;
 		> header {
 			@include grid-mb(d,1,10);
 			padding: rem($rhythm-unit) 0 0 0;
