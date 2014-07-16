@@ -135,6 +135,18 @@ $brand-linkedin:																		rgb(33,123,193);
 $brand-pinterest:																		rgb(203,32,39);
 $brand-dribbble:																		rgb(234,76,137);
 $brand-google:																			rgb(221,75,57);
+$brand-youtube:																		rgb(229,45,39);
+$brand-codepen:																		$black;
+$brand-github:																			rgb(34,34,34);
+$brand-spotify:																			rgb(132,189,0);
+$brand-wordpress:																	rgb(33,117,155);
+$brand-apple:																			$black;
+$brand-instagram:																	rgb(81,127,164);
+$brand-windows:																		rgb(0,161,207);
+$brand-android:																		rgb(164,198,57);
+$brand-drupal:																			rgb(44,130,197);
+$brand-flickr:																				$black;
+$brand-vimeo:																			rgb(69,187,255);
 
 // Third Party Branding
 $brand-fontawesome:															rgb(34,34,34);
@@ -206,7 +218,6 @@ $base-font-family-serif:																Georgia, "Times New Roman",Times,serif !
 $base-font-family-headings:														"franklin-gothic-urw",sans-serif !default;
 $base-font-family-condensed:													"proxima-nova-alt-ext-cond",sans-serif;
 $base-font-family-code:																'Source Sans Pro',Monaco,"Courier New",monospace !default;
-// TODO: Do I need to include local? how will I apply this in the css?
 $base-font-family-amp:																Baskerville, Georgia,Garamond,'Palatino','Book Antiqua';
 
 // - Sizes
@@ -237,16 +248,8 @@ $semi-bold:																						600;
 $bold:																								700;
 $extra-bold:																					800;
 
-// - Iconography
-// must specify custom locations of the included Glyphicons icon font.
-// TODO: do I need to do this if I am not including Bootstrap via Bower.
-// TODO: decide to use Font Awesome or not
-$icon-font-path: 																			"bootstrap/" !default;
-$icon-font-name:																			"glyphicons-halflings-regular" !default;
-$icon-font-svg-id:																			"glyphicons_halflingsregular" !default;
-
 // - Blockquote
-$blockquote-font-size:																($base-font-size * 1.25) !default; // TODO: Apply Baseline Grid
+$blockquote-font-size:																($base-font-size * 1.25) !default;
 
 
 
@@ -256,7 +259,7 @@ $blockquote-font-size:																($base-font-size * 1.25) !default; // TODO
 // B1. BASE COMPONENTS
 
 // - Borders
-$border-color:																				$gray !default;  // TODO: test this in example
+$border-color:																				$gray !default;
 $border-style:																				solid !default;
 $border-width:																				1px !default;
 $border-radius:																				$radius;
@@ -278,7 +281,7 @@ $transition-speed:																		.3s !default;
 
 // - Misc
 //** Horizontal offset for forms and lists.
-$component-offset-horizontal:												180px !default; // TODO: What does this do?
+$component-offset-horizontal:												180px !default;
 
 // B2.  Animatons
 
@@ -286,9 +289,9 @@ $component-offset-horizontal:												180px !default; // TODO: What does this
 
 // B3. Alerts
 
-$alert-padding:																				15px !default;  // TODO: Check with Baseline grid
+$alert-padding:																				rem($rhythm-unit) !default;
 $alert-border-radius:																	$radius !default;
-$alert-link-font-weight:																bold !default; // TODO: Check with specific font weights
+$alert-link-font-weight:																$bold !default;
 
 $alert-success-background-color:											$state-success-background-color !default;
 $alert-success-text-color:															$state-success-text-color !default;
@@ -319,9 +322,8 @@ $badge-font-weight:																	$bold !default;
 $badge-border-radius:																10px !default;
 
 // B5 Breadcrumbs
-// TODO: Check this in example
-$breadcrumb-padding-vertical:												8px !default; // TODO: Check with Baseline
-$breadcrumb-padding-horizontal:											15px !default; // TODO: Check with Baseline
+$breadcrumb-padding-vertical:												rem($rhythm-unit)/2 !default;
+$breadcrumb-padding-horizontal:											rem($rhythm-unit) !default;
 
 $breadcrumb-background-color:											$gray-lightest !default;
 $breadcrumb-text-color:															$gray-lighter !default;
@@ -370,13 +372,12 @@ $btn-link-disabled-color:															$gray-light !default;
 
 // B8. Carousel
 
-$carousel-control-font-size:														64px;
+$carousel-control-font-size:														64px !default;
 $carousel-text-shadow:																0 1px 2px rgba($black,.6) !default;
 
 $carousel-control-color:															$white !default;
 $carousel-control-width:															15% !default;
 $carousel-control-opacity:														.5 !default;
-$carousel-control-font-size:														20px !default; // TODO: Apply using Baseline Grid
 
 $carousel-indicator-active-background-color:					$white !default;
 $carousel-indicator-border-color: 											$gray-light !default;
@@ -385,7 +386,7 @@ $carousel-caption-color:															$brand-primary !default;
 
 // B9. Close
 
-$close-font-weight:																		bold !default; // TODO: Apply font specific weight
+$close-font-weight:																		$bold !default;
 $close-color:																					$black !default;
 $close-text-shadow:																		0 1px 0 $white !default;
 
@@ -394,7 +395,6 @@ $close-text-shadow:																		0 1px 0 $white !default;
 $pre-scrollable-max-height:														340px !default;
 
 // B11. Dropdowns
-// TODO: Check this in example
 $dropdown-background-color:												$white !default;
 $dropdown-border-color:															darken($dropdown-background-color, 5%) !default;
 
@@ -411,7 +411,7 @@ $dropdown-link-active-background-color:							$component-active-background-color
 
 $dropdown-link-disabled-color:												$gray-light !default;
 
-$dropdown-header-color:															$gray-light !default;
+$dropdown-header-color:															$brand-primary !default;
 
 $caret-width-base:																		4px !default;
 $caret-width-large:																		5px !default;
@@ -434,10 +434,10 @@ $input-border-focus-color:														$brand-primary  !default;
 
 $input-color-placeholder-color:												$gray-light !default;
 
-// TODO: Convert these to Baseline grid
-$input-height-base:																		38 !default; // TODO: This needs a variable
-$input-height-large:																		$input-height-base*2 !default; // TODO: Check need this
-$input-height-small:																	$input-height-base/2 !default;
+// TODO: Investigate these values further
+$input-height-base:																		$rhythm-unit*3 !default;
+$input-height-large:																		$rhythm-unit*4 !default;
+$input-height-small:																	$rhythm-unit*1.5 !default;
 
 $legend-color:																				$white !default;
 $legend-background-color:														$brand-secondary !default;
@@ -451,7 +451,7 @@ $jumbotron-padding:																	rem(30) !default;
 $jumbotron-color:																		$white !default;
 $jumbotron-background-color:												$brand-primary !default;
 $jumbotron-heading-color:														inherit !default;
-$jumbotron-font-size:																	ceil(($base-font-size * 1.5)) !default; // TODO: Apply Baseline grid
+$jumbotron-font-size:																	ceil(($base-font-size * 1.5)) !default;
 
 // B14. Labels
 
@@ -468,7 +468,6 @@ $label-link-hover-color:																$white !default;
 $label-font-size:																				75% !default;
 
 // B15. List Group
-// TODO: Check this in example
 $list-group-background-color:													$white !default;
 $list-group-border-color:															$gray-lighter !default;
 $list-group-border-radius:															$border-radius !default;
@@ -508,12 +507,12 @@ $modal-small:																				gs-width(d,1,3,false,true) !default;
 // B18. Navbar
 
 // Basics of a navbar
-$navbar-height:																				48px !default; // TODO: Apply Baseline Grid
-$navbar-margin-bottom:															$base-line-height !default; // TODO: Apply Baseline Grid
+$navbar-height:																				$rhythm-unit*4 !default;
+$navbar-margin-bottom:															$base-line-height !default;
 $navbar-border-radius:																$border-radius !default;
-$navbar-padding-horizontal:													rem($rhythm-unit) !default; // TODO: Apply Baseline Grid
-$navbar-padding-vertical:															rem($rhythm-unit)  !default; // TODO: Apply Baseline Grid
-$navbar-collapse-max-height:													340px !default; // TODO: Apply Baseline Grid
+$navbar-padding-horizontal:													rem($rhythm-unit) !default;
+$navbar-padding-vertical:															rem($rhythm-unit)  !default;
+$navbar-collapse-max-height:													340px !default; // Not currently used
 
 $navbar-default-color:																$gray-lightest !default;
 $navbar-default-background-color:										$gray-darker !default;
@@ -565,7 +564,7 @@ $navbar-inverse-toggle-border-color:									$gray-darker !default;
 
 // B19. Navs
 //=== Shared nav styles
-$nav-link-padding:																		10px 15px !default; // TODO: Apply Baseline Grid
+$nav-link-padding:																		rem($rhythm-unit)*.5 rem($rhythm-unit) !default;
 $nav-link-hover-background-color:										$gray-lightest !default;
 
 $nav-disabled-link-color:															$gray-light !default;
@@ -590,8 +589,7 @@ $nav-pills-border-radius:															$border-radius !default;
 $nav-pills-active-link-hover-background-color:				$component-active-background-color !default;
 $nav-pills-active-link-hover-color:											$component-active-color !default;
 
-// B20. Pagination // TODO: checking if can merge with Pager
-
+// B20. Pagination
 $pagination-color:																		$link-color !default;
 $pagination-background-color:												$white !default;
 $pagination-border-color:															$gray-lighter !default;
@@ -609,7 +607,6 @@ $pagination-disabled-background-color:							$white !default;
 $pagination-disabled-border-color:										$gray-lighter !default;
 
 // -Pager
-
 $pager-background-color:															$pagination-background-color !default;
 $pager-border-color:																	$pagination-border-color !default;
 $pager-border-radius:																	$radius !default;
@@ -687,11 +684,11 @@ $progress-bar-info-background-color:									$brand-info !default;
 
 // B24. Tables
 
-$table-cell-padding:																		8px !default; // TODO: Apply Baseline Grid
-$table-condensed-cell-padding: 											5px !default; // TODO: Apply Baseline Grid
+$table-cell-padding:																		rem($rhythm-unit) !default;
+$table-condensed-cell-padding: 											rem($rhythm-unit)/2 !default;
 
 $table-background-color:															transparent !default;
-$table-background-accent-color:											$gray-lightest !default; // TODO: Maybe use darken function
+$table-background-accent-color:											$gray-lightest !default;
 $table-background-hover-color:												$gray-lightest !default;
 $table-background-active-color:												$table-background-hover-color !default;
 
@@ -699,19 +696,19 @@ $table-border-color:																	$gray-lighter !default;
 
 // B25. Thumbnails/Figures
 
-$thumbnail-padding:																	4px !default; // TODO: Apply Baseline Grid
+$thumbnail-padding:																	rem($rhythm-unit)/4 !default;
 $thumbnail-background-color:												transparent!default;
 $thumbnail-border-color:															$gray-lighter !default;
 $thumbnail-border-radius:														$border-radius !default;
 
 $thumbnail-caption-text-color:												$brand-primary !default;
-$thumbnail-caption-padding:													rem($rhythm-unit)/1.5 !default; // TODO: Apply Baseline Grid
+$thumbnail-caption-padding:													rem($rhythm-unit)/1.5 !default;
 
 $circle-radius:																					500px !default;
 
 // B26. Tooltip
 
-$tooltip-max-width:																		200px !default; // TODO: Apply Gridset
+$tooltip-max-width:																		gs-width(d,1,12,false,true) !default;
 $tooltip-color:																				$white!default;
 $tooltip-background-color:														$black !default;
 $tooltip-opacity:																			.9 !default;

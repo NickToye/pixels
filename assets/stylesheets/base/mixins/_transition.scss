@@ -2,8 +2,6 @@
 // ---------------------------
 // Mixin for Transitions
 
-// TODO: Verify this with Sassification, apply Variables to Transition section if required
-
 @mixin transition($transition...) {
 	-webkit-transition: $transition;
 	transition: $transition;
@@ -26,3 +24,5 @@
 	-o-transition: -o-transform $transition;
 	transition: transform $transition;
 }
+
+// The elipsis use is explained here -> http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variable_arguments

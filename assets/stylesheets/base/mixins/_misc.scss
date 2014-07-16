@@ -29,16 +29,6 @@
 		}
 	}
 }
-// TODO: why 2 opacity mixins??
-// @include opacity(VALUE);
-@mixin opacity($opacity : .5) {
-	-webkit-opacity : $opacity;
-	-moz-opacity : $opacity;
-	opacity : $opacity;
-	@if ($ie8-opacity-supported == true) {
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})";
-	}
-}
 // Appearance
 @mixin appearance($value) {
 	-webkit-appearance: $value;

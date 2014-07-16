@@ -133,38 +133,3 @@
 		}
 	}
 }
-
-
-// TODO: Sort out below
-
-// Scale up controls for tablets and up
-/*
-@media screen and (min-width: $screen-sm-min) {
-
-  // Scale up the controls a smidge
-  .carousel-control {
-    .glyphicon-chevron-left,
-    .glyphicon-chevron-right,
-    .icon-prev,
-    .icon-next {
-      width: 30px;
-      height: 30px;
-      margin-top: -15px;
-      margin-left: -15px;
-      font-size: 30px;
-    }
-  }
-
-  // Show and left align the captions
-  .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
-  }
-
-  // Move up the indicators
-  .carousel-indicators {
-    bottom: 20px;
-  }
-}
-*/

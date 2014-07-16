@@ -12,7 +12,7 @@ ul.palette {
 		margin-bottom: 4px;
 		border-radius: $radius;
 		@include gs-media(t,min) {
-			margin-bottom: 0;
+// 			margin-bottom: 0;
 		}
 		&.brand-primary { background-color: $brand-primary;}
 		&.brand-secondary { background-color: $brand-secondary;}
@@ -32,6 +32,18 @@ ul.palette {
 		&.brand-pinterest { background-color: $brand-pinterest;}
 		&.brand-dribbble { background-color: $brand-dribbble;}
 		&.brand-google { background-color: $brand-google;}
+		&.brand-youtube { background-color: $brand-youtube;}
+		&.brand-codepen { background-color: $brand-codepen;}
+		&.brand-github { background-color: $brand-github;}
+		&.brand-spotify { background-color: $brand-spotify;}
+		&.brand-wordpress { background-color: $brand-wordpress;}
+		&.brand-apple { background-color: $brand-apple;}
+		&.brand-instagram { background-color: $brand-instagram;}
+		&.brand-windows { background-color: $brand-windows;}
+		&.brand-android { background-color: $brand-android;}
+		&.brand-drupal { background-color: $brand-drupal;}
+		&.brand-flickr { background-color: $brand-flickr;}
+		&.brand-vimeo { background-color: $brand-vimeo;}
 		i.fa { color: $white; @include font-size($font-size-large, $line-height: false, $margin-bottom: false);}
 	}
 }

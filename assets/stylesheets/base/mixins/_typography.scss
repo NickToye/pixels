@@ -13,7 +13,6 @@
 		margin-bottom: rem($rhythm-unit);
 	}
 }
-// TODO: What is this for?
 @mixin nav($color:$navlinkcolor, $decoration:none) {
 	color: $color;
 	@if $decoration == none {

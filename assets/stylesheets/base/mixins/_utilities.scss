@@ -59,7 +59,7 @@
 	@include box-shadow(none);
 }
 // Baseline Guide
-$guide-color: rgba($black,.1); // TODO: put these in variables
+$guide-color: rgba($black,.1);
 $guide-background: $body-background-color;
 @mixin baseline-guide() {
 	background-color: $guide-background;
@@ -67,7 +67,6 @@ $guide-background: $body-background-color;
 	background-size: 100% rem($rhythm-unit);
 }
 // Scaffold
-// TODO: Do I need this with the other bootstrap version?
 @mixin scaffold($block:outline) {
 	background: rgba($white,1);
 	color: $black;

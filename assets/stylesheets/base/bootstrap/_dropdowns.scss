@@ -38,6 +38,14 @@
 		border-radius: $border-radius;
 		@include box-shadow(0 6px 12px rgba(0,0,0,.175));
 		background-clip: padding-box;
+		// Dropdown section headers
+		&__header {
+			display: block;
+			padding: rem($rhythm-unit);
+			@include font-size($font-size-small,$line-height: true,$margin-bottom: false);
+			color: $dropdown-header-color;
+			border-bottom: 1px solid $dropdown-divider-background-color;
+		}
 		.divider {
 			@include nav-divider($dropdown-divider-background-color);
 		}
@@ -100,59 +108,7 @@
 		}
 	}
 }
-
-
-// // TODO: Look at integrating stuff below
-
-// Menu positioning
-//
-// Add extra class to `.dropdown-menu` to flip the alignment of the dropdown
-// menu with the parent.
-.dropdown-menu-right {
-  left: auto; // Reset the default from `.dropdown-menu`
-  right: 0;
-}
-// With v3, we enabled auto-flipping if you have a dropdown within a right
-// aligned nav component. To enable the undoing of that, we provide an override
-// to restore the default dropdown menu alignment.
-//
-// This is only for left-aligning a dropdown menu within a `.navbar-right` or
-// `.pull-right` nav component.
-.dropdown-menu-left {
-  left: 0;
-  right: auto;
-}
-
-// Dropdown section headers
-.dropdown-header {
-  display: block;
-  padding: 3px 20px;
-  font-size: $font-size-small;
-  line-height: $base-line-height;
-  color: $dropdown-header-color;
-}
-
-// Backdrop to catch body clicks on mobile, etc.
-.dropdown-backdrop {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: ($zindex-dropdown - 10);
-}
-
-// Right aligned dropdowns
-.pull-right > .dropdown-menu {
-  right: 0;
-  left: auto;
-}
-
-// Allow for dropdowns to go bottom up (aka, dropup-menu)
-//
-// Just add .dropup after the standard .dropdown class and you're set, bro.
-// T.O.D.O.: abstract this so that the navbar fixed styles are not placed here?
-
+// Dropup
 .dropup {
 	// Reverse the caret
 	.caret {
@@ -167,24 +123,12 @@
 		margin-bottom: 1px;
 	}
 }
-
-
-// Component alignment
-//
-// Reiterate per navbar.less and the modified component alignment there.
-
-/*
-@media (min-width: $grid-float-breakpoint) {
-  .navbar-right {
-    .dropdown-menu {
-      right: 0; left: auto;
-    }
-    // Necessary for overrides of the default right aligned menu.
-    // Will remove come v4 in all likelihood.
-    .dropdown-menu-left {
-      left: 0; right: auto;
-    }
-  }
+// Backdrop to catch body clicks on mobile, etc.
+.dropdown-backdrop {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: ($zindex-dropdown - 10);
 }
-*/
-

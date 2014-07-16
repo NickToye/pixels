@@ -41,7 +41,7 @@
 			@include font-size($input-font-size, $line-height: false, $margin-bottom: false);
 			color: $input-color;
 			cursor: pointer;
-			display: inline-block; // TODO: look at moving this into input groups potentially
+			display: inline-block;
 			padding-left: 20px;
 
 			margin-right:  $gutter-width;
@@ -113,7 +113,7 @@
 		// input,select,textarea,checkbox,radiobox
 		&--control {
 			// normalise form controls
-
+			height: rem($input-height-base);
 			&[type="search"] { @include box-sizing(border-box); }
 			&[type="radio"],&[type="checkbox"] {
 				margin: 4px 0 0;
@@ -181,7 +181,7 @@
 			// Placeholder
 			@include placeholder();
 
-			// Disabled and read-only inputs // TODO: check out read only
+			// Disabled and read-only inputs
 			//
 			// HTML5 says that controls under a fieldset > legend:first-child won't be
 			// disabled if the fieldset is disabled. Due to implementation difficulty, we
@@ -256,10 +256,10 @@
 		    //
 		    // Reposition the icon because it's now within a grid column and columns have
 		    // `position: relative;` on them. Also accounts for the grid gutter padding.
-		    // TODO: Apply an example of this
+		    // TODO: Apply an example of this when I have form validation setup
 			.has-feedback .form-control-feedback {
-		top: 0;
-	}
+				top: 0;
+			}
 		}
 	}
 	&--horizontal {

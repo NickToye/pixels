@@ -9,7 +9,7 @@
 
 .navbar {
 	position: relative;
-	min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+	min-height: rem($navbar-height); // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
 	margin-bottom: rem($navbar-margin-bottom);
 	border: 1px solid transparent;
 	@include font-size($navbar-font-size, $line-height: true, $margin-bottom: false);
@@ -102,6 +102,10 @@
 			.navbar > .container-fluid & {
 				margin-left: -$navbar-padding-horizontal;
 			}
+		}
+		img {
+			max-height: rem($navbar-height)-$navbar-padding-horizontal;
+			width: auto;
 		}
 	}
 	&__collapse {
