@@ -120,19 +120,22 @@ abbr[data-original-title] {
 @include text-emphasis-variant('.text-danger', $state-danger-text-color);
 
 // - Contextual backgrounds
+
+@include bg-variant('.bg-primary', $brand-primary,$white,white);
+
+@include bg-variant('.bg-success', $state-success-background-color,$state-success-text-color);
+
+@include bg-variant('.bg-info', $state-info-background-color,$state-info-text-color);
+
+@include bg-variant('.bg-warning', $state-warning-background-color,$state-warning-text-color);
+
+@include bg-variant('.bg-danger', $state-danger-background-color,$state-danger-text-color);
+
+/*
 .bg-primary {
   color: $white;
 }
-@include bg-variant('.bg-primary', $brand-primary);
-
-@include bg-variant('.bg-success', $state-success-background-color);
-
-@include bg-variant('.bg-info', $state-info-background-color);
-
-@include bg-variant('.bg-warning', $state-warning-background-color);
-
-@include bg-variant('.bg-danger', $state-danger-background-color);
-
+*/
 
 // - Lists
 // --------------------------------------------------

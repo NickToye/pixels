@@ -577,111 +577,117 @@ a.text-warning:hover {
 a.text-danger:hover {
   color: #843534; }
 
-/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
-.bg-primary {
-  color: white; }
-
 /* line 87, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 .bg-primary {
   background-color: #ca6253;
-  padding: 0.75rem; }
+  padding: 0.75rem;
+  color: white; }
   /* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
   .bg-primary p {
     margin: 0;
     padding: 0;
     border: 0; }
 
-/* line 93, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 a.bg-primary:hover {
   background-color: #b34737; }
 
 /* line 87, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 .bg-success {
-  background-color: #dff0d8;
-  padding: 0.75rem; }
+  background-color: #5cb85c;
+  padding: 0.75rem;
+  color: #224323; }
   /* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
   .bg-success p {
     margin: 0;
     padding: 0;
     border: 0; }
 
-/* line 93, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 a.bg-success:hover {
-  background-color: #c1e2b3; }
+  background-color: #449d44; }
 
 /* line 87, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 .bg-info {
-  background-color: #d9edf7;
-  padding: 0.75rem; }
+  background-color: #5bc0de;
+  padding: 0.75rem;
+  color: #1d4356; }
   /* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
   .bg-info p {
     margin: 0;
     padding: 0;
     border: 0; }
 
-/* line 93, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 a.bg-info:hover {
-  background-color: #afd9ee; }
+  background-color: #31b0d5; }
 
 /* line 87, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 .bg-warning {
-  background-color: #fcf8e3;
-  padding: 0.75rem; }
+  background-color: #f0ad4e;
+  padding: 0.75rem;
+  color: #544324; }
   /* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
   .bg-warning p {
     margin: 0;
     padding: 0;
     border: 0; }
 
-/* line 93, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 a.bg-warning:hover {
-  background-color: #f7ecb5; }
+  background-color: #ec971f; }
 
 /* line 87, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 .bg-danger {
-  background-color: #f2dede;
-  padding: 0.75rem; }
+  background-color: #d9534f;
+  padding: 0.75rem;
+  color: #722e2d; }
   /* line 90, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
   .bg-danger p {
     margin: 0;
     padding: 0;
     border: 0; }
 
-/* line 93, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
+/* line 123, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
 a.bg-danger:hover {
-  background-color: #e4b9b9; }
+  background-color: #c9302c; }
 
-/* line 141, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/*
+.bg-primary {
+  color: $white;
+}
+*/
+/* line 144, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 ul,
 ol {
   margin-top: 0;
   margin-bottom: 0.75rem;
   list-style-position: inside; }
-  /* line 146, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
   ul ul,
   ul ol,
   ol ul,
   ol ol {
     margin-bottom: 0; }
 
-/* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 158, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 .list-unstyled, .list-inline {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
 
-/* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 169, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px; }
 
-/* line 174, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 177, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 dl {
   margin-top: 0;
   margin-bottom: 0.75rem; }
 
-/* line 178, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 181, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 dt,
 dd {
   font-size: 16px;
@@ -689,16 +695,16 @@ dd {
   line-height: 1.5;
   margin-bottom: 0.75rem; }
 
-/* line 182, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 185, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 dt {
   font-weight: 700; }
 
-/* line 185, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 188, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 dd {
   margin-left: 0; }
 
 @media only screen and (min-width: 769px) {
-  /* line 195, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  /* line 198, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -707,7 +713,7 @@ dd {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  /* line 202, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  /* line 205, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
   .dl-horizontal dd {
     margin-left: 180px; }
     /* line 7, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
@@ -717,13 +723,13 @@ dd {
     /* line 12, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_utilities.scss */
     .dl-horizontal dd:after {
       clear: both; } }
-/* line 210, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 213, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 blockquote {
   padding: 0.75rem;
   margin: 0 0 0.75rem;
   font-size: 20;
   border-left: 5px solid #dddddd; }
-  /* line 215, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  /* line 218, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
   blockquote p,
   blockquote ul,
   blockquote ol {
@@ -731,65 +737,65 @@ blockquote {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0.75rem; }
-  /* line 220, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+  /* line 223, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
   blockquote cite {
     display: block;
     font-size: 12px;
     font-size: 0.75rem;
     line-height: 1;
     color: #ca6253; }
-    /* line 224, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+    /* line 227, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
     blockquote cite:before {
       content: '\2014 \00A0'; }
 
-/* line 231, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 234, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 address {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 0.75rem; }
 
-/* line 238, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 241, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.base-font-family {
   font-family: "Open Sans", sans-serif; }
-/* line 239, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 242, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.base-font-family-serif {
   font-family: Georgia, "Times New Roman", Times, serif; }
-/* line 240, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 243, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.base-font-family-headings {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1; }
-/* line 241, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 244, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.base-font-family-condensed {
   font-family: "proxima-nova-alt-ext-cond", sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1; }
-/* line 242, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 245, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.base-font-family-code {
   font-family: "Source Sans Pro", Monaco, "Courier New", monospace; }
-/* line 243, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 246, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.base-font-family-amp {
   font-family: Baskerville, Georgia, Garamond, "Palatino", "Book Antiqua";
   font-style: italic; }
-/* line 244, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 247, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p strong {
   font-weight: 700; }
-/* line 245, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 248, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.light {
   font-weight: 300; }
-/* line 246, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 249, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.normal {
   font-weight: 400; }
-/* line 247, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 250, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.semi-bold {
   font-weight: 600; }
-/* line 248, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 251, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.bold {
   font-weight: 700; }
-/* line 249, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
+/* line 252, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_typography.scss */
 p.extra-bold {
   font-weight: 800; }
 
@@ -1079,12 +1085,12 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.success,
 .table > tfoot > tr.success > td,
 .table > tfoot > tr.success > th {
-  background-color: #dff0d8; }
+  background-color: #5cb85c; }
 
 /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr.success:hover > th {
-  background-color: #d0e9c6; }
+  background-color: #4cae4c; }
 
 /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
 .table > thead > tr > td.info,
@@ -1097,12 +1103,12 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.info,
 .table > tfoot > tr.info > td,
 .table > tfoot > tr.info > th {
-  background-color: #d9edf7; }
+  background-color: #5bc0de; }
 
 /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr.info:hover > th {
-  background-color: #c4e3f3; }
+  background-color: #46b8da; }
 
 /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
 .table > thead > tr > td.warning,
@@ -1115,12 +1121,12 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.warning,
 .table > tfoot > tr.warning > td,
 .table > tfoot > tr.warning > th {
-  background-color: #fcf8e3; }
+  background-color: #f0ad4e; }
 
 /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr.warning:hover > th {
-  background-color: #faf2cc; }
+  background-color: #eea236; }
 
 /* line 22, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
 .table > thead > tr > td.danger,
@@ -1133,12 +1139,12 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.danger,
 .table > tfoot > tr.danger > td,
 .table > tfoot > tr.danger > th {
-  background-color: #f2dede; }
+  background-color: #d9534f; }
 
 /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_tables.scss */
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr.danger:hover > th {
-  background-color: #ebcccc; }
+  background-color: #d43f3a; }
 
 @media only screen and (max-width: 768px) {
   /* line 153, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_tables.scss */
@@ -1627,7 +1633,7 @@ table th[class*="col-"] {
 .has-success .input-group-addon {
   color: #3c763d;
   border-color: #3c763d;
-  background-color: #dff0d8; }
+  background-color: #5cb85c; }
 /* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
 .has-success .form-control-feedback {
   color: #3c763d; }
@@ -1658,7 +1664,7 @@ table th[class*="col-"] {
 .has-warning .input-group-addon {
   color: #8a6d3b;
   border-color: #8a6d3b;
-  background-color: #fcf8e3; }
+  background-color: #f0ad4e; }
 /* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
 .has-warning .form-control-feedback {
   color: #8a6d3b; }
@@ -1689,7 +1695,7 @@ table th[class*="col-"] {
 .has-error .input-group-addon {
   color: #a94442;
   border-color: #a94442;
-  background-color: #f2dede; }
+  background-color: #d9534f; }
 /* line 61, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_forms.scss */
 .has-error .form-control-feedback {
   color: #a94442; }
@@ -1774,26 +1780,26 @@ table th[class*="col-"] {
     background-color: white;
     border-color: #999999; }
     /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
-    .btn--default:hover, .btn--default:visited, .btn--default:focus, .btn--default:active, .btn--default.active {
+    .btn--default:hover, .btn--default:focus, .btn--default:active, .btn--default.active {
       color: #999999;
       background-color: #ebebeb;
       border-color: #7a7a7a; }
-    /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 148, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--default.dropdown-toggle {
       color: #999999;
       background-color: #ebebeb;
       border-color: #7a7a7a; }
-    /* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--default:active, .btn--default.active {
       background-image: none; }
-    /* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 159, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--default.dropdown-toggle {
       background-image: none; }
-    /* line 167, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--default.disabled, .btn--default.disabled:hover, .btn--default.disabled:focus, .btn--default.disabled:active, .btn--default.disabled.active, .btn--default[disabled], .btn--default[disabled]:hover, .btn--default[disabled]:focus, .btn--default[disabled]:active, .btn--default[disabled].active, fieldset[disabled] .btn--default, fieldset[disabled] .btn--default:hover, fieldset[disabled] .btn--default:focus, fieldset[disabled] .btn--default:active, fieldset[disabled] .btn--default.active {
       background-color: white;
       border-color: #999999; }
-    /* line 176, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--default .badge {
       color: white;
       background-color: #999999; }
@@ -1803,26 +1809,26 @@ table th[class*="col-"] {
     background-color: #ca6253;
     border-color: #c45040; }
     /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
-    .btn--primary:hover, .btn--primary:visited, .btn--primary:focus, .btn--primary:active, .btn--primary.active {
+    .btn--primary:hover, .btn--primary:focus, .btn--primary:active, .btn--primary.active {
       color: white;
       background-color: #bb4a3a;
       border-color: #983c2f; }
-    /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 148, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--primary.dropdown-toggle {
       color: white;
       background-color: #bb4a3a;
       border-color: #983c2f; }
-    /* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--primary:active, .btn--primary.active {
       background-image: none; }
-    /* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 159, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--primary.dropdown-toggle {
       background-image: none; }
-    /* line 167, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--primary.disabled, .btn--primary.disabled:hover, .btn--primary.disabled:focus, .btn--primary.disabled:active, .btn--primary.disabled.active, .btn--primary[disabled], .btn--primary[disabled]:hover, .btn--primary[disabled]:focus, .btn--primary[disabled]:active, .btn--primary[disabled].active, fieldset[disabled] .btn--primary, fieldset[disabled] .btn--primary:hover, fieldset[disabled] .btn--primary:focus, fieldset[disabled] .btn--primary:active, fieldset[disabled] .btn--primary.active {
       background-color: #ca6253;
       border-color: #c45040; }
-    /* line 176, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--primary .badge {
       color: #ca6253;
       background-color: white; }
@@ -1832,26 +1838,26 @@ table th[class*="col-"] {
     background-color: #49b067;
     border-color: #429e5c; }
     /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
-    .btn--secondary:hover, .btn--secondary:visited, .btn--secondary:focus, .btn--secondary:active, .btn--secondary.active {
+    .btn--secondary:hover, .btn--secondary:focus, .btn--secondary:active, .btn--secondary.active {
       color: white;
       background-color: #3d9356;
       border-color: #307343; }
-    /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 148, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--secondary.dropdown-toggle {
       color: white;
       background-color: #3d9356;
       border-color: #307343; }
-    /* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--secondary:active, .btn--secondary.active {
       background-image: none; }
-    /* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 159, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--secondary.dropdown-toggle {
       background-image: none; }
-    /* line 167, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--secondary.disabled, .btn--secondary.disabled:hover, .btn--secondary.disabled:focus, .btn--secondary.disabled:active, .btn--secondary.disabled.active, .btn--secondary[disabled], .btn--secondary[disabled]:hover, .btn--secondary[disabled]:focus, .btn--secondary[disabled]:active, .btn--secondary[disabled].active, fieldset[disabled] .btn--secondary, fieldset[disabled] .btn--secondary:hover, fieldset[disabled] .btn--secondary:focus, fieldset[disabled] .btn--secondary:active, fieldset[disabled] .btn--secondary.active {
       background-color: #49b067;
       border-color: #429e5c; }
-    /* line 176, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--secondary .badge {
       color: #49b067;
       background-color: white; }
@@ -1861,26 +1867,26 @@ table th[class*="col-"] {
     background-color: #5cb85c;
     border-color: #4cae4c; }
     /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
-    .btn--success:hover, .btn--success:visited, .btn--success:focus, .btn--success:active, .btn--success.active {
+    .btn--success:hover, .btn--success:focus, .btn--success:active, .btn--success.active {
       color: white;
       background-color: #47a447;
       border-color: #398439; }
-    /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 148, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--success.dropdown-toggle {
       color: white;
       background-color: #47a447;
       border-color: #398439; }
-    /* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--success:active, .btn--success.active {
       background-image: none; }
-    /* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 159, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--success.dropdown-toggle {
       background-image: none; }
-    /* line 167, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--success.disabled, .btn--success.disabled:hover, .btn--success.disabled:focus, .btn--success.disabled:active, .btn--success.disabled.active, .btn--success[disabled], .btn--success[disabled]:hover, .btn--success[disabled]:focus, .btn--success[disabled]:active, .btn--success[disabled].active, fieldset[disabled] .btn--success, fieldset[disabled] .btn--success:hover, fieldset[disabled] .btn--success:focus, fieldset[disabled] .btn--success:active, fieldset[disabled] .btn--success.active {
       background-color: #5cb85c;
       border-color: #4cae4c; }
-    /* line 176, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--success .badge {
       color: #5cb85c;
       background-color: white; }
@@ -1890,26 +1896,26 @@ table th[class*="col-"] {
     background-color: #5bc0de;
     border-color: #46b8da; }
     /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
-    .btn--info:hover, .btn--info:visited, .btn--info:focus, .btn--info:active, .btn--info.active {
+    .btn--info:hover, .btn--info:focus, .btn--info:active, .btn--info.active {
       color: white;
       background-color: #39b3d7;
       border-color: #269abc; }
-    /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 148, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--info.dropdown-toggle {
       color: white;
       background-color: #39b3d7;
       border-color: #269abc; }
-    /* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--info:active, .btn--info.active {
       background-image: none; }
-    /* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 159, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--info.dropdown-toggle {
       background-image: none; }
-    /* line 167, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--info.disabled, .btn--info.disabled:hover, .btn--info.disabled:focus, .btn--info.disabled:active, .btn--info.disabled.active, .btn--info[disabled], .btn--info[disabled]:hover, .btn--info[disabled]:focus, .btn--info[disabled]:active, .btn--info[disabled].active, fieldset[disabled] .btn--info, fieldset[disabled] .btn--info:hover, fieldset[disabled] .btn--info:focus, fieldset[disabled] .btn--info:active, fieldset[disabled] .btn--info.active {
       background-color: #5bc0de;
       border-color: #46b8da; }
-    /* line 176, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--info .badge {
       color: #5bc0de;
       background-color: white; }
@@ -1919,26 +1925,26 @@ table th[class*="col-"] {
     background-color: #f0ad4e;
     border-color: #eea236; }
     /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
-    .btn--warning:hover, .btn--warning:visited, .btn--warning:focus, .btn--warning:active, .btn--warning.active {
+    .btn--warning:hover, .btn--warning:focus, .btn--warning:active, .btn--warning.active {
       color: white;
       background-color: #ed9c28;
       border-color: #d58512; }
-    /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 148, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--warning.dropdown-toggle {
       color: white;
       background-color: #ed9c28;
       border-color: #d58512; }
-    /* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--warning:active, .btn--warning.active {
       background-image: none; }
-    /* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 159, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--warning.dropdown-toggle {
       background-image: none; }
-    /* line 167, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--warning.disabled, .btn--warning.disabled:hover, .btn--warning.disabled:focus, .btn--warning.disabled:active, .btn--warning.disabled.active, .btn--warning[disabled], .btn--warning[disabled]:hover, .btn--warning[disabled]:focus, .btn--warning[disabled]:active, .btn--warning[disabled].active, fieldset[disabled] .btn--warning, fieldset[disabled] .btn--warning:hover, fieldset[disabled] .btn--warning:focus, fieldset[disabled] .btn--warning:active, fieldset[disabled] .btn--warning.active {
       background-color: #f0ad4e;
       border-color: #eea236; }
-    /* line 176, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--warning .badge {
       color: #f0ad4e;
       background-color: white; }
@@ -1948,26 +1954,26 @@ table th[class*="col-"] {
     background-color: #d9534f;
     border-color: #d43f3a; }
     /* line 139, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
-    .btn--danger:hover, .btn--danger:visited, .btn--danger:focus, .btn--danger:active, .btn--danger.active {
+    .btn--danger:hover, .btn--danger:focus, .btn--danger:active, .btn--danger.active {
       color: white;
       background-color: #d2322d;
       border-color: #ac2925; }
-    /* line 149, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 148, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--danger.dropdown-toggle {
       color: white;
       background-color: #d2322d;
       border-color: #ac2925; }
-    /* line 155, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 154, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--danger:active, .btn--danger.active {
       background-image: none; }
-    /* line 160, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 159, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .open .btn--danger.dropdown-toggle {
       background-image: none; }
-    /* line 167, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 166, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--danger.disabled, .btn--danger.disabled:hover, .btn--danger.disabled:focus, .btn--danger.disabled:active, .btn--danger.disabled.active, .btn--danger[disabled], .btn--danger[disabled]:hover, .btn--danger[disabled]:focus, .btn--danger[disabled]:active, .btn--danger[disabled].active, fieldset[disabled] .btn--danger, fieldset[disabled] .btn--danger:hover, fieldset[disabled] .btn--danger:focus, fieldset[disabled] .btn--danger:active, fieldset[disabled] .btn--danger.active {
       background-color: #d9534f;
       border-color: #d43f3a; }
-    /* line 176, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
+    /* line 175, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_buttons.scss */
     .btn--danger .badge {
       color: #d9534f;
       background-color: white; }
@@ -2071,12 +2077,12 @@ input[type="button"].btn--block {
     color: inherit; }
   /* line 33, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_alerts.scss */
   .alert--success {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
+    background-color: #5cb85c;
+    border-color: #5cae4c;
     color: #3c763d; }
     /* line 29, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .alert--success hr {
-      border-top-color: #c9e2b3; }
+      border-top-color: #539d44; }
     /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .alert--success .alert__link {
       color: #2b542c;
@@ -2087,12 +2093,12 @@ input[type="button"].btn--block {
         color: #1a321a; }
   /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_alerts.scss */
   .alert--info {
-    background-color: #d9edf7;
-    border-color: #bce8f1;
+    background-color: #5bc0de;
+    border-color: #3dced8;
     color: #31708f; }
     /* line 29, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .alert--info hr {
-      border-top-color: #a6e1ec; }
+      border-top-color: #2ac7d2; }
     /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .alert--info .alert__link {
       color: #245269;
@@ -2103,12 +2109,12 @@ input[type="button"].btn--block {
         color: #173543; }
   /* line 39, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_alerts.scss */
   .alert--warning {
-    background-color: #fcf8e3;
-    border-color: #faebcc;
+    background-color: #f0ad4e;
+    border-color: #ee8436;
     color: #8a6d3b; }
     /* line 29, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .alert--warning hr {
-      border-top-color: #f7e1b5; }
+      border-top-color: #ec751f; }
     /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .alert--warning .alert__link {
       color: #66512c;
@@ -2119,12 +2125,12 @@ input[type="button"].btn--block {
         color: #43351c; }
   /* line 42, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_alerts.scss */
   .alert--danger {
-    background-color: #f2dede;
-    border-color: #ebccd1;
+    background-color: #d9534f;
+    border-color: #d43a4f;
     color: #a94442; }
     /* line 29, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .alert--danger hr {
-      border-top-color: #e4b9c0; }
+      border-top-color: #c92c41; }
     /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .alert--danger .alert__link {
       color: #843534;
@@ -3632,19 +3638,19 @@ figure figcaption {
     /* line 23, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
     .list-group__item--success {
       color: #3c763d;
-      background-color: #dff0d8; }
+      background-color: #5cb85c; }
     /* line 23, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
     .list-group__item--info {
       color: #31708f;
-      background-color: #d9edf7; }
+      background-color: #5bc0de; }
     /* line 23, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
     .list-group__item--warning {
       color: #8a6d3b;
-      background-color: #fcf8e3; }
+      background-color: #f0ad4e; }
     /* line 23, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
     .list-group__item--danger {
       color: #a94442;
-      background-color: #f2dede; }
+      background-color: #d9534f; }
   /* line 57, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_list-group.scss */
   body.bootstrap .list-group {
     display: block;
@@ -3660,7 +3666,7 @@ a.list-group__item--success {
   /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
   a.list-group__item--success:hover, a.list-group__item--success:focus {
     color: #3c763d;
-    background-color: #d0e9c6; }
+    background-color: #4cae4c; }
   /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
   a.list-group__item--success.active, a.list-group__item--successactive:hover, a.list-group__item--success.active:focus {
     color: white;
@@ -3672,7 +3678,7 @@ a.list-group__item--info {
   /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
   a.list-group__item--info:hover, a.list-group__item--info:focus {
     color: #31708f;
-    background-color: #c4e3f3; }
+    background-color: #46b8da; }
   /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
   a.list-group__item--info.active, a.list-group__item--infoactive:hover, a.list-group__item--info.active:focus {
     color: white;
@@ -3684,7 +3690,7 @@ a.list-group__item--warning {
   /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
   a.list-group__item--warning:hover, a.list-group__item--warning:focus {
     color: #8a6d3b;
-    background-color: #faf2cc; }
+    background-color: #eea236; }
   /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
   a.list-group__item--warning.active, a.list-group__item--warningactive:hover, a.list-group__item--warning.active:focus {
     color: white;
@@ -3696,7 +3702,7 @@ a.list-group__item--danger {
   /* line 32, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
   a.list-group__item--danger:hover, a.list-group__item--danger:focus {
     color: #a94442;
-    background-color: #ebcccc; }
+    background-color: #d43f3a; }
   /* line 36, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_lists.scss */
   a.list-group__item--danger.active, a.list-group__item--dangeractive:hover, a.list-group__item--danger.active:focus {
     color: white;
@@ -4012,63 +4018,63 @@ a.list-group__item.active, a.list-group__item.active:hover, a.list-group__item.a
 
 /* line 233, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
 .panel-success {
-  border-color: #d6e9c6; }
+  border-color: #5cae4c; }
   /* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
   .panel-success > .panel-heading {
     color: #3c763d;
-    background-color: #dff0d8;
-    border-color: #d6e9c6; }
+    background-color: #5cb85c;
+    border-color: #5cae4c; }
     /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .panel-success > .panel-heading + .panel-collapse .panel-body {
-      border-top-color: #d6e9c6; }
+      border-top-color: #5cae4c; }
   /* line 18, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
   .panel-success > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: #d6e9c6; }
+    border-bottom-color: #5cae4c; }
 
 /* line 236, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
 .panel-info {
-  border-color: #bce8f1; }
+  border-color: #3dced8; }
   /* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
   .panel-info > .panel-heading {
     color: #31708f;
-    background-color: #d9edf7;
-    border-color: #bce8f1; }
+    background-color: #5bc0de;
+    border-color: #3dced8; }
     /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .panel-info > .panel-heading + .panel-collapse .panel-body {
-      border-top-color: #bce8f1; }
+      border-top-color: #3dced8; }
   /* line 18, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
   .panel-info > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: #bce8f1; }
+    border-bottom-color: #3dced8; }
 
 /* line 239, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
 .panel-warning {
-  border-color: #faebcc; }
+  border-color: #ee8436; }
   /* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
   .panel-warning > .panel-heading {
     color: #8a6d3b;
-    background-color: #fcf8e3;
-    border-color: #faebcc; }
+    background-color: #f0ad4e;
+    border-color: #ee8436; }
     /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .panel-warning > .panel-heading + .panel-collapse .panel-body {
-      border-top-color: #faebcc; }
+      border-top-color: #ee8436; }
   /* line 18, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
   .panel-warning > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: #faebcc; }
+    border-bottom-color: #ee8436; }
 
 /* line 242, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_panels.scss */
 .panel-danger {
-  border-color: #ebccd1; }
+  border-color: #d43a4f; }
   /* line 9, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
   .panel-danger > .panel-heading {
     color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebccd1; }
+    background-color: #d9534f;
+    border-color: #d43a4f; }
     /* line 13, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
     .panel-danger > .panel-heading + .panel-collapse .panel-body {
-      border-top-color: #ebccd1; }
+      border-top-color: #d43a4f; }
   /* line 18, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/mixins/_components.scss */
   .panel-danger > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: #ebccd1; }
+    border-bottom-color: #d43a4f; }
 
 /* line 6, /Applications/MAMP/Development/Mixture/Pixels/assets/stylesheets/base/bootstrap/_wells.scss */
 .well {
@@ -4822,4 +4828,5 @@ main {
 
 /* Modules */
 /* Scratch */
+
 

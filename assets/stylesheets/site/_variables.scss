@@ -186,19 +186,19 @@ $pre-border-color:																	darken(adjust-hue($pre-background-color, -10)
 
 // - State Colors
 $state-success-text-color:														rgb(60,118,61) !default;
-$state-success-background-color:										rgb(223,240,216)!default;
+$state-success-background-color:										$brand-success !default;
 $state-success-border-color:												darken(adjust-hue($state-success-background-color, -10), 5%) !default;
 
 $state-info-text-color:																rgb(49,112,143) !default;
-$state-info-background-color:												rgb(217,237,247) !default;
+$state-info-background-color:												$brand-info !default;
 $state-info-border-color:														darken(adjust-hue($state-info-background-color, -10), 7%) !default;
 
 $state-warning-text-color:														rgb(138,109,59) !default;
-$state-warning-background-color:										rgb(252,248,227) !default;
+$state-warning-background-color:										$brand-warning !default;
 $state-warning-border-color:												darken(adjust-hue($state-warning-background-color, -10), 5%) !default;
 
 $state-danger-text-color:														rgb(169,68,66) !default;
-$state-danger-background-color:										rgb(242,222,222) !default;
+$state-danger-background-color:										$brand-danger !default;
 $state-danger-border-color: 												darken(adjust-hue($state-danger-background-color, -10), 5%) !default;
 
 // - Component Colors

@@ -83,14 +83,44 @@ $guide-background: $body-background-color;
 // Contextual backgrounds
 // -------------------------
 // [converter] $parent hack
-@mixin bg-variant($parent, $color) {
+@mixin bg-variant($parent, $bg-color, $text-color, $clarity: n) {
 	#{$parent} {
-		background-color: $color;
+		background-color: $bg-color;
 		padding: rem($rhythm-unit);
 		p { @include zero;}
+		@if $clarity == n {
+			color: darken($text-color,15%);
+		}
+		@if $clarity == white {
+			color: $white;
+		}
+		@if $clarity == l1 {
+			color: tint($text-color, 10%);
+		}
+		@if $clarity == l2 {
+		background-color: tint($text-color, 25%);
+		}
+		@if $clarity == l3 {
+			color: tint($text-color, 50%);
+		}
+		@if $clarity == l4 {
+			color: tint($text-color, 75%);
+		}
+		@if $clarity == d1 {
+			color: shade($text-color, 10%);
+		}
+		@if $clarity == d2 {
+			color: shade($text-color, 25%);
+		}
+		@if $clarity == d3 {
+			color: shade($text-color, 50%);
+		}
+		@if $clarity == d4 {
+			color: shade($text-color, 75%);
+		}
 	}
 	// Currently not applied as an anchor
 	a#{$parent}:hover {
-		background-color: darken($color, 10%);
+		background-color: darken($bg-color, 10%);
 	}
 }
